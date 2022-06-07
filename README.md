@@ -20,6 +20,7 @@ cd hmmphylo
 docker-compose up -d
 docker-compose run --rm hmmphylo
 dos2unix GO.sh
+#Have your file downloaded and with an apprioprate name as this will be the name of the folder :)
 ./GO.sh
 ```
 
