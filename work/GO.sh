@@ -1,13 +1,18 @@
 #!/bin/bash
+#Implement Previous Steps*
+#1. INPUT PROTEIN SEQUENCE AND GET HMM FROM PFAM
+#2. PUT THIS HMM INTO HMMER3 
+#3. GET THE HITS FROM HMMER3 in form of fasta sequences
+#4. MAJOR DO THIS -> Take the HMM for each part of structure -> GET SEQUENCES FOR EACH PART AND concatenate
 #Python File Run
 python FixID.py
 
 
-#Remove Duplicates
-seqkit rmdup -n fixedtestfile.fa -o seqs_without_duplicate.fa
-#Concatenate Identical Sequences
-awk '/^>/ {if(prev!=$0) {prev=$0;printf("\n%s\n",$0);} next;} {printf("%s",$0);} END {printf("\n");}' seqs_without_duplicate.fa > concatenated_seq.fa
 
+#Concatenate Identical Taxas
+awk '/^>/ {if(prev!=$0) {prev=$0;printf("\n%s\n",$0);} next;} {printf("%s",$0);} END {printf("\n");}' seqs_without_duplicate.fa > concatenated_seq.fa
+#Remove Duplicates
+seqkit rmdup -s fixedtestfile.fa -o seqs_without_duplicate.fa
 #Run MAFFT
 mafft --auto concatenated_seq.fa > aligned_seq.fa
 
