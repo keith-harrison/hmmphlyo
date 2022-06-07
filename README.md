@@ -14,10 +14,12 @@ Before you continue, ensure you have met the following requirements:
 * You have installed [Docker](https://docs.docker.com/get-docker/) for your operating system.
 * If you are on windows then you will also need [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 ```bat
-git clone https://github.com/keith-harrison/FINDER/
-cd Docker
-docker-compose up 
+git clone https://github.com/keith-harrison/hmmphlyo/
+cd hmmphylo
+docker-compose up -d
 docker-compose run --rm hmmphylo
+dos2unix GO.sh
+./GO.sh
 ```
 
 ## Contributing
