@@ -1,10 +1,7 @@
 #!/bin/bash
-#Implement Previous Steps*
-#1. INPUT PROTEIN SEQUENCE AND GET HMM FROM PFAM
-#2. PUT THIS HMM INTO HMMER3 
-#3. GET THE HITS FROM HMMER3 in form of fasta sequences
-#4. MAJOR DO THIS -> Take the HMM for each part of structure -> GET SEQUENCES FOR EACH PART AND concatenate
-#Python File Run
+
+#1. MAJOR DO THIS -> concatenate fasta sequences from each hmm from each part of structure into one sequence for each organism
+#2. MAJOR DO THIS -> Fix trimal
 python FixID.py
 
 
