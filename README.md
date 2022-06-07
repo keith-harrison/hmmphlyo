@@ -1,6 +1,7 @@
 # HMMPhylo
 HMMPhylo is a library/docker container for taking the results of HMMsearch and creating phylogenetic trees from them.
 ## Tools Used
+* Delbian (Standard Linux Image)
 * Python is used to webscrape all the uniprot IDs used in the results of the HMMsearch
 * MAFFT (MSA) 
 * TrimAL 
