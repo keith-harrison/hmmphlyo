@@ -17,7 +17,7 @@ Before you continue, ensure you have met the following requirements:
 * If you are on windows then you will also need [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 * Setting up the System
 ```bat
-git clone https://github.com/keith-harrison/hmmphlyo/
+git clone https://github.com/keith-harrison/hmmphylo/
 cd hmmphylo
 docker-compose up -d
 docker-compose run --rm hmmphylo
