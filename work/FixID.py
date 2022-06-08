@@ -1,17 +1,18 @@
 import requests, sys, re
-filename = input("Enter File name: ")
-name = open("filename.txt","w")
-foldername = filename.split(".", 1)[0]
-name.write(foldername)
-name.close()
+
+
 #try catch valid file name
 while True:
     try:
+        filename = input("Enter File name: ")
         fastafile = open(filename, "r")
         break   
     except FileNotFoundError:
         print("File not found")
-
+name = open("filename.txt","w")
+foldername = filename.split(".", 1)[0]
+name.write(foldername)
+name.close()
 
 
 fastalines = []
