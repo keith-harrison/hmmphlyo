@@ -15,7 +15,7 @@ ARG PATH="/root/miniconda3/bin:${PATH}"
 RUN conda install -c bioconda iqtree
 RUN conda install -c bioconda seqkit
 RUN apt install -y git
-RUN git clone https://github.com/inab/trimal && cd trimal/source && make && mv /work/trimal/source/* /usr/bin
+RUN git clone https://github.com/inab/trimal && cd trimal/source && make && mv ./* /usr/bin
 RUN rm -r trimal
 RUN apt install nano
 ENV PATH="${PATH}:/bin"
