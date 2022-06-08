@@ -15,7 +15,7 @@ Prerequisites
 Before you continue, ensure you have met the following requirements:
 * You have installed [Docker](https://docs.docker.com/get-docker/) for your operating system.
 * If you are on windows then you will also need [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-* Setting up the System : 
+* Setting up the System
 ```bat
 git clone https://github.com/keith-harrison/hmmphlyo/
 cd hmmphylo
@@ -33,6 +33,7 @@ This will return the full protein sequences not just the snippets given in the h
 ```bat
 ./GOfull.sh
 #The input is the name of the file we wish to take uniprot ids from (this can take any file with format >ID1 >ID2 >....)
+#For simplicity you can give the same input as the previous GO.sh and the second input will be "full<FILENAME>"
 ```
 
 ## Contributing
