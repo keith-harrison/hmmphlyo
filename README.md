@@ -22,6 +22,10 @@ docker-compose run --rm hmmphylo
 dos2unix GO.sh
 #Have your file downloaded and with an apprioprate name as this will be the name of the folder :)
 ./GO.sh
+#When an input is asked for put the entire filename including the file format
+./GOMultiple.sh 
+#For this, which takes in multiple sequences you want to concatenate from different files 
+#The input is the prefix of the file e.g for testfile1.fa testfile2.fa the input should be testfile
 ```
 
 ## Contributing

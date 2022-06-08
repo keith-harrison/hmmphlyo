@@ -9,11 +9,13 @@ python FixID.py
 
 #Remove Duplicates
 seqkit rmdup -s fixedtestfile.fa -o seqs_without_duplicate.fa
-seqkit rmdup -n seqs_without_duplicate.fa -o seqs_without_duplicate2.fa
+
 #Concatenate Identical Taxas
-awk '/^>/ {if(prev!=$0) {prev=$0;printf("\n%s\n",$0);} next;} {printf("%s",$0);} END {printf("\n");}' seqs_without_duplicate2.fa > concatenated_seq.fa
+awk '/^>/ {if(prev!=$0) {prev=$0;printf("\n%s\n",$0);} next;} {printf("%s",$0);} END {printf("\n");}' seqs_without_duplicate.fa > concatenated_seq.fa
+#Double check removing duplicates
+seqkit rmdup -n concatenated_seq.fa -o concatenated_ready_seq.fa
 #Run MAFFT
-mafft --auto concatenated_seq.fa > aligned_seq.fa
+mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
 
 #Run Trimal*
 trimal -clustal -in aligned_seq.fa -out trimmed_seq.fa
@@ -28,7 +30,6 @@ rm ./aligned*
 rm ./trimmed*
 rm ./concatenated*
 rm seqs_without_duplicate.fa
-rm seqs_without_duplicate2.fa
 rm fixed*.fa
 rm filename.txt
 
