@@ -8,7 +8,7 @@ python FixID.py
 
 
 #Remove Duplicates
-seqkit rmdup -s fixedtestfile.fa -o seqs_without_duplicate.fa
+seqkit rmdup -s fixed*.fa -o seqs_without_duplicate.fa
 
 #Concatenate Identical Taxas
 awk '/^>/ {if(prev!=$0) {prev=$0;printf("\n%s\n",$0);} next;} {printf("%s",$0);} END {printf("\n");}' seqs_without_duplicate.fa > concatenated_seq.fa

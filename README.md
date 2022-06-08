@@ -1,5 +1,6 @@
 # HMMPhylo
 HMMPhylo is a library/docker container for taking the results of HMMsearch and creating phylogenetic trees from them.
+This is used to study PPK protein sequences in Eukaryotes and other kingdoms.
 ## Tools Used
 * Delbian (Standard Linux Image)
 * Python is used to webscrape all the uniprot IDs used in the results of the HMMsearch
@@ -22,7 +23,7 @@ docker-compose run --rm hmmphylo
 dos2unix GO.sh
 #Have your file downloaded and with an apprioprate name as this will be the name of the folder :)
 ./GO.sh
-#When an input is asked for put the entire filename including the file format
+#When an input is asked for put the entire filename including the file format THIS PART IS STILL UNDER DEVELOPMENT
 ./GOMultiple.sh 
 #For this, which takes in multiple sequences you want to concatenate from different files 
 #The input is the prefix of the file e.g for testfile1.fa testfile2.fa the input should be testfile
@@ -32,3 +33,7 @@ dos2unix GO.sh
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+## Do More Research on :
+cut_ga (gathering threshold)
+gappy out
