@@ -15,19 +15,24 @@ Prerequisites
 Before you continue, ensure you have met the following requirements:
 * You have installed [Docker](https://docs.docker.com/get-docker/) for your operating system.
 * If you are on windows then you will also need [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+* Setting up the System : 
 ```bat
 git clone https://github.com/keith-harrison/hmmphlyo/
 cd hmmphylo
 docker-compose up -d
 docker-compose run --rm hmmphylo
 dos2unix GO.sh
-#Have your file downloaded and with an apprioprate name as this will be the name of the folder :)
+```
+* Running GO.sh (Gives phylogeny of the sequences given)
+```bat
 ./GO.sh
-#When an input is asked for put the entire filename including the file format 
-#THIS PART IS STILL UNDER DEVELOPMENT
-./GOMultiple.sh 
-#For this, which takes in multiple sequences you want to concatenate from different files 
-#The input is the prefix of the file e.g for testfile1.fa testfile2.fa the input should be testfile
+#Then input is the name of the file (this file is the results of the hmmsearch in fasta output)
+```
+* Running GOfull.sh (Gives phylogeny of full protein sequences given ids)
+This will return the full protein sequences not just the snippets given in the hmm results for GO.sh
+```bat
+./GOfull.sh
+#The input is the name of the file we wish to take uniprot ids from (this can take any file with format >ID1 >ID2 >....)
 ```
 
 ## Contributing
