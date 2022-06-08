@@ -38,7 +38,7 @@ for uniprotid in fastalines:
             #try catch loop add
             responseBody = r.text
             result = re.search('OS=(.*)OX=', responseBody)
-            newlines.append(result.group(1).split("</name>",1)[0].rstrip())
+            newlines.append(result.group(1).split("</name>",1)[0].rstrip().replace(" ", "_"))
         except:
             newlines.append((uniprotid+"removed"))
 fastafile = open(filename, "r")
