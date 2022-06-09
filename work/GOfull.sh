@@ -1,9 +1,9 @@
 python GOfull.py
 python Fixfull.py
 #find fixed* | sed '/^<!DOCTYPE/d' fixed*.fa > tempfile.fa
-find . -name "fixed*.fa" -exec sed -i '/^<!DOCTYPE/d' {} \;
+find . -maxdepth 1 -name "fixed*.fa" -exec sed -i '/^<!DOCTYPE/d' {} \;
 #Remove Duplicates
-find . -name "fixed*.fa" -exec seqkit rmdup -n {} -o concatenated_ready_seq.fa \;
+find . -maxdepth 1 -name "fixed*.fa" -exec seqkit rmdup -n {} -o concatenated_ready_seq.fa \;
 
 #Run MAFFT
 mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
@@ -12,7 +12,6 @@ mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
 trimal -clustal -in aligned_seq.fa -out trimmed_seq.fa
 
 #Run IQTREE
-#iqtree -nt AUTO  -s aligned_seq.fa
 iqtree -nt AUTO  -s trimmed_seq.fa
 cat filename.txt | xargs mkdir
 cat filename.txt | xargs mv *log 
