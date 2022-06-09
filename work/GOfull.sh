@@ -1,13 +1,10 @@
 python GOfull.py
-python FixID.py
-
+python Fixfull.py
+#find fixed* | sed '/^<!DOCTYPE/d' fixed*.fa > tempfile.fa
+find . -name "fixed*.fa" -exec sed -i '/^<!DOCTYPE/d' {} \;
 #Remove Duplicates
-seqkit rmdup -n fixed*.fa -o seqs_without_duplicate.fa
+find . -name "fixed*.fa" -exec seqkit rmdup -n {} -o concatenated_ready_seq.fa \;
 
-#Concatenate Identical Taxas
-awk '/^>/ {if(prev!=$0) {prev=$0;printf("\n%s\n",$0);} next;} {printf("%s",$0);} END {printf("\n");}' seqs_without_duplicate.fa > concatenated_seq.fa
-#Double check removing duplicates
-seqkit rmdup -n concatenated_seq.fa -o concatenated_ready_seq.fa
 #Run MAFFT
 mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
 

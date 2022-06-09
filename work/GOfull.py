@@ -43,19 +43,17 @@ for uniprotid in fastalines:
 #iterate through newlines and remove lines that start with > if the next element is blank
 indexestoremove=[]
 for i in range(len(newlines)):
-    print(i)
-    print(newlines[i])
     if newlines[i][0] == ">":
         if newlines[i+1] == "\n":
             indexestoremove.append(i)
 #remove the lines with indexes in indexestoremove
-for i in indexestoremove:
-    newlines.pop(i)
-
+newlines= [i for j, i in enumerate(newlines) if j not in indexestoremove]
 
 content =  "\n".join(newlines)
 file = open("full"+filename, "w")
 file.write(content)
 file.close()
+
+#Now we want to go through and fix the fasta headers ids to now be their taxonomy
         
 
