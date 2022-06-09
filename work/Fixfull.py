@@ -32,9 +32,9 @@ for i in range(len(fastalines)):
                 result = re.search('OS=(.*)OX=', responseBody)
                 newlines.append("\n>"+result.group(1).rstrip().replace(" ", "_")+"\n")
             except:
-                print("error")
+                print("website not found for"+uniprotid)
         except:
-            print("error")
+            print("website not found for"+uniprotid)
     else:
         newlines.append(fastalines[i])
 newname = "fixed"+filename
