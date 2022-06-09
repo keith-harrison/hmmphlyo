@@ -24,17 +24,9 @@ for i in fastafile:
 newlines = []
 removeids = []
 for uniprotid in fastalines:
-    requestURL = str("https://www.uniprot.org/uniprot/"+uniprotid)
-
-    r = requests.get(requestURL, headers={ "Accept" : "application/xml"})
-
-    if not r.ok:
-        r.raise_for_status()
-        sys.exit()
-        newlines.append((uniprotid+"removed"))
-        #add to remove from list
-        
-    else:
+    try:
+        requestURL = str("https://www.uniprot.org/uniprot/"+uniprotid)
+        r = requests.get(requestURL, headers={ "Accept" : "application/xml"})
         try:
             #try catch loop add
             responseBody = r.text
@@ -42,6 +34,8 @@ for uniprotid in fastalines:
             newlines.append(result.group(1).split("</name>",1)[0].rstrip().replace(" ", "_"))
         except:
             newlines.append((uniprotid+"removed"))
+    except:
+        newlines.append((uniprotid+"removed"))
 fastafile = open(filename, "r")
 fastafile = fastafile.readlines()
 counter = 0

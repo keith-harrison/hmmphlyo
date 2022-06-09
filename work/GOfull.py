@@ -20,17 +20,9 @@ for i in fastafile:
 newlines = []
 
 for uniprotid in fastalines:
-
-    requestURL = str("https://www.uniprot.org/uniprot/"+uniprotid+".fasta")
-
-    r = requests.get(requestURL, headers={ "Accept" : "application/xml"})
-
-    if not r.ok:
-        r.raise_for_status()
-        newlines.append((uniprotid+"removed"))
-        #add to remove from list
-        
-    else:
+    try:
+        requestURL = str("https://www.uniprot.org/uniprot/"+uniprotid+".fasta")
+        r = requests.get(requestURL, headers={ "Accept" : "application/xml"})
         try:
             #try catch loop add
             responseBody = r.text
@@ -43,7 +35,10 @@ for uniprotid in fastalines:
             newlines.append(">"+uniprotid)
             newlines.append("".join(newsequence)+"\n")
         except:
-            print("websitenotfound")
+            newlines.append(">"+uniprotid)
+    except:
+        newlines.append(">"+uniprotid)
+        
 
 #iterate through newlines and remove lines that start with > if the next element is blank
 indexestoremove=[]
