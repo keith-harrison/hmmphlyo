@@ -1,7 +1,4 @@
 import requests, sys, re
-
-
-#try catch valid file name
 while True:
     try:
         filename = input("Enter File name: ")
@@ -14,71 +11,49 @@ foldername = filename.split(".", 1)[0]
 name.write(foldername)
 name.close()
 
+newname = "fixed"+filename
+#TURN INTO SINGLE LINE FASTA
+with open(filename) as f_input, open(newname, 'w') as f_output:
+    block = []
 
-fastalines = []
-for i in fastafile:
-    if i[0] == ">":
-        fastalines.append(str(i[1:]).rstrip("\n").split("/", 1)[0])
+    for line in f_input:
+        if line.startswith('>'):
+            if block:
+                f_output.write(''.join(block) + '\n')
+                block = []
+            f_output.write(line)
+        else:
+            block.append(line.strip())
+
+    if block:
+        f_output.write(''.join(block) + '\n')
+#READLINE OF FILES
+fastafile = open(newname, "r")
+fastalines = fastafile.readlines()
+
 
         
 newlines = []
-removeids = []
-for uniprotid in fastalines:
-    try:
-        requestURL = str("https://www.uniprot.org/uniprot/"+uniprotid)
-        r = requests.get(requestURL, headers={ "Accept" : "application/xml"})
+for i in range(len(fastalines)):
+    if fastalines[i][0] == ">":
+        uniprotid = (str(fastalines[i][1:]).rstrip("\n").split("/", 1)[0])
         try:
-            #try catch loop add
-            responseBody = r.text
-            result = re.search('OS=(.*)OX=', responseBody)
-            newlines.append(result.group(1).split("</name>",1)[0].rstrip().replace(" ", "_"))
+            requestURL = str("https://www.uniprot.org/uniprot/"+uniprotid)
+            r = requests.get(requestURL, headers={ "Accept" : "application/xml"})
+            try:
+                #try catch loop add
+                responseBody = r.text
+                result = re.search('OS=(.*)OX=', responseBody)
+                newlines.append("\n>"+result.group(1).rstrip().replace(" ", "_")+"\n")
+                newlines.append(fastalines[i+1])
+            except:
+                print("website not found for"+uniprotid)
         except:
-            newlines.append((uniprotid+"removed"))
-    except:
-        newlines.append((uniprotid+"removed"))
-fastafile = open(filename, "r")
-fastafile = fastafile.readlines()
-counter = 0
+            print("website not found for"+uniprotid)
 newname = "fixed"+filename
 f = open(newname,"w")
 f.close()
 f = open(newname,"a")
-for i in range(len(fastafile)):
-    try:
-        if fastafile[i][0] == ">":
-            if "removed" not in newlines[counter]:
-                fastafile[i] = ">"+newlines[counter]+"\n"
-                counter+=1
-            else:
-                #if we do not want sequence remove from > to next > found
-                fastafile.pop(i)
-                nextcarrot = False
-                while nextcarrot == False:
-                    if fastafile[i+1][0] == ">":
-                        nextcarrot=True
-                        fastafile.pop(i)
-                    else:
-                        fastafile.pop(i)
-                counter+=1
-                if "removed" not in newlines[counter]:
-                    fastafile[i] = ">"+newlines[counter]+"\n"
-                    counter+=1
-                else:
-                    #if we do not want sequence remove from > to next > found
-                    fastafile.pop(i)
-                    nextcarrot = False
-                    while nextcarrot == False:
-                        if fastafile[i+1][0] == ">":
-                            nextcarrot=True
-                            fastafile.pop(i)
-                        else:
-                            fastafile.pop(i)
-                    counter+=1
-                    if "removed" not in newlines[counter]:
-                        fastafile[i] = ">"+newlines[counter]+"\n"
-                        counter+=1
-    except:
-        #file is now shorter so indexes will overshoot so just finish early
-        break
-f.writelines(fastafile)
+
+f.writelines(newlines)
 f.close()
