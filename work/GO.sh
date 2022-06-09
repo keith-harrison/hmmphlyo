@@ -4,7 +4,7 @@
 #2. MAJOR DO THIS -> Fix trimal
 python FixID.py
 
-
+find . -maxdepth 1 -name "fixed*.fa" -exec sed -i '/^<!DOCTYPE/d' {} \;
 
 
 #Remove Duplicates

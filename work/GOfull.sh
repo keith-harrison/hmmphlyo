@@ -19,7 +19,6 @@ cat filename.txt | xargs mv *iqtree
 rm ./aligned*
 rm ./trimmed*
 rm ./concatenated*
-rm seqs_without_duplicate.fa
 rm fixed*.fa
 rm filename.txt
 rm full*.fa
