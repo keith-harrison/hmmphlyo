@@ -7,14 +7,18 @@ find . -maxdepth 1 -name "fixed*.fa" -exec seqkit rmdup -n {} -o concatenated_re
 
 #Run MAFFT
 mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
-sed -i 's/:/_/' aligned_seq.fa
+
+sed -i 's/:/_/' trimmed_seq.fa
 #Run Trimal*
-trimal -clustal -in aligned_seq.fa -out trimmed_seq.fa
+trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
 
 
-#Replace erroneous characters that will effect iqtree
-
-
+#Replace erroneous characters that will effect fasttree
+sed -i 's/:/_/' trimmed_seq.fa
+sed -i 's/,/_/' trimmed_seq.fa
+sed -i 's/(/_/' trimmed_seq.fa
+sed -i 's/)/_/' trimmed_seq.fa
+sed -i 's/_\{2,\}/_/g' trimmed_seq.fa
 
 #Run fasttree
 FastTree -quiet trimmed_seq.fa > treefile 
