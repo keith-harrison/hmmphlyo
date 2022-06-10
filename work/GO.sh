@@ -16,9 +16,14 @@ awk '/^>/ {if(prev!=$0) {prev=$0;printf("\n%s\n",$0);} next;} {printf("%s",$0);}
 seqkit rmdup -n concatenated_seq.fa -o concatenated_ready_seq.fa
 #Run MAFFT
 mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
-
+sed -i 's/:/_/' aligned_seq.fa
+sed -i 's/:/_/' aligned_seq.fa
+sed -i 's/,/_/' aligned_seq.fa
+sed -i 's/(/_/' aligned_seq.fa
+sed -i 's/)/_/' aligned_seq.fa
+sed -i 's/_\{2,\}/_/g' aligned_seq.fa
 #Run Trimal*
-trimal -clustal -in aligned_seq.fa -out trimmed_seq.fa
+trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
 
 #Run IQTREE
 #iqtree -nt AUTO  -s aligned_seq.fa
