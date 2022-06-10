@@ -14,6 +14,7 @@ ENV PATH="/root/miniconda3/bin:${PATH}"
 ARG PATH="/root/miniconda3/bin:${PATH}"
 RUN conda install -c bioconda iqtree
 RUN conda install -c bioconda seqkit
+RUN conda install -c bioconda fasttree
 RUN apt install -y git
 RUN git clone https://github.com/inab/trimal && cd trimal/source && make && mv ./* /usr/bin
 RUN rm -r trimal
