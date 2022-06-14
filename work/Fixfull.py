@@ -4,7 +4,7 @@ import requests, sys, re
 #try catch valid file name
 while True:
     try:
-        filename = input("Enter File name: ")
+        filename = input("Enter File name (Returns file of full sequences according to UNIPROT ids): ")
         fastafile = open(filename, "r")
         break   
     except FileNotFoundError:

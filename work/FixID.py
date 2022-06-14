@@ -1,7 +1,7 @@
 import requests, sys, re
 while True:
     try:
-        filename = input("Enter File name: ")
+        filename = input("Enter File name (fixes ids to instead be organism names): ")
         fastafile = open(filename, "r")
         break   
     except FileNotFoundError:
@@ -47,9 +47,9 @@ for i in range(len(fastalines)):
                 newlines.append("\n>"+result.group(1).rstrip().replace(" ", "_")+"\n")
                 newlines.append(fastalines[i+1])
             except:
-                print("website not found for"+uniprotid)
+                print("website not found for: "+uniprotid)
         except:
-            print("website not found for"+uniprotid)
+            print("website not found for: "+uniprotid)
 newname = "fixed"+filename
 f = open(newname,"w")
 f.close()
