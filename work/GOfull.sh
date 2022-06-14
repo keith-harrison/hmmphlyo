@@ -23,7 +23,7 @@ FastTree -quiet trimmed_seq.fa > treefile
 cat filename.txt | xargs mkdir
 cat filename.txt | xargs mv treefile
 cat filename.txt | xargs mv concatenated_ready_seq.fa
-cat filename.txt | xargs mv concatenated_ready_seq.fa
+rm fixedfull*.fa
 rm aligned_seq.fa
 rm trimmed_seq.fa
 rm filename.txt
