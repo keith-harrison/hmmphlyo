@@ -22,7 +22,10 @@ trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
 FastTree -quiet trimmed_seq.fa > treefile 
 cat filename.txt | xargs mkdir
 cat filename.txt | xargs mv treefile
+cat filename.txt | xargs mv concatenated_ready_seq.fa
+cat filename.txt | xargs mv concatenated_ready_seq.fa
 rm aligned_seq.fa
 rm trimmed_seq.fa
+rm filename.txt
 
 
