@@ -19,6 +19,8 @@ RUN apt install -y git
 RUN git clone https://github.com/inab/trimal && cd trimal/source && make && mv ./* /usr/bin
 RUN rm -r trimal
 RUN apt install nano
+RUN pip install --upgrade numpy
+
 ENV PATH="${PATH}:/bin"
 ENV PATH="${PATH}:/usr/bin"
 #TrimAL

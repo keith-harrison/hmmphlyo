@@ -1,7 +1,5 @@
 #!/bin/bash
-
-#1. MAJOR DO THIS -> concatenate fasta sequences from each hmm from each part of structure into one sequence for each organism
-#2. MAJOR DO THIS -> Fix trimal
+#This takes the results of an HMMSEARCH off of EBI's online hmmsearch and produces a phylogeny from the results.
 python FixID.py
 
 find . -maxdepth 1 -name "fixed*.fa" -exec sed -i '/^<!DOCTYPE/d' {} \;
@@ -26,7 +24,6 @@ sed -i 's/_\{2,\}/_/g' aligned_seq.fa
 trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
 
 #Run IQTREE
-#iqtree -nt AUTO  -s aligned_seq.fa
 iqtree -nt AUTO  -s trimmed_seq.fa
 cat filename.txt | xargs mkdir
 cat filename.txt | xargs mv *log 
