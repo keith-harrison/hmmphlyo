@@ -1,0 +1,217 @@
+IQ-TREE multicore version 2.0.3 for Linux 64-bit built Dec 20 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    b705da7c3482 (AVX2, FMA3, 12 GB RAM)
+Command: iqtree -nt AUTO -s pruned_tree.fa
+Seed:    206330 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jun 15 10:23:37 2022
+Kernel:  AVX+FMA - auto-detect threads (6 CPU cores detected)
+
+Reading alignment file pruned_tree.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 1923 columns, 1770 distinct patterns
+952 parsimony-informative, 634 singleton sites, 337 constant sites
+                                                                             Gap/Ambiguity  Composition  p-value
+   1  Litorilinea_aerophila                                                         61.05%    failed      0.90%
+   2  Longibacter_salinarum                                                         63.18%    failed      4.28%
+   3  Aliifodinibius_halophilus                                                     62.14%    passed     40.94%
+   4  Balneolaceae_bacterium_YR4-1                                                  62.35%    failed      3.08%
+   5  Longimonas_halophila                                                          62.04%    failed      0.02%
+   6  Rhodohalobacter_barkolensis                                                   61.31%    failed      0.01%
+   7  Rubrivirga_sp._SAORIC476                                                      63.34%    failed      0.01%
+   8  Caldilinea_aerophila_strain_DSM_14535_/_JCM_11387_/_NBRC_104270_/_STL-6-O1_   63.34%    failed      0.68%
+   9  Rhodothermaceae_bacterium_RA                                                  60.69%    failed      0.04%
+  10  Rubricoccus_marinus                                                           63.23%    failed      0.05%
+  11  Salinibacter_sp._10B                                                          63.03%    failed      0.53%
+  12  Aliifodinibius_roseus                                                         58.45%    passed     66.70%
+  13  Rhodohalobacter_mucosus                                                       60.84%    passed     12.33%
+  14  Balneola_sp._EhC07                                                            61.21%    failed      0.14%
+  15  Rhodohalobacter_sp._SW132                                                     61.93%    failed      1.42%
+  16  bacterium_HR18                                                                62.09%    failed      0.00%
+  17  Gracilimonas_mengyeensis                                                      61.21%    failed      2.02%
+  18  Dictyostelium_purpureum                                                       50.49%    failed      0.00%
+  19  Tieghemostelium_lacteum                                                       45.35%    failed      0.00%
+  20  Candidatus_Cyclonatronum_proteinivorum                                        60.84%    passed     75.83%
+  21  Cavenderia_fasciculata_strain_SH3_                                            38.01%    failed      0.00%
+  22  Dictyostelium_discoideum                                                      45.24%    failed      0.00%
+  23  Polysphondylium_pallidum_strain_ATCC_26659_/_Pp_5_/_PN500_                    37.44%    failed      0.00%
+  24  Balneola_sp.                                                                  61.05%    failed      1.22%
+  25  bacterium_SCGC_AG-212-C10                                                     64.48%    failed      2.87%
+  26  Dehalococcoidia_bacterium                                                     62.66%    failed      0.91%
+  27  Chloroflexi_bacterium_strain_G233_                                            63.55%    failed      0.00%
+  28  Ostreococcus_lucimarinus_strain_CCE9901_                                      57.72%    passed     28.17%
+  29  Ostreococcus_tauri                                                            53.04%    passed      5.55%
+  30  Physcomitrium_patens                                                          65.57%    passed      8.90%
+  31  Bathycoccus_prasinos                                                          47.89%    failed      1.31%
+  32  Chloropicon_primus                                                            52.94%    failed      1.29%
+  33  Cyanidioschyzon_merolae_strain_10D_                                           32.29%    failed      0.00%
+  34  Galdieria_sulphuraria                                                         46.96%    passed     26.11%
+  35  Cyanidiococcus_yangmingshanensis                                              49.14%    passed      5.27%
+  36  Porphyridium_purpureum                                                        48.05%    passed     29.18%
+  37  Porphyra_umbilicalis                                                          63.65%    failed      0.00%
+  38  Gracilariopsis_chorda                                                         40.67%    passed     23.37%
+  39  Chondrus_crispus                                                              45.19%    passed     12.58%
+  40  Thecamonas_trahens_ATCC_50062                                                 46.65%    failed      0.00%
+WARNING: 28 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                         55.76%  28 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.063 seconds, parsimony score: 10074 (based on 1586 sites)
+Measuring multi-threading efficiency up to 6 CPU cores
+Increase to 10 rounds for branch lengths
+5 trees examined
+Threads: 1 / Time: 7.192 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -61254
+Threads: 2 / Time: 3.942 sec / Speedup: 1.824 / Efficiency: 91% / LogL: -61254
+Threads: 3 / Time: 2.935 sec / Speedup: 2.450 / Efficiency: 82% / LogL: -61254
+Threads: 4 / Time: 2.420 sec / Speedup: 2.972 / Efficiency: 74% / LogL: -61254
+Threads: 5 / Time: 2.003 sec / Speedup: 3.590 / Efficiency: 72% / LogL: -61254
+Threads: 6 / Time: 2.172 sec / Speedup: 3.311 / Efficiency: 55% / LogL: -61254
+BEST NUMBER OF THREADS: 5
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -50850.151
+2. Current log-likelihood: -50848.874
+Optimal log-likelihood: -50847.832
+Proportion of invariable sites: 0.030
+Gamma shape alpha: 0.991
+Parameters optimization took 2 rounds (0.409 sec)
+Time for fast ML tree search: 1.718 seconds
+
+NOTE: ModelFinder requires 110 MB RAM!
+ModelFinder will test up to 546 protein models (sample size: 1923) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            53496.055    77  107146.110   107152.620   107574.356
+  2  LG+I          52927.119    78  106010.238   106016.921   106444.046
+  3  LG+G4         50885.828    78  101927.656   101934.340   102361.465
+  4  LG+I+G4       50846.944    79  101851.889   101858.747   102291.258
+  5  LG+R2         51241.004    79  102640.008   102646.867   103079.378
+  6  LG+R3         50900.751    81  101963.501   101970.717   102413.994
+  7  LG+R4         50836.020    83  101838.040   101845.623   102299.657
+  8  LG+R5         50798.442    85  101766.885   101774.843   102239.624
+  9  LG+R6         50779.474    87  101732.949   101741.293   102216.811
+ 10  LG+R7         50777.553    89  101733.106   101741.845   102228.092
+ 22  LG+F+R6       50717.795    106 101647.590   101660.081   102237.124
+ 35  WAG+R6        50935.445    87  102044.890   102053.234   102528.753
+ 48  WAG+F+R6      50857.294    106 101926.587   101939.079   102516.121
+ 61  JTT+R6        51303.833    87  102781.665   102790.009   103265.528
+ 74  JTT+F+R6      51257.578    106 102727.156   102739.647   103316.690
+ 87  JTTDCMut+R6   51307.350    87  102788.701   102797.045   103272.564
+100  JTTDCMut+F+R6 51258.387    106 102728.774   102741.265   103318.308
+113  DCMut+R6      51604.502    87  103383.003   103391.348   103866.866
+126  DCMut+F+R6    51347.168    106 102906.336   102918.827   103495.870
+139  VT+R6         50933.525    87  102041.049   102049.394   102524.912
+152  VT+F+R6       50912.814    106 102037.629   102050.120   102627.163
+165  PMB+R6        51249.084    87  102672.169   102680.513   103156.032
+178  PMB+F+R6      51115.775    106 102443.549   102456.040   103033.083
+191  Blosum62+R6   51199.722    87  102573.443   102581.788   103057.306
+204  Blosum62+F+R6 51017.614    106 102247.227   102259.718   102836.761
+217  Dayhoff+R6    51603.625    87  103381.250   103389.594   103865.113
+230  Dayhoff+F+R6  51346.794    106 102905.589   102918.080   103495.123
+243  mtREV+R6      53947.524    87  108069.048   108077.392   108552.911
+256  mtREV+F+R6    51647.831    106 103507.662   103520.153   104097.196
+269  mtART+R6      54598.138    87  109370.276   109378.620   109854.138
+282  mtART+F+R6    52065.222    106 104342.444   104354.936   104931.978
+295  mtZOA+R6      53370.878    87  106915.757   106924.101   107399.620
+308  mtZOA+F+R6    51551.380    106 103314.760   103327.251   103904.294
+321  mtMet+R6      54207.340    87  108588.680   108597.024   109072.542
+334  mtMet+F+R6    51665.257    106 103542.513   103555.005   104132.047
+347  mtVer+R6      54456.331    87  109086.663   109095.007   109570.525
+360  mtVer+F+R6    52281.317    106 104774.633   104787.124   105364.167
+373  mtInv+R6      54579.950    87  109333.900   109342.244   109817.763
+386  mtInv+F+R6    51350.340    106 102912.680   102925.171   103502.214
+399  mtMAM+R6      54945.796    87  110065.592   110073.936   110549.454
+412  mtMAM+F+R6    52622.962    106 105457.925   105470.416   106047.459
+425  HIVb+R6       52428.361    87  105030.722   105039.066   105514.584
+438  HIVb+F+R6     52153.573    106 104519.145   104531.636   105108.679
+451  HIVw+R6       54512.256    87  109198.512   109206.856   109682.375
+464  HIVw+F+R6     53444.751    106 107101.503   107113.994   107691.037
+477  FLU+R6        52105.155    87  104384.311   104392.655   104868.174
+490  FLU+F+R6      51784.179    106 103780.359   103792.850   104369.893
+503  rtREV+R6      51272.760    87  102719.520   102727.865   103203.383
+516  rtREV+F+R6    50834.151    106 101880.302   101892.793   102469.836
+529  cpREV+R6      51367.497    87  102908.993   102917.337   103392.856
+542  cpREV+F+R6    51173.746    106 102559.493   102571.984   103149.027
+Akaike Information Criterion:           LG+F+R6
+Corrected Akaike Information Criterion: LG+F+R6
+Bayesian Information Criterion:         LG+R6
+Best-fit model: LG+R6 chosen according to BIC
+
+All model information printed to pruned_tree.fa.model.gz
+CPU time for ModelFinder: 1261.535 seconds (0h:21m:1s)
+Wall-clock time for ModelFinder: 262.417 seconds (0h:4m:22s)
+
+NOTE: 66 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -50779.474
+2. Current log-likelihood: -50777.892
+Optimal log-likelihood: -50777.831
+Site proportion and rates:  (0.057,0.012) (0.136,0.085) (0.195,0.250) (0.242,0.551) (0.293,1.063) (0.077,6.414)
+Parameters optimization took 2 rounds (1.676 sec)
+Computing ML distances based on estimated model parameters... 0.383 sec
+Computing BIONJ tree...
+0.012 seconds
+Log-likelihood of BIONJ tree: -50782.934
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.369 second
+Computing log-likelihood of 98 initial trees ... 6.550 seconds
+Current best score: -50777.831
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -50777.792
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -50776.953
+Iteration 10 / LogL: -50776.953 / Time: 0h:0m:24s
+BETTER TREE FOUND at iteration 16: -50776.944
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -50776.617
+Iteration 20 / LogL: -50777.549 / Time: 0h:0m:40s
+Finish initializing candidate tree set (4)
+Current best tree score: -50776.617 / CPU time: 38.061
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -50776.888 / Time: 0h:0m:51s (0h:2m:33s left)
+Iteration 40 / LogL: -50777.100 / Time: 0h:1m:2s (0h:2m:1s left)
+Iteration 50 / LogL: -50776.664 / Time: 0h:1m:12s (0h:1m:37s left)
+Iteration 60 / LogL: -50776.996 / Time: 0h:1m:23s (0h:1m:19s left)
+Iteration 70 / LogL: -50779.140 / Time: 0h:1m:33s (0h:1m:2s left)
+Iteration 80 / LogL: -50777.897 / Time: 0h:1m:43s (0h:0m:47s left)
+Iteration 90 / LogL: -50777.092 / Time: 0h:1m:55s (0h:0m:33s left)
+Iteration 100 / LogL: -50777.329 / Time: 0h:2m:6s (0h:0m:20s left)
+Iteration 110 / LogL: -50778.509 / Time: 0h:2m:17s (0h:0m:7s left)
+TREE SEARCH COMPLETED AFTER 117 ITERATIONS / Time: 0h:2m:25s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -50776.617
+2. Current log-likelihood: -50776.606
+Optimal log-likelihood: -50776.592
+Site proportion and rates:  (0.056,0.012) (0.136,0.084) (0.195,0.250) (0.238,0.547) (0.298,1.056) (0.076,6.464)
+Parameters optimization took 2 rounds (0.780 sec)
+BEST SCORE FOUND : -50776.592
+Total tree length: 49.365
+
+Total number of iterations: 117
+CPU time used for tree search: 711.885 sec (0h:11m:51s)
+Wall-clock time used for tree search: 143.476 sec (0h:2m:23s)
+Total CPU time used: 727.843 sec (0h:12m:7s)
+Total wall-clock time used: 146.710 sec (0h:2m:26s)
+
+Analysis results written to: 
+  IQ-TREE report:                pruned_tree.fa.iqtree
+  Maximum-likelihood tree:       pruned_tree.fa.treefile
+  Likelihood distances:          pruned_tree.fa.mldist
+  Screen log file:               pruned_tree.fa.log
+
+Date and Time: Wed Jun 15 10:30:26 2022
