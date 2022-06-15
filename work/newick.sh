@@ -21,3 +21,4 @@ trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
 mv trimmed_seq.fa pruned_tree.fa
 #Run IQTREE
 iqtree -nt AUTO  -s pruned_tree.fa
+#rm pruned_tree.fa.treefile
