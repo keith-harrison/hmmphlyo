@@ -2,12 +2,14 @@
 
 
 #Write names in pruned tree to a file called names.txt
-python -c 'import sys; from ete3 import Tree; t = Tree(sys.argv[1],quoted_node_names=True,format=1);print(t.get_leaf_names());' prunedtree.nwk > names.txt
+python -c "exec(\"import sys\nimport sys\nfrom ete3 import Tree\nt = Tree('prunedtree.nwk',format=1)\nnames=t.get_leaf_names()\nwith open('listfile.txt', mode='w') as file:\n  for listitem in names:\n    file.write(listitem+str('\\\n'))\")"
 #Use names to gather all sequences in pruned tree.
-cat names.txt | while read line; do grep -wns "$line" concatenated_ready_seq.fa -A 1; done > newick_seq_line.txt
+#make concatenated_ready_seq.fa single line fasta file
+python single_line.py
+cat listfile.txt | grep -A 1 --no-group-separator - fixedconcatenated_ready_seq.fa > newick_seq_line.fa
 #Now that we have all the sequences in our pruned tree run a regular MAFFT and Trimal followed by IQTREE
 
-mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
+mafft --auto newick_seq_line.fa > aligned_seq.fa
 sed -i 's/:/_/' aligned_seq.fa
 sed -i 's/:/_/' aligned_seq.fa
 sed -i 's/,/_/' aligned_seq.fa
@@ -16,6 +18,6 @@ sed -i 's/)/_/' aligned_seq.fa
 sed -i 's/_\{2,\}/_/g' aligned_seq.fa
 
 trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
-
+mv trimmed_seq.fa pruned_tree.fa
 #Run IQTREE
-iqtree -nt AUTO  -s trimmed_seq.fa
+iqtree -nt AUTO  -s pruned_tree.fa

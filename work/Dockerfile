@@ -21,6 +21,7 @@ RUN rm -r trimal
 RUN apt install nano
 RUN pip install --upgrade numpy
 
+RUN pip install --upgrade ete3
 ENV PATH="${PATH}:/bin"
 ENV PATH="${PATH}:/usr/bin"
 #TrimAL
