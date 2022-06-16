@@ -20,7 +20,8 @@ RUN git clone https://github.com/inab/trimal && cd trimal/source && make && mv .
 RUN rm -r trimal
 RUN apt install nano
 RUN pip install --upgrade numpy
-
+RUN apt-get -y install autoconf
+RUN git clone https://github.com/EddyRivasLab/easel && cd easel && autoconf && ./configure && make && make install
 RUN pip install --upgrade ete3
 ENV PATH="${PATH}:/bin"
 ENV PATH="${PATH}:/usr/bin"
