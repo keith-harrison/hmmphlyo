@@ -6,7 +6,9 @@ wget wwwuser.gwdg.de/~compbiol/metaeuk/2020_TAX_DB/MMETSP_zenodo_3247846_uniclus
 tar -xvf MMETSP_zenodo_3247846_uniclust90_2018_08_seed_valid_taxids.tar.gz
 #Download TARA
 wget wwwuser.gwdg.de/~compbiol/metaeuk/2019_11/MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas.gz
-tar -xvf MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas.gz
+gunzip MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas.gz
+
+
 #Download ALL protein clusters BIG
 wget wwwuser.gwdg.de/~compbiol/metaeuk/2019_11/MERC_MMETSP_Uniclust50_profiles.tar.gz
 tar -xvf MERC_MMETSP_Uniclust50_profiles.tar.gz
@@ -14,9 +16,29 @@ tar -xvf MERC_MMETSP_Uniclust50_profiles.tar.gz
 #Build hmmprofile from trimmed_seq.fa OR use PP_kinase2.hmm
 hmmbuild PP_kinase_all.hmm trimmed_seq.fa
 #Run hmmsearch of file against hmm profile
-nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhits.sto PP_kinase_all.hmm MMETSP.pep &
+nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsMMETSP.sto PP_kinase_all.hmm MMETSP.pep &
+nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsTara.sto PP_kinase_all.hmm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas &
+
+nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsMiddleMMETSP.sto PP_kinase_middle.hmm MMETSP.pep &
+nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsTaraMiddle.sto PP_kinase_middle.hmm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas &
+
+nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsEukMMETSP.sto PP_kinase_euk.hmm MMETSP.pep &
+nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsTaraEuk.sto PP_kinase_euk.hmm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas &
 #Move results back to home directory in order to use esl tools (not available on isca)
-esl-reformat fasta myhits.sto > hits.fa
+
+esl-reformat fasta myhitsMMETSP.sto > hitsMMETSP.fa
+esl-reformat fasta myhitsTara.sto > hitsTara.fa
+
+esl-reformat fasta myhitsMiddleMMETSP.sto > hitsMiddleMMETSP.fa
+esl-reformat fasta myhitsTaraMiddle.sto > hitsTaraMiddle.fa
+
+esl-reformat fasta myhitsEukMMETSP.sto > hitsEukMMETSP.fa
+esl-reformat fasta myhitsTaraEuk.sto > hitsTaraEuk.fa
+
+
+
+
+
 
 #join onto concatenated_ready_seq.fa OR just onto eukaryote_ppk_seq.fa
 cat hits.fa concatenated_ready_seq.fa > hits_concat.fa
