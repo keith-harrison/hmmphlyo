@@ -35,13 +35,21 @@ esl-reformat fasta myhitsTaraMiddle.sto > hitsTaraMiddle.fa
 esl-reformat fasta myhitsEukMMETSP.sto > hitsEukMMETSP.fa
 esl-reformat fasta myhitsTaraEuk.sto > hitsTaraEuk.fa
 
+#fix MMETSP files
+python fixMMETSP.py
+#fix Tara files
+sed -i 's/|[^|]*//2g' hitsTara.fa
+sed -i 's/|/_/g' hitsTara.fa
 
 
-
-
-
-#join onto concatenated_ready_seq.fa OR just onto eukaryote_ppk_seq.fa
-cat hits.fa concatenated_ready_seq.fa > hits_concat.fa
+#join onto concatenated_ready_seq.fa OR just onto eukaryote_ppk_seq.fa EUK TREE
+#Write names in pruned tree to a file called names.txt
+python -c "exec(\"import sys\nimport sys\nfrom ete3 import Tree\nt = Tree('prunedtree.nwk',format=1)\nnames=t.get_leaf_names()\nwith open('listfile.txt', mode='w') as file:\n  for listitem in names:\n    file.write(listitem+str('\\\n'))\")"
+#Use names to gather all sequences in pruned tree.
+#make concatenated_ready_seq.fa single line fasta file
+python single_line.py
+cat listfile.txt | grep -A 1 --no-group-separator -f - fixedconcatenated_ready_seq.fa > newick_seq_line.fa
+cat longhitsEuk.fa newick_seq_line.fa > hits_concat.fa
 
 mafft --auto hits_concat.fa > aligned_seq.fa
 sed -i 's/:/_/' aligned_seq.fa
@@ -57,3 +65,14 @@ trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
 iqtree -nt AUTO  -s trimmed_seq.fa
 #rm pruned_tree.fa.treefile
 
+#Alignment Run MAFFT EUK + ALL
+cat concatenated_ready_seq.fa longhitsEuk.fa > concatenated_ready_seq.fa
+
+
+mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
+
+#Trimming of Alignment Run Trimal*
+trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
+
+#Phylogeny - Run fasttree
+FastTree -quiet trimmed_seq.fa > treefile 

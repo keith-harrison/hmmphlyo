@@ -1,0 +1,215 @@
+IQ-TREE multicore version 2.0.3 for Linux 64-bit built Dec 20 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    87056acaf980 (AVX2, FMA3, 12 GB RAM)
+Command: iqtree -nt AUTO -s trimmed_seq.fa
+Seed:    42483 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jun 17 12:41:34 2022
+Kernel:  AVX+FMA - auto-detect threads (6 CPU cores detected)
+
+Reading alignment file trimmed_seq.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 157 sequences with 2088 columns, 1980 distinct patterns
+1206 parsimony-informative, 530 singleton sites, 352 constant sites
+                                                                             Gap/Ambiguity  Composition  p-value
+   1  Litorilinea_aerophila                                                         64.13%    failed      0.09%
+   2  Longibacter_salinarum                                                         66.09%    failed      1.94%
+   3  Aliifodinibius_halophilus                                                     65.13%    passed     28.62%
+   4  Balneolaceae_bacterium_YR4-1                                                  65.33%    failed      2.98%
+   5  Longimonas_halophila                                                          65.04%    failed      0.00%
+   6  Rhodohalobacter_barkolensis                                                   64.37%    failed      0.01%
+   7  Rubrivirga_sp._SAORIC476                                                      66.24%    failed      0.04%
+   8  Caldilinea_aerophila_strain_DSM_14535_/_JCM_11387_/_NBRC_104270_/_STL-6-O1_   66.24%    failed      0.29%
+   9  Rhodothermaceae_bacterium_RA                                                  63.79%    failed      0.01%
+  10  Rubricoccus_marinus                                                           66.14%    failed      0.04%
+  11  Salinibacter_sp._10B                                                          65.95%    failed      0.13%
+  12  Aliifodinibius_roseus                                                         61.73%    passed     65.14%
+  13  Rhodohalobacter_mucosus                                                       63.94%    passed      8.44%
+  14  Balneola_sp._EhC07                                                            64.27%    failed      0.44%
+  15  Rhodohalobacter_sp._SW132                                                     64.94%    failed      1.88%
+  16  bacterium_HR18                                                                65.09%    failed      0.00%
+  17  Gracilimonas_mengyeensis                                                      64.27%    failed      3.72%
+  18  Dictyostelium_purpureum                                                       54.41%    failed      0.00%
+  19  Tieghemostelium_lacteum                                                       49.66%    failed      0.00%
+  20  Candidatus_Cyclonatronum_proteinivorum                                        63.94%    passed     55.31%
+  21  Cavenderia_fasciculata_strain_SH3_                                            42.91%    failed      0.00%
+  22  Dictyostelium_discoideum                                                      49.57%    failed      0.00%
+  23  Polysphondylium_pallidum_strain_ATCC_26659_/_Pp_5_/_PN500_                    42.39%    failed      0.00%
+  24  Balneola_sp.                                                                  64.13%    failed      1.10%
+  25  bacterium_SCGC_AG-212-C10                                                     67.29%    failed      2.38%
+  26  Dehalococcoidia_bacterium                                                     65.61%    failed      2.40%
+  27  Chloroflexi_bacterium_strain_G233_                                            66.43%    failed      0.02%
+  28  Ostreococcus_lucimarinus_strain_CCE9901_                                      61.06%    passed     77.82%
+  29  Ostreococcus_tauri                                                            56.75%    passed     26.42%
+  30  Physcomitrium_patens                                                          68.30%    passed     49.15%
+  31  Bathycoccus_prasinos                                                          52.01%    passed      9.76%
+  32  Chloropicon_primus                                                            56.66%    failed      3.99%
+  33  Cyanidioschyzon_merolae_strain_10D_                                           37.64%    failed      0.00%
+  34  Galdieria_sulphuraria                                                         51.15%    passed     26.99%
+  35  Cyanidiococcus_yangmingshanensis                                              53.16%    failed      2.91%
+  36  Porphyridium_purpureum                                                        52.16%    passed     52.83%
+  37  Porphyra_umbilicalis                                                          66.52%    failed      0.00%
+  38  Gracilariopsis_chorda                                                         45.35%    failed      4.52%
+  39  Chondrus_crispus                                                              49.52%    passed     13.30%
+  40  Thecamonas_trahens_ATCC_50062                                                 50.86%    failed      0.00%
+  41  Transcript_4761_402_3176_                                                     60.30%    passed     70.32%
+  42  Transcript_7980_1918_4926_                                                    53.54%    passed     20.43%
+  43  Transcript_8329_97_3102_                                                      54.31%    passed     11.75%
+  44  Transcript_4674_1_2931_                                                       61.25%    passed     67.00%
+  45  Transcript_4146_2_2941_                                                       61.78%    passed     74.06%
+  46  Transcript_1658_148_3021_                                                     61.88%    passed     75.56%
+  47  Transcript_2583_327_3218_                                                     58.24%    passed     11.69%
+  48  Transcript_5394_188_2905_                                                     60.20%    passed     12.72%
+  49  Transcript_16188_2_2935_                                                      61.73%    passed     78.14%
+  50  Transcript_16688_1340_4213_                                                   61.59%    passed     31.15%
+  51  Transcript_16689_1409_4282_                                                   61.59%    passed     31.15%
+  52  Transcript_6995_243_3314_                                                     61.06%    passed     46.83%
+  53  Transcript_12636_44_2749_                                                     63.84%    passed     34.10%
+  54  Transcript_16971_40_2784_                                                     62.69%    passed     81.31%
+  55  Transcript_16969_3_2684_                                                      62.93%    passed     83.13%
+  56  Transcript_17988_169_3120_                                                    63.94%    failed      0.22%
+  57  Transcript_8850_330_3044_                                                     63.65%    passed     98.93%
+  58  Transcript_8298_92_2878_                                                      60.49%    passed     56.72%
+  59  Transcript_708_2_2551_                                                        62.64%    passed     99.99%
+  60  Transcript_4458_2_2545_                                                       62.69%    passed    100.00%
+  61  Transcript_3337_2_2950_                                                       65.85%    passed     11.59%
+  62  Transcript_22398_2_2497_                                                      66.04%    passed      5.06%
+  63  Transcript_7624_130_2808_                                                     63.94%    failed      0.01%
+  64  Transcript_22749_3_2294_                                                      64.37%    passed     35.96%
+  65  Transcript_707_2_2233_                                                        66.67%    passed     97.59%
+  66  Transcript_13167_1_2742_                                                      63.89%    passed     98.85%
+  67  Transcript_2138_83_2896_                                                      59.87%    failed      0.30%
+  68  Transcript_810_2_2686_                                                        60.97%    failed      1.38%
+  69  Transcript_9142_1_2571_                                                       67.77%    passed     84.68%
+  70  Transcript_12666_239_2725_                                                    63.65%    passed     80.44%
+  71  Transcript_40816_1_2445_                                                      64.80%    passed      8.21%
+  72  Transcript_7526_297_3056_                                                     63.46%    passed     29.03%
+  73  Transcript_7527_297_3056_                                                     63.46%    passed     29.03%
+  74  Transcript_7528_297_3056_                                                     63.46%    passed     29.03%
+  75  Transcript_33811_2_2407_                                                      65.37%    passed     11.14%
+  76  Transcript_25735_300_2693_                                                    65.42%    passed     11.68%
+  77  Transcript_45168_2_2302_                                                      65.52%    passed     12.05%
+  78  Transcript_21315_1767_4694_                                                   60.82%    failed      0.01%
+  79  Transcript_7714_2_2239_                                                       70.07%    passed     63.95%
+  80  Transcript_7981_1918_3765_                                                    70.69%    failed      4.20%
+  81  Transcript_19462_374_2248_                                                    70.64%    passed     13.02%
+  82  Transcript_22976_2811_4979_                                                   68.15%    passed     53.57%
+  83  Transcript_22977_6583_8751_                                                   68.15%    passed     53.57%
+  84  Transcript_100847_228_2402_                                                   68.01%    failed      1.11%
+  85  Transcript_24633_2572_4530_                                                   69.25%    failed      3.64%
+  86  E8WSW0_32842121_ERR599222_k119_162606                                         66.91%    passed     95.46%
+  87  E8WSW0_32842121_ERR868425_k119_2035952                                        66.91%    passed     90.63%
+  88  E8WSW0_32842121_ERR1726972_k119_1753507                                       66.91%    passed     13.30%
+  89  E8WSW0_32842121_ERR1726707_k119_1962767                                       66.52%    passed     76.82%
+  90  E8WSW0_32842121_ERR1726761_k119_1086432                                       66.52%    passed     77.87%
+  91  E8WSW0_32842121_ERR1726919_k119_2390112                                       66.52%    passed     67.22%
+  92  E8WSW0_32842121_ERR1726861_k119_1364570                                       66.52%    passed     72.00%
+  93  E8WSW0_32842121_ERR1726980_k119_3306944                                       66.52%    passed     73.12%
+  94  E8WSW0_32842121_ERR1726972_k119_2213981                                       66.52%    passed     75.97%
+  95  E8WSW0_32842121_ERR868429_k119_3048515                                        66.52%    passed     71.94%
+  96  E8WSW0_32842121_ERR868401_k119_1671456                                        66.76%    failed      0.05%
+  97  E8WSW0_32842121_ERR1726730_k119_1676316                                       66.76%    failed      0.11%
+  98  E8WSW0_32842121_ERR1726864_k119_1058861                                       66.76%    failed      0.06%
+  99  E8WSW0_32842121_ERR868477_k119_864431                                         66.76%    failed      0.07%
+ 100  E8WSW0_32842121_ERR868454_k119_1268216                                        66.76%    failed      0.04%
+ 101  E8WSW0_32842121_ERR868387_k119_1045440                                        66.76%    failed      0.06%
+ 102  E8WSW0_32842121_ERR868347_k119_1825595                                        66.76%    failed      0.06%
+ 103  E8WSW0_32842121_ERR599280_k119_1422877                                        66.76%    failed      0.06%
+ 104  E8WSW0_32842121_ERR868483_k119_2474434                                        66.76%    failed      0.06%
+ 105  E8WSW0_32842121_ERR868405_k119_1482435                                        66.76%    failed      0.05%
+ 106  E8WSW0_32842121_ERR868357_k119_779475                                         66.76%    failed      0.12%
+ 107  E8WSW0_32842121_ERR1726933_k119_795545                                        66.76%    failed      0.08%
+ 108  E8WSW0_32842121_ERR868477_k119_1130694                                        66.67%    passed     14.95%
+ 109  E8WSW0_32842121_ERR868436_k119_1567827                                        67.53%    passed     89.59%
+ 110  J0NPF2_35247294_ERR1726908_k119_2005353                                       68.30%    passed      8.79%
+ 111  J0NPF2_35247294_ERR868484_k119_545034                                         68.30%    passed      7.23%
+ 112  J0NPF2_35247294_ERR868379_k119_1654639                                        69.06%    failed      2.17%
+ 113  E8WSW0_32842121_ERR868484_k119_718227                                         69.06%    passed     12.46%
+ 114  ERR1719375_2995424_ERR868503_k119_172452                                      71.26%    passed     76.54%
+ 115  ERR1719375_2995424_ERR868454_k119_1215201                                     71.26%    passed     77.61%
+ 116  ERR1719375_2995424_ERR599307_k119_1237681                                     71.17%    passed     74.82%
+ 117  ERR1719375_2995424_ERR1726629_k119_1813692                                    70.93%    passed     70.70%
+ 118  ERR1719375_2995424_ERR868414_k119_2046849                                     71.26%    passed     77.68%
+ 119  ERR1719375_2995424_ERR868358_k119_1301422                                     71.17%    passed     73.74%
+ 120  E8WSW0_32842121_ERR868468_k119_847353                                         68.06%    passed     35.01%
+ 121  E8WSW0_32842121_ERR599222_k119_105765                                         67.96%    failed      0.00%
+ 122  E8WSW0_32842121_ERR868421_k119_544451                                         67.86%    passed     58.63%
+ 123  E8WSW0_32842121_ERR538182_k119_200643                                         68.30%    failed      0.17%
+ 124  E8WSW0_32842121_ERR1726772_k119_966045                                        68.01%    passed     35.57%
+ 125  E8WSW0_32842121_ERR868393_k119_2186834                                        68.30%    failed      0.25%
+ 126  E8WSW0_32842121_ERR868412_k119_1100463                                        68.30%    failed      0.21%
+ 127  E8WSW0_32842121_ERR1726702_k119_333367                                        68.01%    passed     73.27%
+ 128  E8WSW0_32842121_ERR315802_k141_3731813                                        68.44%    failed      0.39%
+ 129  E8WSW0_32842121_ERR868416_k119_1613795                                        68.53%    failed      0.42%
+ 130  E8WSW0_32842121_ERR868436_k119_910604                                         68.34%    failed      1.68%
+ 131  E8WSW0_32842121_ERR868456_k119_1980726                                        68.30%    failed      0.00%
+ 132  E8WSW0_32842121_ERR318599_k127_397559                                         68.30%    failed      0.00%
+ 133  E8WSW0_32842121_ERR315820_k119_538875                                         68.30%    failed      0.00%
+ 134  E8WSW0_32842121_ERR868456_k119_1695731                                        68.63%    failed      0.00%
+ 135  E8WSW0_32842121_ERR868509_k119_1436619                                        68.63%    failed      0.00%
+ 136  E8WSW0_32842121_ERR868366_k119_2192151                                        68.63%    failed      0.00%
+ 137  E8WSW0_32842121_ERR868373_k119_1645386                                        68.58%    failed      0.24%
+ 138  E8WSW0_32842121_ERR868354_k119_2556419                                        68.58%    failed      0.24%
+ 139  E8WSW0_32842121_ERR538186_k119_1253730                                        68.68%    failed      0.27%
+ 140  E8WSW0_32842121_ERR1726817_k119_3532953                                       68.58%    failed      0.15%
+ 141  E8WSW0_32842121_ERR868441_k119_524725                                         69.06%    failed      1.79%
+ 142  E8WSW0_32842121_ERR1726933_k119_351713                                        69.06%    failed      2.03%
+ 143  E8WSW0_32842121_ERR868504_k119_1796194                                        68.97%    failed      0.35%
+ 144  E8WSW0_32842121_ERR868509_k119_1319774                                        69.06%    failed      0.46%
+ 145  E8WSW0_32842121_ERR599237_k119_1821883                                        69.06%    failed      0.58%
+ 146  E8WSW0_32842121_ERR868444_k119_2742632                                        69.06%    failed      1.71%
+ 147  E8WSW0_32842121_ERR868369_k119_815052                                         69.06%    failed      0.71%
+ 148  E8WSW0_32842121_ERR868355_k119_1703614                                        69.06%    failed      0.25%
+ 149  E8WSW0_32842121_ERR868418_k119_2541635                                        69.83%    failed      0.00%
+ 150  E8WSW0_32842121_ERR868372_k119_999952                                         69.11%    failed      0.00%
+ 151  E8WSW0_32842121_ERR868491_k119_1980447                                        68.53%    failed      0.00%
+ 152  E8WSW0_32842121_ERR868389_k119_1191190                                        68.10%    failed      0.00%
+ 153  E8WSW0_32842121_ERR538175_k119_2412540                                        69.40%    passed     14.29%
+ 154  E8WSW0_32842121_ERR868413_k119_53425                                          69.40%    passed     21.21%
+ 155  E8WSW0_32842121_ERR868431_k119_2583226                                        69.44%    failed      0.00%
+ 156  E8WSW0_32842121_ERR599298_k119_2041249                                        69.35%    failed      0.00%
+ 157  E8WSW0_32842121_ERR868410_k119_1182614                                        69.35%    failed      0.00%
+WARNING: 150 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                         64.61%  82 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: Transcript_16689_1409_4282_ is identical to Transcript_16688_1340_4213_ but kept for subsequent analysis
+NOTE: Transcript_7527_297_3056_ is identical to Transcript_7526_297_3056_ but kept for subsequent analysis
+NOTE: Transcript_22977_6583_8751_ is identical to Transcript_22976_2811_4979_ but kept for subsequent analysis
+NOTE: 1 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Transcript_7528_297_3056_ (identical to Transcript_7526_297_3056_) is ignored but added at the end
+Alignment was printed to trimmed_seq.fa.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to trimmed_seq.fa.uniqueseq.phy
+
+Creating fast initial parsimony tree by random order stepwise addition...
+771.044 seconds, parsimony score: 21190 (based on 1736 sites)
+Measuring multi-threading efficiency up to 6 CPU cores
+7 trees examined
+Threads: 1 / Time: 6.734 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -196728
+Threads: 2 / Time: 3.268 sec / Speedup: 2.061 / Efficiency: 103% / LogL: -196728
+Threads: 3 / Time: 3.551 sec / Speedup: 1.896 / Efficiency: 63% / LogL: -196728
+Threads: 4 / Time: 4.963 sec / Speedup: 1.357 / Efficiency: 34% / LogL: -196728
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -101748.363
+Optimal log-likelihood: -101748.304
+Proportion of invariable sites: 0.018
+Gamma shape alpha: 1.090
+Parameters optimization took 1 rounds (1.881 sec)
+Time for fast ML tree search: 23.668 seconds
+
+NOTE: ModelFinder requires 482 MB RAM!
+ModelFinder will test up to 546 protein models (sample size: 2088) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            107663.136   309 215944.273   216052.023   217688.257
+  2  LG+I          106767.407   310 214154.815   214263.323   215904.443
+  3  LG+G4         101864.603   310 204349.207   204457.715   206098.835
+  4  LG+I+G4       101748.310   311 204118.621   204227.891   205873.893
+  5  LG+R2         102965.027   311 206552.054   206661.324   208307.326
+  6  LG+R3         101967.830   313 204561.659   204672.462   206328.220
+  7  LG+R4         101688.721   315 204007.443   204119.791   205785.291
+  8  LG+R5         101582.441   317 203798.881   203912.786   205588.017

@@ -1,0 +1,498 @@
+# STOCKHOLM 1.0
+#=GF ID PP_kinase
+#=GF AC PF02503.20
+#=GF DE Polyphosphate kinase middle domain
+#=GF AU hmmsearch (HMMER 3.2.1)
+
+#=GS Transcript_5863|m.23060/156-357    DE [subseq from] Transcript_5863|g.23060  ORF Transcript_5863|g.23060 Transcript_5863|m.23060 type:3prime_partial len:476 (-) Transcript_5863:3-1427(-)
+#=GS Transcript_5886|m.10480/156-357    DE [subseq from] Transcript_5886|g.10480  ORF Transcript_5886|g.10480 Transcript_5886|m.10480 type:3prime_partial len:536 (+) Transcript_5886:107-1711(+)
+#=GS Transcript_24633|m.58176/84-285    DE [subseq from] Transcript_24633|g.58176  ORF Transcript_24633|g.58176 Transcript_24633|m.58176 type:5prime_partial len:653 (-) Transcript_24633:2572-4530(-)
+#=GS Transcript_100847|m.281023/156-357 DE [subseq from] Transcript_100847|g.281023  ORF Transcript_100847|g.281023 Transcript_100847|m.281023 type:complete len:725 (-) Transcript_100847:228-2402(-)
+#=GS Transcript_707|m.2731/221-404      DE [subseq from] Transcript_707|g.2731  ORF Transcript_707|g.2731 Transcript_707|m.2731 type:internal len:745 (+) Transcript_707:2-2233(+)
+#=GS Transcript_8850|m.15204/252-457    DE [subseq from] Transcript_8850|g.15204  ORF Transcript_8850|g.15204 Transcript_8850|m.15204 type:5prime_partial len:905 (-) Transcript_8850:330-3044(-)
+#=GS Transcript_3337|m.13502/380-576    DE [subseq from] Transcript_3337|g.13502  ORF Transcript_3337|g.13502 Transcript_3337|m.13502 type:5prime_partial len:983 (+) Transcript_3337:2-2950(+)
+#=GS Transcript_4458|m.28359/219-402    DE [subseq from] Transcript_4458|g.28359  ORF Transcript_4458|g.28359 Transcript_4458|m.28359 type:5prime_partial len:848 (+) Transcript_4458:2-2545(+)
+#=GS Transcript_708|m.2734/221-404      DE [subseq from] Transcript_708|g.2734  ORF Transcript_708|g.2734 Transcript_708|m.2734 type:5prime_partial len:850 (+) Transcript_708:2-2551(+)
+#=GS Transcript_12443|m.23795/52-254    DE [subseq from] Transcript_12443|g.23795  ORF Transcript_12443|g.23795 Transcript_12443|m.23795 type:internal len:386 (-) Transcript_12443:3-1157(-)
+#=GS Transcript_4675|m.10046/302-505    DE [subseq from] Transcript_4675|g.10046  ORF Transcript_4675|g.10046 Transcript_4675|m.10046 type:internal len:673 (+) Transcript_4675:1-2016(+)
+#=GS Transcript_7714|m.25937/301-504    DE [subseq from] Transcript_7714|g.25937  ORF Transcript_7714|g.25937 Transcript_7714|m.25937 type:internal len:747 (-) Transcript_7714:2-2239(-)
+#=GS Transcript_1658|m.5315/283-486     DE [subseq from] Transcript_1658|g.5315  ORF Transcript_1658|g.5315 Transcript_1658|m.5315 type:complete len:958 (-) Transcript_1658:148-3021(-)
+#=GS Transcript_4674|m.10039/302-505    DE [subseq from] Transcript_4674|g.10039  ORF Transcript_4674|g.10039 Transcript_4674|m.10039 type:5prime_partial len:977 (+) Transcript_4674:1-2931(+)
+#=GS Transcript_4146|m.15161/305-508    DE [subseq from] Transcript_4146|g.15161  ORF Transcript_4146|g.15161 Transcript_4146|m.15161 type:5prime_partial len:980 (+) Transcript_4146:2-2941(+)
+#=GS Transcript_16969|m.53900/280-484   DE [subseq from] Transcript_16969|g.53900  ORF Transcript_16969|g.53900 Transcript_16969|m.53900 type:3prime_partial len:895 (-) Transcript_16969:3-2684(-)
+#=GS Transcript_16971|m.53909/280-484   DE [subseq from] Transcript_16971|g.53909  ORF Transcript_16971|g.53909 Transcript_16971|m.53909 type:complete len:915 (-) Transcript_16971:40-2784(-)
+#=GS Transcript_4761|m.18233/254-455    DE [subseq from] Transcript_4761|g.18233  ORF Transcript_4761|g.18233 Transcript_4761|m.18233 type:5prime_partial len:925 (-) Transcript_4761:402-3176(-)
+#=GS Transcript_22398|m.69334/230-425   DE [subseq from] Transcript_22398|g.69334  ORF Transcript_22398|g.69334 Transcript_22398|m.69334 type:5prime_partial len:832 (+) Transcript_22398:2-2497(+)
+#=GS Transcript_12636|m.26661/248-452   DE [subseq from] Transcript_12636|g.26661  ORF Transcript_12636|g.26661 Transcript_12636|m.26661 type:complete len:902 (+) Transcript_12636:44-2749(+)
+#=GS Transcript_17988|m.61289/358-578   DE [subseq from] Transcript_17988|g.61289  ORF Transcript_17988|g.61289 Transcript_17988|m.61289 type:complete len:984 (-) Transcript_17988:169-3120(-)
+#=GS Transcript_22976|m.38715/144-335   DE [subseq from] Transcript_22976|g.38715  ORF Transcript_22976|g.38715 Transcript_22976|m.38715 type:complete len:723 (-) Transcript_22976:2811-4979(-)
+#=GS Transcript_22977|m.38735/144-335   DE [subseq from] Transcript_22977|g.38735  ORF Transcript_22977|g.38735 Transcript_22977|m.38735 type:complete len:723 (-) Transcript_22977:6583-8751(-)
+#=GS Transcript_12666|m.28757/188-380   DE [subseq from] Transcript_12666|g.28757  ORF Transcript_12666|g.28757 Transcript_12666|m.28757 type:complete len:829 (+) Transcript_12666:239-2725(+)
+#=GS Transcript_2138|m.5256/297-489     DE [subseq from] Transcript_2138|g.5256  ORF Transcript_2138|g.5256 Transcript_2138|m.5256 type:complete len:938 (-) Transcript_2138:83-2896(-)
+#=GS Transcript_810|m.2091/254-446      DE [subseq from] Transcript_810|g.2091  ORF Transcript_810|g.2091 Transcript_810|m.2091 type:5prime_partial len:895 (+) Transcript_810:2-2686(+)
+#=GS Transcript_2582|m.7961/266-467     DE [subseq from] Transcript_2582|g.7961  ORF Transcript_2582|g.7961 Transcript_2582|m.7961 type:3prime_partial len:501 (-) Transcript_2582:3-1502(-)
+#=GS Transcript_31260|m.37805/60-261    DE [subseq from] Transcript_31260|g.37805  ORF Transcript_31260|g.37805 Transcript_31260|m.37805 type:internal len:340 (+) Transcript_31260:1-1017(+)
+#=GS Transcript_43731|m.113196/61-256   DE [subseq from] Transcript_43731|g.113196  ORF Transcript_43731|g.113196 Transcript_43731|m.113196 type:internal len:287 (+) Transcript_43731:2-859(+)
+#=GS Transcript_43732|m.113201/61-256   DE [subseq from] Transcript_43732|g.113201  ORF Transcript_43732|g.113201 Transcript_43732|m.113201 type:internal len:287 (+) Transcript_43732:2-859(+)
+#=GS Transcript_40816|m.73349/186-394   DE [subseq from] Transcript_40816|g.73349  ORF Transcript_40816|g.73349 Transcript_40816|m.73349 type:5prime_partial len:815 (+) Transcript_40816:1-2445(+)
+#=GS Transcript_2583|m.7965/266-467     DE [subseq from] Transcript_2583|g.7965  ORF Transcript_2583|g.7965 Transcript_2583|m.7965 type:complete len:964 (-) Transcript_2583:327-3218(-)
+#=GS Transcript_16188|m.39468/276-486   DE [subseq from] Transcript_16188|g.39468  ORF Transcript_16188|g.39468 Transcript_16188|m.39468 type:internal len:979 (-) Transcript_16188:2-2935(-)
+#=GS Transcript_45168|m.113081/137-332  DE [subseq from] Transcript_45168|g.113081  ORF Transcript_45168|g.113081 Transcript_45168|m.113081 type:5prime_partial len:767 (+) Transcript_45168:2-2302(+)
+#=GS Transcript_25735|m.66278/168-363   DE [subseq from] Transcript_25735|g.66278  ORF Transcript_25735|g.66278 Transcript_25735|m.66278 type:5prime_partial len:798 (-) Transcript_25735:300-2693(-)
+#=GS Transcript_33811|m.85194/172-367   DE [subseq from] Transcript_33811|g.85194  ORF Transcript_33811|g.85194 Transcript_33811|m.85194 type:5prime_partial len:802 (+) Transcript_33811:2-2407(+)
+#=GS Transcript_7980|m.25125/302-503    DE [subseq from] Transcript_7980|g.25125  ORF Transcript_7980|g.25125 Transcript_7980|m.25125 type:complete len:1003 (-) Transcript_7980:1918-4926(-)
+#=GS Transcript_8329|m.27374/301-502    DE [subseq from] Transcript_8329|g.27374  ORF Transcript_8329|g.27374 Transcript_8329|m.27374 type:complete len:1002 (-) Transcript_8329:97-3102(-)
+#=GS Transcript_8558|m.29379/161-373    DE [subseq from] Transcript_8558|g.29379  ORF Transcript_8558|g.29379 Transcript_8558|m.29379 type:internal len:412 (+) Transcript_8558:2-1234(+)
+#=GS Transcript_13167|m.48012/297-512   DE [subseq from] Transcript_13167|g.48012  ORF Transcript_13167|g.48012 Transcript_13167|m.48012 type:5prime_partial len:914 (+) Transcript_13167:1-2742(+)
+#=GS Transcript_7624|m.27670/276-488    DE [subseq from] Transcript_7624|g.27670  ORF Transcript_7624|g.27670 Transcript_7624|m.27670 type:complete len:893 (+) Transcript_7624:130-2808(+)
+#=GS Transcript_21315|m.64131/334-549   DE [subseq from] Transcript_21315|g.64131  ORF Transcript_21315|g.64131 Transcript_21315|m.64131 type:5prime_partial len:976 (-) Transcript_21315:1767-4694(-)
+#=GS Transcript_5394|m.16324/278-487    DE [subseq from] Transcript_5394|g.16324  ORF Transcript_5394|g.16324 Transcript_5394|m.16324 type:complete len:906 (+) Transcript_5394:188-2905(+)
+#=GS Transcript_16970|m.53905/280-442   DE [subseq from] Transcript_16970|g.53905  ORF Transcript_16970|g.53905 Transcript_16970|m.53905 type:complete len:462 (-) Transcript_16970:359-1744(-)
+#=GS Transcript_22749|m.63969/154-361   DE [subseq from] Transcript_22749|g.63969  ORF Transcript_22749|g.63969 Transcript_22749|m.63969 type:5prime_partial len:764 (+) Transcript_22749:3-2294(+)
+#=GS Transcript_7526|m.21316/291-491    DE [subseq from] Transcript_7526|g.21316  ORF Transcript_7526|g.21316 Transcript_7526|m.21316 type:complete len:920 (+) Transcript_7526:297-3056(+)
+#=GS Transcript_7527|m.21325/291-491    DE [subseq from] Transcript_7527|g.21325  ORF Transcript_7527|g.21325 Transcript_7527|m.21325 type:complete len:920 (+) Transcript_7527:297-3056(+)
+#=GS Transcript_7528|m.21334/291-491    DE [subseq from] Transcript_7528|g.21334  ORF Transcript_7528|g.21334 Transcript_7528|m.21334 type:complete len:920 (+) Transcript_7528:297-3056(+)
+#=GS Transcript_21754|m.33675/1-157     DE [subseq from] Transcript_21754|g.33675  ORF Transcript_21754|g.33675 Transcript_21754|m.33675 type:internal len:158 (-) Transcript_21754:1-471(-)
+#=GS Transcript_19462|m.37281/1-179     DE [subseq from] Transcript_19462|g.37281  ORF Transcript_19462|g.37281 Transcript_19462|m.37281 type:5prime_partial len:625 (-) Transcript_19462:374-2248(-)
+#=GS Transcript_62957|m.154869/170-311  DE [subseq from] Transcript_62957|g.154869  ORF Transcript_62957|g.154869 Transcript_62957|m.154869 type:internal len:312 (-) Transcript_62957:2-934(-)
+#=GS Transcript_6995|m.17183/164-364    DE [subseq from] Transcript_6995|g.17183  ORF Transcript_6995|g.17183 Transcript_6995|m.17183 type:5prime_partial len:1024 (-) Transcript_6995:243-3314(-)
+#=GS Transcript_4774|m.8464/9-147       DE [subseq from] Transcript_4774|g.8464  ORF Transcript_4774|g.8464 Transcript_4774|m.8464 type:internal len:149 (-) Transcript_4774:1-444(-)
+#=GS Transcript_16688|m.68355/217-416   DE [subseq from] Transcript_16688|g.68355  ORF Transcript_16688|g.68355 Transcript_16688|m.68355 type:5prime_partial len:958 (-) Transcript_16688:1340-4213(-)
+#=GS Transcript_16689|m.68361/217-416   DE [subseq from] Transcript_16689|g.68361  ORF Transcript_16689|g.68361 Transcript_16689|m.68361 type:5prime_partial len:958 (-) Transcript_16689:1409-4282(-)
+#=GS Transcript_9142|m.16444/9-207      DE [subseq from] Transcript_9142|g.16444  ORF Transcript_9142|g.16444 Transcript_9142|m.16444 type:5prime_partial len:857 (+) Transcript_9142:1-2571(+)
+#=GS Transcript_8298|m.24923/183-383    DE [subseq from] Transcript_8298|g.24923  ORF Transcript_8298|g.24923 Transcript_8298|m.24923 type:complete len:929 (+) Transcript_8298:92-2878(+)
+#=GS Transcript_15129|m.38471/23-203    DE [subseq from] Transcript_15129|g.38471  ORF Transcript_15129|g.38471 Transcript_15129|m.38471 type:internal len:205 (+) Transcript_15129:3-614(+)
+#=GS Transcript_18322|m.38003/131-285   DE [subseq from] Transcript_18322|g.38003  ORF Transcript_18322|g.38003 Transcript_18322|m.38003 type:internal len:286 (+) Transcript_18322:3-857(+)
+#=GS Transcript_9062|m.15101/3-146      DE [subseq from] Transcript_9062|g.15101  ORF Transcript_9062|g.15101 Transcript_9062|m.15101 type:internal len:258 (-) Transcript_9062:1-771(-)
+#=GS Transcript_9061|m.15097/3-146      DE [subseq from] Transcript_9061|g.15097  ORF Transcript_9061|g.15097 Transcript_9061|m.15097 type:internal len:288 (-) Transcript_9061:3-863(-)
+#=GS Transcript_25719|m.33467/176-299   DE [subseq from] Transcript_25719|g.33467  ORF Transcript_25719|g.33467 Transcript_25719|m.33467 type:internal len:300 (+) Transcript_25719:2-898(+)
+#=GS Transcript_25506|m.47815/1-144     DE [subseq from] Transcript_25506|g.47815  ORF Transcript_25506|g.47815 Transcript_25506|m.47815 type:internal len:263 (+) Transcript_25506:1-786(+)
+#=GS Transcript_45914|m.75906/1-143     DE [subseq from] Transcript_45914|g.75906  ORF Transcript_45914|g.75906 Transcript_45914|m.75906 type:internal len:149 (-) Transcript_45914:1-444(-)
+#=GS Transcript_15137|m.49652/304-525   DE [subseq from] Transcript_15137|g.49652  ORF Transcript_15137|g.49652 Transcript_15137|m.49652 type:internal len:668 (+) Transcript_15137:1-2001(+)
+#=GS Transcript_15135|m.49641/304-525   DE [subseq from] Transcript_15135|g.49641  ORF Transcript_15135|g.49641 Transcript_15135|m.49641 type:internal len:673 (+) Transcript_15135:1-2016(+)
+#=GS Transcript_27648|m.67142/70-267    DE [subseq from] Transcript_27648|g.67142  ORF Transcript_27648|g.67142 Transcript_27648|m.67142 type:internal len:383 (-) Transcript_27648:3-1148(-)
+#=GS Transcript_16691|m.34290/179-378   DE [subseq from] Transcript_16691|g.34290  ORF Transcript_16691|g.34290 Transcript_16691|m.34290 type:3prime_partial len:427 (+) Transcript_16691:114-1391(+)
+#=GS Transcript_37974|m.90206/94-218    DE [subseq from] Transcript_37974|g.90206  ORF Transcript_37974|g.90206 Transcript_37974|m.90206 type:internal len:219 (-) Transcript_37974:1-654(-)
+#=GS Transcript_28271|m.36471/3-123     DE [subseq from] Transcript_28271|g.36471  ORF Transcript_28271|g.36471 Transcript_28271|m.36471 type:internal len:126 (-) Transcript_28271:3-377(-)
+#=GS Transcript_567|m.1019/2-124        DE [subseq from] Transcript_567|g.1019  ORF Transcript_567|g.1019 Transcript_567|m.1019 type:internal len:125 (+) Transcript_567:3-374(+)
+#=GS Transcript_3503|m.10619/9-137      DE [subseq from] Transcript_3503|g.10619  ORF Transcript_3503|g.10619 Transcript_3503|m.10619 type:internal len:174 (+) Transcript_3503:3-521(+)
+#=GS Transcript_15132|m.38478/23-172    DE [subseq from] Transcript_15132|g.38478  ORF Transcript_15132|g.38478 Transcript_15132|m.38478 type:internal len:178 (+) Transcript_15132:3-533(+)
+#=GS Transcript_12857|m.32462/1-113     DE [subseq from] Transcript_12857|g.32462  ORF Transcript_12857|g.32462 Transcript_12857|m.32462 type:internal len:275 (+) Transcript_12857:2-823(+)
+#=GS Transcript_7981|m.25132/1-116      DE [subseq from] Transcript_7981|g.25132  ORF Transcript_7981|g.25132 Transcript_7981|m.25132 type:complete len:616 (-) Transcript_7981:1918-3765(-)
+#=GS Transcript_15216|m.40983/160-271   DE [subseq from] Transcript_15216|g.40983  ORF Transcript_15216|g.40983 Transcript_15216|m.40983 type:internal len:272 (-) Transcript_15216:2-814(-)
+#=GS Transcript_39406|m.64322/67-155    DE [subseq from] Transcript_39406|g.64322  ORF Transcript_39406|g.64322 Transcript_39406|m.64322 type:internal len:156 (-) Transcript_39406:2-466(-)
+#=GS Transcript_39407|m.64325/4-102     DE [subseq from] Transcript_39407|g.64325  ORF Transcript_39407|g.64325 Transcript_39407|m.64325 type:internal len:175 (-) Transcript_39407:1-522(-)
+#=GS Transcript_3138|m.5274/1-80        DE [subseq from] Transcript_3138|g.5274  ORF Transcript_3138|g.5274 Transcript_3138|m.5274 type:internal len:84 (+) Transcript_3138:1-249(+)
+#=GS Transcript_30555|m.65431/1-97      DE [subseq from] Transcript_30555|g.65431  ORF Transcript_30555|g.65431 Transcript_30555|m.65431 type:5prime_partial len:516 (+) Transcript_30555:1-1548(+)
+#=GS Transcript_9889|m.22841/4-92       DE [subseq from] Transcript_9889|g.22841  ORF Transcript_9889|g.22841 Transcript_9889|m.22841 type:5prime_partial len:100 (+) Transcript_9889:1-300(+)
+#=GS Transcript_3140|m.5277/133-226     DE [subseq from] Transcript_3140|g.5277  ORF Transcript_3140|g.5277 Transcript_3140|m.5277 type:internal len:228 (-) Transcript_3140:1-681(-)
+#=GS Transcript_3502|m.10614/205-276    DE [subseq from] Transcript_3502|g.10614  ORF Transcript_3502|g.10614 Transcript_3502|m.10614 type:internal len:289 (+) Transcript_3502:3-866(+)
+#=GS Transcript_25720|m.33471/2-83      DE [subseq from] Transcript_25720|g.33471  ORF Transcript_25720|g.33471 Transcript_25720|m.33471 type:internal len:120 (+) Transcript_25720:1-357(+)
+#=GS Transcript_7981|m.25134/302-366    DE [subseq from] Transcript_7981|g.25134  ORF Transcript_7981|g.25134 Transcript_7981|m.25134 type:complete len:396 (-) Transcript_7981:3740-4927(-)
+#=GS Transcript_24203|m.58794/2-75      DE [subseq from] Transcript_24203|g.58794  ORF Transcript_24203|g.58794 Transcript_24203|m.58794 type:internal len:87 (-) Transcript_24203:2-259(-)
+#=GS Transcript_15214|m.40976/13-97     DE [subseq from] Transcript_15214|g.40976  ORF Transcript_15214|g.40976 Transcript_15214|m.40976 type:internal len:213 (+) Transcript_15214:2-637(+)
+#=GS Transcript_9064|m.15106/142-190    DE [subseq from] Transcript_9064|g.15106  ORF Transcript_9064|g.15106 Transcript_9064|m.15106 type:3prime_partial len:197 (-) Transcript_9064:1-588(-)
+#=GS Transcript_24450|m.33705/1-78      DE [subseq from] Transcript_24450|g.33705  ORF Transcript_24450|g.33705 Transcript_24450|m.33705 type:internal len:222 (-) Transcript_24450:3-665(-)
+#=GS Transcript_26317|m.45395/156-202   DE [subseq from] Transcript_26317|g.45395  ORF Transcript_26317|g.45395 Transcript_26317|m.45395 type:3prime_partial len:208 (+) Transcript_26317:18-638(+)
+#=GS Transcript_8399|m.22113/17-84      DE [subseq from] Transcript_8399|g.22113  ORF Transcript_8399|g.22113 Transcript_8399|m.22113 type:internal len:88 (-) Transcript_8399:2-262(-)
+#=GS Transcript_9886|m.22831/131-179    DE [subseq from] Transcript_9886|g.22831  ORF Transcript_9886|g.22831 Transcript_9886|m.22831 type:3prime_partial len:182 (-) Transcript_9886:2-544(-)
+#=GS Transcript_18324|m.38009/131-175   DE [subseq from] Transcript_18324|g.38009  ORF Transcript_18324|g.38009 Transcript_18324|m.38009 type:internal len:177 (+) Transcript_18324:3-530(+)
+#=GS Transcript_30574|m.65476/115-158   DE [subseq from] Transcript_30574|g.65476  ORF Transcript_30574|g.65476 Transcript_30574|m.65476 type:internal len:161 (-) Transcript_30574:3-482(-)
+#=GS Transcript_18323|m.38006/3-66      DE [subseq from] Transcript_18323|g.38006  ORF Transcript_18323|g.38006 Transcript_18323|m.38006 type:internal len:348 (+) Transcript_18323:1-1041(+)
+#=GS Transcript_17987|m.61285/358-401   DE [subseq from] Transcript_17987|g.61285  ORF Transcript_17987|g.61285 Transcript_17987|m.61285 type:3prime_partial len:403 (-) Transcript_17987:2-1207(-)
+#=GS Transcript_19461|m.37278/231-261   DE [subseq from] Transcript_19461|g.37278  ORF Transcript_19461|g.37278 Transcript_19461|m.37278 type:internal len:263 (+) Transcript_19461:2-787(+)
+
+Transcript_5863|m.23060/156-357            -QRRWVQKFFEREVRPLLVPVGLDPAHPFPQ..VANKSLHFIARLSGKD..............AFGRD......NRIAIVKVP.RVLPRVIKLP.....................aSLGDGRQAFVL.LTSVIRAHLEELFPGRKVEAFSQFRVTRDSDLEVDE...EEIA.NLRHALRSGLTTRHFGRAVRLEVVNSCP
+#=GR Transcript_5863|m.23060/156-357    PP .99****************************..****************..............99999......*********.**********.....................96688889****.************************************...****.****************************
+Transcript_5886|m.10480/156-357            -QRRWVQKFFEREVRPLLVPVGLDPAHPFPQ..VANKSLHFIARLSGKD..............AFGRD......NRIAIVKVP.RVLPRVIKLP.....................aSLGDGRQAFVL.LTSVIRAHLEELFPGRKVEAFSQFRVTRDSDLEVDE...EEIA.NLRHALRSGLTTRHFGRAVRLEVVNSCP
+#=GR Transcript_5886|m.10480/156-357    PP .99****************************..****************..............99999......*********.**********.....................96688889****.************************************...****.****************************
+Transcript_24633|m.58176/84-285            -QRRWVQKFFEREVRPLLVPVGLDPAHPFPQ..VANKSLHFIARLSGKD..............AFGRD......NRIAIVKVP.RVLPRVIKLP.....................aSLGDGRQAFVL.LTSVIRAHLEELFPGRKVEAFSQFRVTRDSDLEVDE...EEIA.NLRHALRSGLTTRHFGRAVRLEVVNSCP
+#=GR Transcript_24633|m.58176/84-285    PP .99****************************..****************..............99999......*********.**********.....................96688889****.************************************...****.****************************
+Transcript_100847|m.281023/156-357         -QRRWVQKFFEREVRPLLVPVGLDPAHPFPQ..VANKSLHFIARLSGKD..............AFGRD......NRIAIVKVP.RVLPRVIKLP.....................aSLGDGRQAFVL.LTSVIRAHLEELFPGRKVEAFSQFRVTRDSDLEVDE...EEIA.NLRHALRSGLTTRHFGRAVRLEVVNSCP
+#=GR Transcript_100847|m.281023/156-357 PP .99****************************..****************..............99999......*********.**********.....................96688889****.************************************...****.****************************
+Transcript_707|m.2731/221-404              -QKSAMREHFVREIEPLLTPLAVDPGHPFPY..IGSLSLSLAVELQDPL..............DDERY......VDFAIVTIP.SNLPRFIRIP......................TDEGYDNHFIT.VEQVIKNNLDRLFGGMVIISCTAFRATRNADVERNE...DEAD.DLLEMIIDELRDRRFSKFVRLEVEDTMP
+#=GR Transcript_707|m.2731/221-404      PP .899***************************..****************..............9***9......*********.*********9......................8788888****.************************************...****.****************************
+Transcript_8850|m.15204/252-457            EERKHLREWFEREVEPLLTPLAIDPGHPFPY..LASLAVNMLIVLKDPE.............dPDKSK......SSLAIVNLP.SNMQRWVKLPd....................nQEEGRNNRFVP.LEHVVIFNLDRLFGGMEIHSVNCFRATRNADVARNE...EEAE.DLLEMMTDEVRERRFAPFVRLEVNENIS
+#=GR Transcript_8850|m.15204/252-457    PP 6899***************************..**************98.............766667......99*******.**********8....................76667777****.************************************...****.****************************
+Transcript_3337|m.13502/380-576            -EKAGLRTIFRDQLEPMLTPLAIDPGHPFPY..ISNLTISLAVVLRDP-..............-MDDS......SKLAIINVP.SQLKRWVRM-......................T-SREGHAFIS.LEQIIAANLDCLFGGMAIDSTHAFRVTRNADVDRHE...DEAD.DLLEMITDEMRLRKFAPFVRLECEAGMP
+#=GR Transcript_3337|m.13502/380-576    PP .67889*************************..**************9................4445......69*******.*********.......................4.455579***.************************************...****.****************************
+Transcript_4458|m.28359/219-402            -QKSAMREHFVREIEPLLTPLAVDPGHPFPY..IGSLSLSLAVELQDPL..............DDERY......VDFAIVTIP.SNLPRFIRIP......................TDEGYDNHFIT.VEQVIKNNLDRLFGGMVIISCTAFRATRNADVERNE...DEAD.DLLEMIIDELRDRRFSKFVRLEVEDTMP
+#=GR Transcript_4458|m.28359/219-402    PP .899***************************..****************..............9***9......*********.*********9......................8788888****.************************************...****.****************************
+Transcript_708|m.2734/221-404              -QKSAMREHFVREIEPLLTPLAVDPGHPFPY..IGSLSLSLAVELQDPL..............DDERY......VDFAIVTIP.SNLPRFIRIP......................TDEGYDNHFIT.VEQVIKNNLDRLFGGMVIISCTAFRATRNADVERNE...DEAD.DLLEMIIDELRDRRFSKFVRLEVEDTMP
+#=GR Transcript_708|m.2734/221-404      PP .899***************************..****************..............9***9......*********.*********9......................8788888****.************************************...****.****************************
+Transcript_12443|m.23795/52-254            EERASLREYFISELEPLLTPLAVDPGHPFPY..LTSLALNLAIQLRDPEdp..........dyEDTEK......KSLAIVTLPtRGLQRWVKI-......................----GENKFVP.LEHVVIYNLDRLFGGMEIQAVHCFRATRNADVERNE...DEAE.DLLEMMTDEVRTRRFAPFVRLEANGNMD
+#=GR Transcript_12443|m.23795/52-254    PP 68999**************************..***************999..........9988888......99*******9*********...........................4458***.************************************...****.****************************
+Transcript_4675|m.10046/302-505            --QKELAKYFEEQIEPVLDPRAIDPCHPFPF..LGSLSLSIAVEIEDAF..............KQ---......EKFAIVSVP.APLDRWIRVHk....................dSSGDDVQRFIP.LEQVIEANMEKLFKGCNIVATHVFRVTRNADIERNE...DEAE.DLLEMMADEVRERRFASFVRLEVQDTMP
+#=GR Transcript_4675|m.10046/302-505    PP ..57899************************..*************974..............44.........56*******.*********98....................75677778****.************************************...****.****************************
+Transcript_7714|m.25937/301-504            --QKELAKYFEEQIEPVLDPRAIDPCHPFPF..LGSLSLSIAVEIEDAF..............KQ---......EKFAIVSVP.APLDRWIRVHk....................dSSGDDVQRFIP.LEQVIEANMEKLFKGCNIVATHVFRVTRNADIERNE...DEAE.DLLEMMADEVRERRFASFVRLEVQDTMP
+#=GR Transcript_7714|m.25937/301-504    PP ..57899************************..*************974..............44.........56*******.*********98....................75677778****.************************************...****.****************************
+Transcript_1658|m.5315/283-486             --QKELAKYFEEQIEPVLDPRAIDPCHPFPF..LGSLSLSIAVEIEDAF..............KQ---......EKFAIVSVP.APLDRWIRVHk....................dSSGDDVQRFIP.LEQVIEANMEKLFKGCNIVATHVFRVTRNADIERNE...DEAE.DLLEMMADEVRERRFASFVRLEVQDTMP
+#=GR Transcript_1658|m.5315/283-486     PP ..57899************************..*************974..............44.........56*******.*********98....................75677778****.************************************...****.****************************
+Transcript_4674|m.10039/302-505            --QKELAKYFEEQIEPVLDPRAIDPCHPFPF..LGSLSLSIAVEIEDAF..............KQ---......EKFAIVSVP.APLDRWIRVHk....................dSSGDDVQRFIP.LEQVIEANMEKLFKGCNIVATHVFRVTRNADIERNE...DEAE.DLLEMMADEVRERRFASFVRLEVQDTMP
+#=GR Transcript_4674|m.10039/302-505    PP ..57899************************..*************974..............44.........56*******.*********98....................75677778****.************************************...****.****************************
+Transcript_4146|m.15161/305-508            --QKELAKYFEEQIEPVLDPRAIDPCHPFPF..LGSLSLSIAVEIEDAF..............KQ---......EKFAIVSVP.APLDRWIRVHk....................dSSGDDVQRFIP.LEQVIEANMEKLFKGCNIVATHVFRVTRNADIERNE...DEAE.DLLEMMADEVRERRFASFVRLEVQDTMP
+#=GR Transcript_4146|m.15161/305-508    PP ..57899************************..*************974..............44.........56*******.*********98....................75677778****.************************************...****.****************************
+Transcript_16969|m.53900/280-484           -EKATFDRWFLEEIEPLLTPLAVDPGHPFPY..LSSLAINLAVMLHDPE..............MPGDS......RQFAIVTVP.SMLSRWRPI-......................--EGRPNSYVP.LEQIVSANLDHLFGGMDIISVSPFRATRNADVERNE...EEAE.DLLEMMTDEVRERKFAPFVRLEVADGTP
+#=GR Transcript_16969|m.53900/280-484   PP .688999************************..****************..............88888......99*******.*********.........................566779***.************************************...****.****************************
+Transcript_16971|m.53909/280-484           -EKATFDRWFLEEIEPLLTPLAVDPGHPFPY..LSSLAINLAVMLHDPE..............MPGDS......RQFAIVTVP.SMLSRWRPI-......................--EGRPNSYVP.LEQIVSANLDHLFGGMDIISVSPFRATRNADVERNE...EEAE.DLLEMMTDEVRERKFAPFVRLEVADGTP
+#=GR Transcript_16971|m.53909/280-484   PP .688999************************..****************..............88888......99*******.*********.........................566779***.************************************...****.****************************
+Transcript_4761|m.18233/254-455            ---TKLGDYFEAQIEPVLDPRAIDPCHPFPF..LGSLSLSIAVELEDAF..............KQ---......EKFAIVSVP.AALERWIRVG.....................dSKDSSEQRFLP.LEQLIEANMEKLFRGCNIRDTHVFRVTRNADIERNE...DEAE.DLLEMMADEVRERRFASFVRLEVQDTMP
+#=GR Transcript_4761|m.18233/254-455    PP ...57889***********************..*************974..............44.........56*******.*********9.....................86677888****.************************************...****.****************************
+Transcript_22398|m.69334/230-425           -EKSGLRKIFLDQLEPMLTPLAIDPGHPFPY..ISNLTISLAVVLHDPM..............DG--S......SRLAILNVP.SSMKRWVRL-......................T-AREGHAFVA.LEQIIAANLDCLFGGMIIESTHAFRVTRNADIDRHE...EEAD.DLLEMITDEMRQRKFAPFVRIECEANMP
+#=GR Transcript_22398|m.69334/230-425   PP .577899************************..**************94..............33..3......69*******.*********.......................4.555589***.************************************...****.****************************
+Transcript_12636|m.26661/248-452           -DRTQLREWFVNEVEPLLTPLAIDPGHPFPY..LTSLAVNMAIVLKDPE.............dPDQSK......SLLSIVNLP.PSMQRWVKLPd....................nKETGRRNAFVP.LEHVVIYNLDRLFGGMEIQSVNCFRATRNADVVRNE...EEAE.DLLEMMTDEVRERRFAPFVRLEVNENIS
+#=GR Transcript_12636|m.26661/248-452   PP .7899**************************..**************99.............655556......8899*****.**********8....................86677788****.************************************...****.****************************
+Transcript_17988|m.61289/358-578           -EQACAREWFCENLEPILTPLAVDPGHPFPV..LPSLTLSLAVTLHDPH.............dDENSP......ERFAIVSLP.TNYERFVALRslvpkapsa....gaedgvhelQ-QRPANDFIT.LEQLIEANLDRLFNGMIITGVHPFRVTRNADLERNE...EEAE.DLLEMISVEVRARRFAPFVRLEVEASMP
+#=GR Transcript_17988|m.61289/358-578   PP .68899*************************..**************98.............555567......99*******.********99999******....*****99954.555679***.************************************...****.****************************
+Transcript_22976|m.38715/144-335           ---KHLDDVFLARVFPVLSPLAIDPAHPFPF..IPNTGYALALQLERK-..............-SDRR......SLQALLPIP.AQINRFVSL-......................P--GDALRFLP.LEELLLLKLPTLFPGYKLKAHFEFRVLRDSDLEVE-...DEAE.DLVREFEVALKRRRRGEVVRMTHSAGAP
+#=GR Transcript_22976|m.38715/144-335   PP ...7899************************..**************8................5555......799******.*********.......................4..34569***.***********************************....****.****************************
+Transcript_22977|m.38735/144-335           ---KHLDDVFLARVFPVLSPLAIDPAHPFPF..IPNTGYALALQLERK-..............-SDRR......SLQALLPIP.AQINRFVSL-......................P--GDALRFLP.LEELLLLKLPTLFPGYKLKAHFEFRVLRDSDLEVE-...DEAE.DLVREFEVALKRRRRGEVVRMTHSAGAP
+#=GR Transcript_22977|m.38735/144-335   PP ...7899************************..**************8................5555......799******.*********.......................4..34569***.***********************************....****.****************************
+Transcript_12666|m.28757/188-380           -EQTRLDEYFASELEVLLTPIALDPAHPFPQ..LQTLSLSLAVQLRNPEdq.........akgGADTA......LRVAIVPLP.PNLARWIDVDi...................egKTEGKNWTCVTpLEEIVRANLDSLFGGMQVVSTHLFRVTRNAELERHE...EEAE.DLLDMISEEMRERRFAPFVRMEIEEGMP
+#=GR Transcript_12666|m.28757/188-380   PP .6889**************************..**************9977.........77744445......89*******.*********99...................98667777888888************************************...****.****************************
+Transcript_2138|m.5256/297-489             -EQTRLDEYFASELEVLLTPIALDPAHPFPQ..LQTLSLSLAVQLRNPEdq.........akgGADTA......LRVAIVPLP.PNLARWIDVDi...................egKTEGKNWTCVTpLEEIVRANLDRLFGGMQVVSTHLFRVTRNAELERHE...EEAE.DLLDMISEEMRERRFAPFVRMEIEEGMP
+#=GR Transcript_2138|m.5256/297-489     PP .6889**************************..**************9977.........77744445......89*******.*********99...................98667777888888************************************...****.****************************
+Transcript_810|m.2091/254-446              -EQTRLDEYFASELEVLLTPIALDPAHPFPQ..LQTLSLSLAVQLRNPEdq.........akgGADTA......LRVAIVPLP.PNLARWIDVDi...................egKTEGKNWTCVTpLEEIVRANLDSLFGGMQVVSTHLFRVTRNAELERHE...EEAE.DLLDMISEEMRERRFAPFVRMEIEEGMP
+#=GR Transcript_810|m.2091/254-446      PP .6889**************************..**************9977.........77744445......89*******.*********99...................98667777888888************************************...****.****************************
+Transcript_2582|m.7961/266-467             ---KKLREWYHDHLEPILDPRAIDPCHPFPF..LPSLSTALAVELEDAY..............SNE--......-KFAVVSVP.SVVERWIDVGe....................fMGEQKGRLFLP.LEQILEANMDTLFQGCNIRACHPFRVCRNADIERNE...DEAE.DLLEMMSDEVRSRRFASFVRLEVQDTMP
+#=GR Transcript_2582|m.7961/266-467     PP ...6899************************..*************985..............555.........5*******.********998....................845566679999.************************************...****.****************************
+Transcript_31260|m.37805/60-261            ---DYLRGIFVKEIEPLLTPLAIDPGHPFPF..ISSLSINLAIIIHDPDdi.........eanEGSGK......RSMAIVNVP.SRMRRWKELP......................N---RKNCFVP.LEQIIIHNLDRLFGGMVILSADCFIATRNADVERNE...EEAD.DLLEMMTDEVRERRFAPFVRLEVAQTMD
+#=GR Transcript_31260|m.37805/60-261    PP ...7999************************..***************999.........98844555......79*******.*********4......................3...4569***.************************************...****.****************************
+Transcript_43731|m.113196/61-256           --RETLAAFFNKQVEVLLTPIKLDPGHPFPV..LPSDSLNISVLIEDPK..............NRDGP......YLHAIVNLP.QNLPRFHEVPpa.................faaDGEEWKQGFVL.LEQIIIHNLSNLFGGMTVAATHTFRVTRNAELERHE...EDAD.DLLDMISYELRERRFAPFVRLEVDAAMP
+#=GR Transcript_43731|m.113196/61-256   PP ..678999***********************..***************9..............99999......9********.************.................99866777789***.************************************...****.****************************
+Transcript_43732|m.113201/61-256           --RETLAAFFNKQVEVLLTPIKLDPGHPFPV..LPSDSLNISVLIEDPK..............NRDGP......YLHAIVNLP.QNLPRFHEVPpa.................faaDGEEWKQGFVL.LEQIIIHNLSNLFGGMTVAATHTFRVTRNAELERHE...EDAD.DLLDMISYELRERRFAPFVRLEVDAAMP
+#=GR Transcript_43732|m.113201/61-256   PP ..678999***********************..***************9..............99999......9********.************.................99866777789***.************************************...****.****************************
+Transcript_40816|m.73349/186-394           --RQALATFFRLQVEVLLTPIKLDPGHPFPV..LPSDSLNISVLIEDPK..............NREGP......YLHAIVNLP.SNLPRWHPVPss.................yaaEGERWEQGFVL.LEQIIIHNLSRLFGGMNVFGTHTFRVTRNAELERHE...EDAD.DLLDMISYELRERRFAPFVRLEVDAAMP
+#=GR Transcript_40816|m.73349/186-394   PP ..67899************************..***************9..............99999......*********.***********9.................98755666679***.************************************...****.****************************
+Transcript_2583|m.7965/266-467             ---KKLREWYHDHLEPILDPRAIDPCHPFPF..LPSLSTALAVELEDAY..............SNE--......-KFAVVSVP.SVVERWIDVGe....................fMGEQKGRLFLP.LEQILEANMDTLFQGCNIRACHPFRVCRNADIERNE...DEAE.DLLEMMSDEVRSRRFASFVRLEVQDTMP
+#=GR Transcript_2583|m.7965/266-467     PP ...6899************************..*************985..............555.........5*******.********998....................845566679999.************************************...****.****************************
+Transcript_16188|m.39468/276-486           -EQEKLNEWFKSDIEPILDPRAVDPCHPFPF..LSSLSLSIAVNLEDS-..............-NTKR......EKFAIVSVPvAGVERWIQMKrp.................dsgSGPGHVNEFVP.VEQVIIANLPHLFHGYTVLGAHVFRVTRNADVERNE...DEAD.DLLEMMSEEVRDRRFASFVRLEVLDSMP
+#=GR Transcript_16188|m.39468/276-486   PP .6899**************************..*************97................5555......79*****************999.................98855666679***.************************************...****.****************************
+Transcript_45168|m.113081/137-332          --RETLAAFFNKQVEVLLTPIKLDPGHPFPV..LPSDSLNISVLIEDPK..............NRDGP......YLHAIVNLP.QNLPRFHEVPpa.................faaDGEEWKQGFVL.LEQIIIHNLSNLFGGMTVAATHTFRVTRNAELERHE...EDAD.DLLDMISYELRERRFAPFVRLEVDAAMP
+#=GR Transcript_45168|m.113081/137-332  PP ..678999***********************..***************9..............99999......9********.************.................99866777789***.************************************...****.****************************
+Transcript_25735|m.66278/168-363           --RETLAAFFNKQVEVLLTPIKLDPGHPFPV..LPSDSLNISVLIEDPK..............NRDGP......YLHAIVNLP.QNLPRFHEVPpa.................faaDGEEWKQGFVL.LEQIIIHNLSNLFGGMTVAATHTFRVTRNAELERHE...EDAD.DLLDMISYELRERRFAPFVRLEVDAAMP
+#=GR Transcript_25735|m.66278/168-363   PP ..678999***********************..***************9..............99999......9********.************.................99866777789***.************************************...****.****************************
+Transcript_33811|m.85194/172-367           --RETLAAFFNKQVEVLLTPIKLDPGHPFPV..LPSDSLNISVLIEDPK..............NRDGP......YLHAIVNLP.QNLPRFHEVPpa.................faaDGEEWKQGFVL.LEQIIIHNLSNLFGGMTVAATHTFRVTRNAELERHE...EDAD.DLLDMISYELRERRFAPFVRLEVDAAMP
+#=GR Transcript_33811|m.85194/172-367   PP ..678999***********************..***************9..............99999......9********.************.................99866777789***.************************************...****.****************************
+Transcript_7980|m.25125/302-503            ---QKVREWYHDYVEPILDPRAIDPCHPFPF..LPSLSIALAVELEDAY..............SNE--......-KFAVVSVP.SVVDRWIDVGe...................fmD-ETKGKLFLP.LEQILEANMDTLFQGCNIRACHAFRVCRNADVERNE...EEAE.DLLEMMSDEVRTRRFASFVRLEVQDTMP
+#=GR Transcript_7980|m.25125/302-503    PP ...6799************************..*************985..............555.........5*******.********998...................854.555569***.************************************...****.****************************
+Transcript_8329|m.27374/301-502            ---QKVREWYHDYVEPILDPRAIDPCHPFPF..LPSLSIALAVELEDAY..............SNE--......-KFAVVSVP.SVVDRWIDVGe...................fmD-ETKGKLFLP.LEQILEANMDTLFQGCNIRACHAFRVCRNADVERNE...EEAE.DLLEMMSDEVRTRRFASFVRLEVQDTMP
+#=GR Transcript_8329|m.27374/301-502    PP ...6799************************..*************985..............555.........5*******.********998...................854.555569***.************************************...****.****************************
+Transcript_8558|m.29379/161-373            -ERERLSRYFTQELELLLTPIKLDPGHPFPF..LQSLSIGLAVRLRGE-..............-EEGA......TSYAVVAIP.STVARWIPVEveaqae.........eaegregGAGGGSHAFLP.VEELIASHLDQLFGGWKILGAWPYRVTRNAELERHE...EECE.DLLEMMAEEVRERMFAPFVRLEVRAGAP
+#=GR Transcript_8558|m.29379/161-373    PP .7899**************************..*************97................5555......79*******.****************.........**9998845677789***.************************************...****.****************************
+Transcript_13167|m.48012/297-512           -DKQELEDFFMEEVEPLITPLAIDPGHPFPS..VTNLQISLAVELQDPFvqdiasgasatlsmKEKRSadfitlKRFSIVILP.STISRWIPL-......................H--GKNGVFAP.LELVLRLNLDRIYGGMMVLSVHPFRITRSADISRHE...EDAD.DLLEMITLEVRHRKFASVTRLEVDANMP
+#=GR Transcript_13167|m.48012/297-512   PP .5789**************************..*************998999999999888873333366777799*******.*********.......................4..44458***.************************************...****.****************************
+Transcript_7624|m.27670/276-488            -ERERLSRYFTQELELLLTPIKLDPGHPFPF..LQSLSIGLAVRLRGE-..............-EEGA......TSYAVVAIP.STVARWIPVEveaqae.........eaegregGAGGGSHAFLP.VEELIASHLDQLFGGWKILGAWPYRVTRNAELERHE...EECE.DLLEMMAEEVRERMFAPFVRLEVRAGAP
+#=GR Transcript_7624|m.27670/276-488    PP .7899**************************..*************97................5555......79*******.****************.........**9998845677789***.************************************...****.****************************
+Transcript_21315|m.64131/334-549           ---ERLNKYFQRELELLLTPIKLDPAHPFPY..LPSGSLNLAVTLEDPReqsg......dpqfASNGH......PLYAIVNIP.PSFSRWYEVPps.................aaqEGDSWQQAFMP.VEQIIEHNLGQLFGGAIIKAVHVFRVTRNADLERHE...EEAD.DLLDMVADELRERRFAPFVRLEVAGDMP
+#=GR Transcript_21315|m.64131/334-549   PP ...6899************************..**************988887......777744444......99*******.**********99.................87644555669999.************************************...****.****************************
+Transcript_5394|m.16324/278-487            -ERERLTKYFTEELELLLTPIKMDPGHPFPF..LQSLSIGLGVRLQDLGe............dAAAEG......VSYAVVTIP.STVDRWIKVEtt.................gseGGSGRGIAFLP.VEQLIISHLDQLFGGWKILDAWPYRVTRNAELERHE...DEAE.DLLEMIAEEVRERMFAPFVRLEVLQGTP
+#=GR Transcript_5394|m.16324/278-487    PP .7899**************************..************99865............534444......89*******.*********999.................86523344459***.************************************...****.****************************
+Transcript_16970|m.53905/280-442           -EKATFDRWFLEEIEPLLTPLAVDPGHPFPY..LSSLAINLAVMLHDPE..............MPGDS......RQFAIVTVP.SMLSRWRPI-......................--EGRPNSYVP.LEQIVSANLDHLFGGMDIISVSPFRATRNADVERNE...EEAE.DLLEMMTDEVRERKFAPFVRLEVADGTP
+#=GR Transcript_16970|m.53905/280-442   PP .68899*************************..****************..............88888......99*******.*********.........................566779***.************************************...****.****************************
+Transcript_22749|m.63969/154-361           -EQRRLEKYFQNELELLITPIKLDPGHPFPF..LQTMDVSVGVVLCDR-..............-VTKV......SSYAIVTLP.KNVPRWHVVNlpwn..............relgS-DPSAKGYIA.LERIIIHNLGRLFGGWEVQGAYVFRVTRNAEIERHE...EEAE.DLLDMISDEVRMRQFAPFVRLEVETTTP
+#=GR Transcript_22749|m.63969/154-361   PP .6889**************************..*************97................5555......79*******.*****8766566**..............*9964.566678***.************************************...****.****************************
+Transcript_7526|m.21316/291-491            -----LEMYFSRQVEVLLTPIKLDPGHPFPV..LPSDSLNIAVLLEDPK..............CPDSP......YMHAIVNIP.CNLPRWHPISsd.................sttLGDSLLQGFVL.LEEIVINNLSKLFGGMTVVGAHTFRVTRNAELERHE...EDAD.DLLDMISYELRERRFAPFVRLQVHESMP
+#=GR Transcript_7526|m.21316/291-491    PP .....789***********************..***************9..............88888......9********.*********877.................65522333448***.************************************...****.****************************
+Transcript_7527|m.21325/291-491            -----LEMYFSRQVEVLLTPIKLDPGHPFPV..LPSDSLNIAVLLEDPK..............CPDSP......YMHAIVNIP.CNLPRWHPISsd.................sttLGDSLLQGFVL.LEEIVINNLSKLFGGMTVVGAHTFRVTRNAELERHE...EDAD.DLLDMISYELRERRFAPFVRLQVHESMP
+#=GR Transcript_7527|m.21325/291-491    PP .....789***********************..***************9..............88888......9********.*********877.................65522333448***.************************************...****.****************************
+Transcript_7528|m.21334/291-491            -----LEMYFSRQVEVLLTPIKLDPGHPFPV..LPSDSLNIAVLLEDPK..............CPDSP......YMHAIVNIP.CNLPRWHPISsd.................sttLGDSLLQGFVL.LEEIVINNLSKLFGGMTVVGAHTFRVTRNAELERHE...EDAD.DLLDMISYELRERRFAPFVRLQVHESMP
+#=GR Transcript_7528|m.21334/291-491    PP .....789***********************..***************9..............88888......9********.*********877.................65522333448***.************************************...****.****************************
+Transcript_21754|m.33675/1-157             -------------------PVGLDPAHPFPQ..VANKSLHFIARLSGKD..............AFGRD......NRIAIVKVP.RVLPRVIKLP.....................aSLGDGRQAFVL.LTSVIRAHLEELFPGRKVEAFSQFRVTRDSDLEVDE...EEIA.NLRHALRSGLTTRHFGRAVRLEVVNSCP
+#=GR Transcript_21754|m.33675/1-157     PP ...................8899********..****************..............99999......*********.**********.....................96688889****.************************************...****.****************************
+Transcript_19462|m.37281/1-179             ------------------------PGHPFPY..LTSLALNLAIQLRDPEdp..........dyEDTEK......KSLAIVTLPtRGLQRWVKI-......................----GENKFVP.LEHVVIYNLDRLFGGMEIQAVHCFRATRNADVERNE...DEAE.DLLEMMTDEVRTRRFAPFVRLEANGNMD
+#=GR Transcript_19462|m.37281/1-179     PP ........................68*****..***************999..........9988888......99*******9*********...........................4458***.************************************...****.****************************
+Transcript_62957|m.154869/170-311          -QRRWVQKFFEREVRPLLVPVGLDPAHPFPQ..VANKSLHFIARLSGKD..............AFGRD......NRIAIVKVP.RVLPRVIKLP.....................aSLGDGRQAFVL.LTSVIRAHLEELFPGRKVEAFSQFRVTRDSDLEVDE...EEIA.NLRHALRSGLTTRHFGRAVR--------
+#=GR Transcript_62957|m.154869/170-311  PP .99****************************..****************..............99999......*********.**********.....................96688889****.************************************...****.*******************9........
+Transcript_6995|m.17183/164-364            EQKAKMRDYFTKKIYPLVTPLSVDQSHPFPL..LASHGIYLVVTLLNP-..............-ETSK......TRIVYFRIP.PVKPRCIPV-......................S-DD-GLKYVL.LEDVVLENLDMVCYGMEMLKVFPFRVTRNVKLVIDDvnfGESD.NLLDFIWEETHRRRSAPATRLEVSDKMP
+#=GR Transcript_6995|m.17183/164-364    PP 699****************************..************998................6666......789999***.*********.......................4.44.469***.***********************************54444666.****************************
+Transcript_4774|m.8464/9-147               --NAHLSEVFLAQVFPVLSPLAIDPAHPFPF..IPNEGIALALQLKRE-..............RDGR-......VLQALLPIP.GQIDRFVTLP......................A-EDGAIRMLP.MEELLLLNIGVLFPGYKLNGSCMFRVLRDSDLEVE-...EEAE.DLVREFETALKRRRRGEVVRLQI-----
+#=GR Transcript_4774|m.8464/9-147       PP ..67899************************..*************97...............3443.......799******.*********6......................5.78888****.***********************************....****.*********************98.....
+Transcript_16688|m.68355/217-416           -QRRNMTTYFKKKILPILTPLSVDQTHPFPL..LQSHGIYLAVVLLNP-..............-ETDK......TRRVYLRVP.PVKPRAVQL-......................D-N-EGLKYIP.IEEIVLDNMNLVTEGMQVLKAYPFRVTRNVKLVIDDahfGESD.NLLDFVWEEVHRRRSAPATRLEVTKDMP
+#=GR Transcript_16688|m.68355/217-416   PP .88999*************************..************998................5666......68999****.*********.......................3.3.4469***.***********************************54434566.****************************
+Transcript_16689|m.68361/217-416           -QRRNMTTYFKKKILPILTPLSVDQTHPFPL..LQSHGIYLAVVLLNP-..............-ETDK......TRRVYLRVP.PVKPRAVQL-......................D-N-EGLKYIP.IEEIVLDNMNLVTEGMQVLKAYPFRVTRNVKLVIDDahfGESD.NLLDFVWEEVHRRRSAPATRLEVTKDMP
+#=GR Transcript_16689|m.68361/217-416   PP .88999*************************..************998................5666......68999****.*********.......................3.3.4469***.***********************************54434566.****************************
+Transcript_9142|m.16444/9-207              -QRDTMREYFRKKLFPLITPLSVDQTHPFPL..LQSHGIYLVVVVLNP-..............-ETSK......TRRLYFRIP.NVKPRALPV-......................--DETRLKYIS.VEHICLANIDMICEGMELLKAYPFRVTRNVKLEIDDtsfGDSD.NLLDFVWEEVHRRRSAPATRLEVTKTMP
+#=GR Transcript_9142|m.16444/9-207      PP .8999**************************..***********9998................5555......67888999*.*********.........................566679***.***********************************63434556.9***************************
+Transcript_8298|m.24923/183-383            EQRSAMTAFFKRKILPILTPLSVDQTHPFPL..LQSHGIYLAIVLLNP-..............-ETSK......TRRVYLRVP.RIKPRALAV-......................--NADKTKYIP.IEEVVMDNMHLVCEGMEVIRAYPFRVTRNVKLVIDDayfGESD.NLLDFVWEEVHRRRSAPATRLEVPKDMP
+#=GR Transcript_8298|m.24923/183-383    PP 6999***************************..************998................5666......68999****.*********.........................345569***.***********************************64544666.****************************
+Transcript_15129|m.38471/23-203            -EQKRLRKYFLDELELLLTPIKLDPGHPFPY..LPSLGVGIAVRLRPKPtnre.....gsakqH---KgeslyqPSYAVVNIP.SNVPRWLRVDldadad.........adadakdADAAGGIAYLP.VEQLIISHLGRLFGGWEILDAWAYRVTRNAEMDWHE...EEAD.DLLEMIAEEVRGRMFAPFVRLEVQTGMP
+#=GR Transcript_15129|m.38471/23-203    PP .799***************************..**************988888.....776551...144555599*******.****************.........***99874456667****.************************************...****.****************************
+Transcript_18322|m.38003/131-285           -ERERLRTFFTEELELLLTPIALDPGHPFPF..LQSLSIGIAVRLQDTQgsanas..pnasngNDTDC......ISYAVVSIP.PTVDRWIKVE......................TGTKKERLYLP.VEQLIISHLDQLFGGWKIIDAWTYRVTRNAELERHE...DEAE.DLLEMIAEEVRERMFAPFVRLE------
+#=GR Transcript_18322|m.38003/131-285   PP .7899**************************..**************99999999..98888766666......9********.*********8......................77777789999.************************************...****.*********************8......
+Transcript_9062|m.15101/3-146              -------------------------------..----------------..............-----......---ALLPIP.HQIDRFVFLP......................S-PDGTLRVLP.LEELLILHLDSVFPGYKAKGHCAFRVLRDSDLEVE-...DEAE.DLVREFEVALKRRRRGEVVRLKISADAP
+#=GR Transcript_9062|m.15101/3-146      PP .............................................................................789***.*********7......................6.677789999.***********************************....****.****************************
+Transcript_9061|m.15097/3-146              -------------------------------..----------------..............-----......---ALLPIP.HQIDRFVFLP......................S-PDGTLRVLP.LEELLILHLDSVFPGYKAKGHCAFRVLRDSDLEVE-...DEAE.DLVREFEVALKRRRRGEVVRLKISADAP
+#=GR Transcript_9061|m.15097/3-146      PP .............................................................................789***.*********7......................6.677789999.***********************************....****.****************************
+Transcript_25719|m.33467/176-299           -QRRWVQKFFEREVRPLLVPVGLDPAHPFPQ..VANKSLHFIARLSGKD..............AFGRD......NRIAIVKVP.RVLPRVIKLP.....................aSLGDGRQAFVL.LTSVIRAHLEELFPGRKVEAFSQFRVTRDSDLEVDE...EEIA.NL--------------------------
+#=GR Transcript_25719|m.33467/176-299   PP .99****************************..****************..............99999......*********.**********.....................96688889****.************************************...9987.76..........................
+Transcript_25506|m.47815/1-144             -------------------------------..----------------..............-----......-------VP.RVLPRVIKLP.....................aSLGDGRQAFVL.LTSVIRAHLEELFPGRKVEAFSQFRVTRDSDLEVDE...EEIA.NLRHALRSGLTTRHFGRAVRLEVVNSCP
+#=GR Transcript_25506|m.47815/1-144     PP .................................................................................8*.**********.....................96688889****.************************************...****.****************************
+Transcript_45914|m.75906/1-143             -------------------------------..----------------..............-----......--------P.RVLPRVIKLP.....................aSLGDGRQAFVL.LTSVIRAHLEELFPGRKVEAFSQFRVTRDSDLEVDE...EEIA.NLRHALRSGLTTRHFGRAVRLEVVNSCP
+#=GR Transcript_45914|m.75906/1-143     PP ..................................................................................8.9*********.....................96688889****.************************************...****.****************************
+Transcript_15137|m.49652/304-525           -QREELDAWFRSEVEPILTPIAVDKGHPFPLagLSSLTVNIAVEVAERPkqgt......lteeDMEQK......RMLAIVPLT.PSLPRFKLAPppsrrpsqdehdqisaeengefP--QSEYYFVP.VEQIVEANLARLFGGMELGETHMFRATRNANVERNE...DEAD.DLLEMMADEVRERRFAPIVRLEVEEGGA
+#=GR Transcript_15137|m.49652/304-525   PP .899**************************86689**********99888999......999866666......89*******.******988899*************99998543..66789***.************************************...****.***********************98765
+Transcript_15135|m.49641/304-525           -QREELDAWFRSEVEPILTPIAVDKGHPFPLagLSSLTVNIAVEVAERPkqgt......lteeDMEQK......RMLAIVPLT.PSLPRFKLAPppsrrpsqdehdqisaeengefP--QSEYYFVP.VEQIVEANLARLFGGMELGETHMFRATRNANVERNE...DEAD.DLLEMMADEVRERRFAPIVRLEVEEGGA
+#=GR Transcript_15135|m.49641/304-525   PP .899**************************86689**********99888999......999866666......89*******.******988899*************99998543..66789***.************************************...****.***********************98765
+Transcript_27648|m.67142/70-267            -QQREQRAYFRRTLAPLITPLSVDQTHPFPT..LHSHVIYMQVVLLNP-..............-ESLI......TRSVYFRVP.AE-DRLIAL-......................---DNGLSFIP.VEEICLHNLDLVCEGMELIKAHPFRVTRNVKLDMDDtafGEDD.SLLDFVWEEVHRRRTAPATRLEVSSRMP
+#=GR Transcript_27648|m.67142/70-267    PP .6777899***********************..************998................4444......567777888.76.8*****..........................34469***.***********************************53433555.9***************************
+Transcript_16691|m.34290/179-378           -ERKEIKDYFVKYMYPVITPLCVDQTHPFPV..LRSHSLYLLVNLLNA-..............-ENAV......KRSVYFSIP.EG-KRLLSV-......................--GKSPLRFIA.AEDICLANMDRICEGMVVLQAHPFRVTRNVKLELKDhlfGEDD.NLLQQVWEEASRRRAAPVTRLEITESMP
+#=GR Transcript_16691|m.34290/179-378   PP .7899**************************..************997................4444......578888999.86.9*****.........................556679***.***********************************64534566.****************************
+Transcript_37974|m.90206/94-218            --------LFMRQIEVLLTPIKLDPGHPFPV..LHSDSLNIAVVIEDPK..............NQDGP......YLHAIVSIP.SNLPRWHPMPps.................aaaEGHEWGQGFIP.LEDIIIHNLPRLFGGMNVVAAHAFRVTRNAELERHE...EDAD.DLLDMI----------------------
+#=GR Transcript_37974|m.90206/94-218    PP ........7**********************..***************9..............99999......*********.**********99.................98755666679***.************************************...****.***986......................
+Transcript_28271|m.36471/3-123             -------------------------------..----------------..............-----......---------.----------......................--------VLP.LEELLILHLDSVFPGYKAKGHCAFRVLRDSDLEVE-...DEAE.DLVREFEVALKRRRRGEVVRLKISADAP
+#=GR Transcript_28271|m.36471/3-123     PP ............................................................................................................................678.***********************************....****.****************************
+Transcript_567|m.1019/2-124                -------------------------------..----------------..............-----......---------.----------......................----GRQAFVL.LTSVIRAHLEELFPGRKVEAFSQFRVTRDSDLEVDE...EEIA.NLRHALRSGLTTRHFGRAVRLEVVNSCP
+#=GR Transcript_567|m.1019/2-124        PP ........................................................................................................................5679***.************************************...****.****************************
+Transcript_3503|m.10619/9-137              -------------------------------..----------------..............-----......---------.----------......................---GGSHAFLP.VEELIASHLDQLFGGWKILGAWPYRVTRNAELERHE...EECE.DLLEMMAEEVRERMFAPFVRLEVRAGAP
+#=GR Transcript_3503|m.10619/9-137      PP .......................................................................................................................566899**.************************************...****.****************************
+Transcript_15132|m.38478/23-172            -EQKRLRKYFLDELELLLTPIKLDPGHPFPY..LPSLGVGIAVRLRPKPtnre.....gsakqH---KgeslyqPSYAVVNIP.SNVPRWLRVDldadad.........adadakdADAAGGIAYLP.VEQLIISHLGRLFGGWEILDAWAYRVTRNAEMDWHE...EEAD.DLLE------------------------
+#=GR Transcript_15132|m.38478/23-172    PP .799***************************..**************988888.....776551...144555599*******.****************.........***99874456667****.************************************...****.**98........................
+Transcript_12857|m.32462/1-113             -------------------------------..----------------..............-----......---------.----------......................-----------.--------LDQLFGGWKIIDAWTYRVTRNAELERHE...DEAE.DLLEMIAEEVRERMFAPFVRLEVQSGTP
+#=GR Transcript_12857|m.32462/1-113     PP ........................................................................................................................................799*************************...****.****************************
+Transcript_7981|m.25132/1-116              -------------------------------..----------------..............-----......---------.----------......................-----------.--------MDTLFQGCNIRACHAFRVCRNADVERNE...EEAE.DLLEMMSDEVRTRRFASFVRLEVQDTMP
+#=GR Transcript_7981|m.25132/1-116      PP ........................................................................................................................................589*************************...****.****************************
+Transcript_15216|m.40983/160-271           EQKAKMRDYFTKKIYPLVTPLSVDQSHPFPL..LASHGIYLVVTLLNP-..............-ETSK......TRIVYFRIP.PVKPRCIPV-......................S--DDRLKYVL.LEDVVLENLDMVCYGMEMLKVFPFRVTRNVKLVID-...----.----------------------------
+#=GR Transcript_15216|m.40983/160-271   PP 699****************************..************998................6666......789999***.*********.......................4..55679***.*****************************998876.....................................
+Transcript_39406|m.64322/67-155            -QRRWVQKFFEREVRPLLVPVGLDPAHPFPQ..VANKSLHFIARLSGKD..............AFGRD......NRIAIVKVP.RVLPRVIKLP.....................aSLGDGRQAFVL.LTSVIRA-----------------------------...----.----------------------------
+#=GR Transcript_39406|m.64322/67-155    PP .99****************************..****************..............99999......*********.**********.....................96688889****.*****85.................................................................
+Transcript_39407|m.64325/4-102             -------------------------------..----------------..............-----......---------.----------......................-----------.---------------------WQFRVTRDSDLEVDE...EEIA.NLRHALRSGLTTRHFGRAVRLEVVNSCP
+#=GR Transcript_39407|m.64325/4-102     PP .....................................................................................................................................................58*************...****.****************************
+Transcript_3138|m.5274/1-80                -------------------------------..----------------..............-----......---------.----------......................-----------.----IISHLGQLFGGWEIIDAWTYRVTRNAELERHE...DEAE.DLLEMIAEEVRERMFAPFVRLEVQSGTP
+#=GR Transcript_3138|m.5274/1-80        PP ....................................................................................................................................5679****************************...****.****************************
+Transcript_30555|m.65431/1-97              -------------------------------..----------------..............-----......---------.----------......................-----------.-------------------------VTRNAELERHE...DEAE.DLLEMIAEEVRERMFAPFVRLEVLQGTP
+#=GR Transcript_30555|m.65431/1-97      PP .........................................................................................................................................................8**********...****.****************************
+Transcript_9889|m.22841/4-92               -------------------------------..----------------..............EKKDS......KKISFIQLP.KNLLRFYRL-......................-NRSSDITFIP.IEEIVRKHLSMLFKNVSILSVTLFRIIRNGYFSLEE..sDDMEaSFVEELKRKLKKKE--------------
+#=GR Transcript_9889|m.22841/4-92       PP ...............................................................45666......89*******.*********........................4666779***.***********************************9..99999************987..............
+Transcript_3140|m.5277/133-226             -ERERLSKYFTNELELLLTPIKLDPGHPFPF..LQSLSIGIAVRLQDTL.............nGESSN......ISYAVVSIP.STVDRWIKVEt...................gsEEGKRRIAYLP.VEQLIISHL---------------------------...----.----------------------------
+#=GR Transcript_3140|m.5277/133-226     PP .7899**************************..************9986.............677778......9********.*********99...................8544444449999.*****9987...............................................................
+Transcript_3502|m.10614/205-276            -ERERLSRYFTQELELLLTPIKLDPGHPFPF..LQSLSIGLAVRLRGE-..............-EEGA......TSYAVVAIP.STVARWIPVKv...................eaQ----------.------------------------------------...----.----------------------------
+#=GR Transcript_3502|m.10614/205-276    PP .7899**************************..*************97................5555......79*******.********964...................331...................................................................................
+Transcript_25720|m.33471/2-83              -------------------------------..----------------..............-----......---------.----------......................-----------.------------------------------------...--IA.NLRHALRSGLTTRHFGRAVRLEVVNSCP
+#=GR Transcript_25720|m.33471/2-83      PP .........................................................................................................................................................................56.99**************************
+Transcript_7981|m.25134/302-366            ---QKVREWYHDYVEPILDPRAIDPCHPFPF..LPSLSIALAVELEDAY..............SNE--......-KFAVVSVP.SVVDRWIDVG......................-----------.------------------------------------...----.----------------------------
+#=GR Transcript_7981|m.25134/302-366    PP ...6799************************..*************985..............555.........5*******.*******985..........................................................................................................
+Transcript_24203|m.58794/2-75              -------------------------------..----------------..............-----......---------.----------......................-----------.------------------------------------...----.------RSGLTTRHFGRAVRLEVVNSCP
+#=GR Transcript_24203|m.58794/2-75      PP ..................................................................................................................................................................................57899*****************
+Transcript_15214|m.40976/13-97             -------------------------------..----------------..............-----......---------.----------......................-----------.------------------------------------...GESD.NLLDFIWEETHRRRSAPATRLEVSDKMP
+#=GR Transcript_15214|m.40976/13-97     PP .......................................................................................................................................................................3667.****************************
+Transcript_9064|m.15106/142-190            -DLEFLADVFMNRVFPMLSPLAIDPAHPFPF..IPNAGFSLALQLERKK..............NKR--......---------.----------......................-----------.------------------------------------...----.----------------------------
+#=GR Transcript_9064|m.15106/142-190    PP .6799**************************..**************95..............443......................................................................................................................................
+Transcript_24450|m.33705/1-78              -------------------------------..----------------..............-----......---------.----------......................-----------.------------------------------------...----.---EMMTDEVRERRFAPFVRLEVNADMD
+#=GR Transcript_24450|m.33705/1-78      PP ...............................................................................................................................................................................5799*********************
+Transcript_26317|m.45395/156-202           -QRRWVQKFFEREVRPLLVPVGLDPAHPFPQ..VANKSLHFIARLSGKD..............A----......---------.----------......................-----------.------------------------------------...----.----------------------------
+#=GR Transcript_26317|m.45395/156-202   PP .99****************************..************9987..............5........................................................................................................................................
+Transcript_8399|m.22113/17-84              -QKESMRDYFRKKLYPLITPLSVDQTHPFPL..LQSFGVYLVLVVLNP-..............-ETSK......TRRLYFRLP.SVKPRALPID......................-----------.------------------------------------...----.----------------------------
+#=GR Transcript_8399|m.22113/17-84      PP .99****************************..*********999987................5555......57888899*.*****99994..........................................................................................................
+Transcript_9886|m.22831/131-179            -EQTQLENYFKKTIFPMLTPMVFDSHHVFPV..LANKLLVFGVITHDAT..............EKK--......---------.----------......................-----------.------------------------------------...----.----------------------------
+#=GR Transcript_9886|m.22831/131-179    PP .7899**************************..**********998875..............444......................................................................................................................................
+Transcript_18324|m.38009/131-175           -ERERLRTFFTEELELLLTPIALDPGHPFPF..LQSLSIGIAVRLQDT-..............-----......---------.----------......................-----------.------------------------------------...----.----------------------------
+#=GR Transcript_18324|m.38009/131-175   PP .7899**************************..************985........................................................................................................................................................
+Transcript_30574|m.65476/115-158           -ERERLTKYFTEELELLLTPIKMDPGHPFPF..LQSLSIGLGVRLQD--..............-----......---------.----------......................-----------.------------------------------------...----.----------------------------
+#=GR Transcript_30574|m.65476/115-158   PP .7899**************************..***********986.........................................................................................................................................................
+Transcript_18323|m.38006/3-66              -------------------------------..----------------..............-----......---------.----------......................-----------.------------------------------------...----.-----------------FVRLEVQSGTP
+#=GR Transcript_18323|m.38006/3-66      PP .............................................................................................................................................................................................79*********
+Transcript_17987|m.61285/358-401           -EQACAREWFCENLEPILTPLAVDPGHPFPG..LPSLTLSPAVTLHD--..............-----......---------.----------......................-----------.------------------------------------...----.----------------------------
+#=GR Transcript_17987|m.61285/358-401   PP .68899*************************..***********987.........................................................................................................................................................
+Transcript_19461|m.37278/231-261           EERASLREYFISELEPLLTPLAVDPGHPFPY..----------------..............-----......---------.----------......................-----------.------------------------------------...----.----------------------------
+#=GR Transcript_19461|m.37278/231-261   PP 68999*************************7.........................................................................................................................................................................
+#=GC PP_cons                               678899*************************..*************998..............66677......89*******.*********9......................55666679***.************************************...9*9*.****************************
+#=GC RF                                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxx..............xxxxx......xxxxxxxxx.xxxxxxxxxx......................xxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx...xxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Transcript_5863|m.23060/156-357            ......AELSAFLLEQFG.L..P.G.AALYRVN...G..PVNLVRLNELI.DqT.DA........PGLRFAPFEPAWP-
+#=GR Transcript_5863|m.23060/156-357    PP ......************.*..*.*.*******...*..***********.879.99........**********876.
+Transcript_5886|m.10480/156-357            ......AELSAFLLEQFG.L..P.G.AALYRVN...G..PVNLVRLNELI.DqT.DA........PGLRFAPFEPAWP-
+#=GR Transcript_5886|m.10480/156-357    PP ......************.*..*.*.*******...*..***********.879.99........**********876.
+Transcript_24633|m.58176/84-285            ......AELSAFLLEQFG.L..P.G.AALYRVN...G..PVNLVRLNELI.DqT.DA........PGLRFAPFEPAWP-
+#=GR Transcript_24633|m.58176/84-285    PP ......************.*..*.*.*******...*..***********.879.99........**********876.
+Transcript_100847|m.281023/156-357         ......AELSAFLLEQFG.L..P.G.AALYRVN...G..PVNLVRLNELI.DqT.DA........PGLRFAPFEPAWP-
+#=GR Transcript_100847|m.281023/156-357 PP ......************.*..*.*.*******...*..***********.879.99........**********876.
+Transcript_707|m.2731/221-404              ......PDIVSRLVDELM.V..D.PkLDVYHSQ...G..LLGLEQLDSIP.-.-.--........--------------
+#=GR Transcript_707|m.2731/221-404      PP ......************.*..9.857******...*..******98875.............................
+Transcript_8850|m.15204/252-457            ......EELIKTLTTKLN.L..T.L.LDVYAMR...G..PLGIGDLFSLPvD.L.GM.......dTSLEFKHWAPLTA-
+#=GR Transcript_8850|m.15204/252-457    PP ......************.*..*.*.*******...*..**********956.7.66.......699********976.
+Transcript_3337|m.13502/380-576            ......QPIIDRLMEELN.I..L.P.RDVFPSA...G..PLSLGEIDGIDvD.F.GM.......dASLTFPPWTART--
+#=GR Transcript_3337|m.13502/380-576    PP ......************.*..*.*.*******...*..*******999634.3.44.......69********987..
+Transcript_4458|m.28359/219-402            ......PDIVSRLVDELM.V..D.PkLDVYHSQ...G..LLGLEQLDSIP.-.-.--........--------------
+#=GR Transcript_4458|m.28359/219-402    PP ......************.*..9.857******...*..*****998875.............................
+Transcript_708|m.2734/221-404              ......PDIVSRLVDELM.V..D.PkLDVYHSQ...G..LLGLEQLDSIP.-.-.--........--------------
+#=GR Transcript_708|m.2734/221-404      PP ......************.*..9.857******...*..*****998875.............................
+Transcript_12443|m.23795/52-254            ......EDLVATLVREMS.L..T.M.NDVYFMK...G..PLGIGDLFDLPvDfG.LD........TSLVFPHWAPMTH-
+#=GR Transcript_12443|m.23795/52-254    PP ......************.*..*.*.*******...*..**********85544.44........9*********986.
+Transcript_4675|m.10046/302-505            ......SYIRDKLVDSLDgI..T.Q.TDVITVP...HraPLGFGSIDSLPvD.F.GM.......dVSLIYPHWAPRTHP
+#=GR Transcript_4675|m.10046/302-505    PP ......***********868..9.9.***9998...667**********955.4.44.......599*********997
+Transcript_7714|m.25937/301-504            ......SYIRDKLVDSLDgI..T.Q.TDVITVP...HraPLGFGSIDSLPvD.F.GM.......dVSLIYPHWAPRTHP
+#=GR Transcript_7714|m.25937/301-504    PP ......***********868..9.9.***9998...667**********955.4.44.......599*********997
+Transcript_1658|m.5315/283-486             ......SYIRDKLVDSLDgI..T.Q.TDVITVP...HraPLGFGSIDSLPvD.F.GM.......dVSLIYPHWAPRTHP
+#=GR Transcript_1658|m.5315/283-486     PP ......***********868..9.9.***9998...667**********955.4.44.......599*********997
+Transcript_4674|m.10039/302-505            ......SYIRDKLVDSLDgI..T.Q.TDVITVP...HraPLGFGSIDSLPvD.F.GM.......dVSLIYPHWAPRTHP
+#=GR Transcript_4674|m.10039/302-505    PP ......***********868..9.9.***9998...667**********955.4.44.......599*********997
+Transcript_4146|m.15161/305-508            ......SYIRDKLVDSLDgI..T.Q.TDVITVP...HraPLGFGSIDSLPvD.F.GM.......dVSLIYPHWAPRTHP
+#=GR Transcript_4146|m.15161/305-508    PP ......***********868..9.9.***9998...667**********955.4.44.......599*********997
+Transcript_16969|m.53900/280-484           ......DDVRGILCSQML.M..Q.R.DDVYLCQ...G..HLDMGEFFSLK.P.N.DNslievdteAPFEYDQWNPLTH-
+#=GR Transcript_16969|m.53900/280-484   PP ......************.*..*.*.*******...*..**********5.3.3.44567776666677777777766.
+Transcript_16971|m.53909/280-484           ......DDVRGILCSQML.M..Q.R.DDVYLCQ...G..HLDMGEFFSLK.P.N.DNslievdteAPFEYDQWNPLTH-
+#=GR Transcript_16971|m.53909/280-484   PP ......************.*..*.*.*******...*..**********5.3.3.44567776666677777777766.
+Transcript_4761|m.18233/254-455            ......EYIRDKLIDSLDgI..T.L.TDVITVP...HraPLGFGTIDSLPvN.F.GM.......dIEMLYPPWSPRTHP
+#=GR Transcript_4761|m.18233/254-455    PP ......***********867..8.8.9999998...667**********955.4.55.......59**********997
+Transcript_22398|m.69334/230-425           ......QAIIDTLVEECN.L..L.P.RDVYTTH...G..PLAMGDIDGVDvD.F.GM.......dESLTFPQWTSL---
+#=GR Transcript_22398|m.69334/230-425   PP ......************.*..*.*.*******...*..*******999534.3.33.......699****99975...
+Transcript_12636|m.26661/248-452           ......EELVMTLTTKLN.L..T.A.SDVYYMR...G..PLGVGDLFSLPvE.F.GM.......dSHLMYKHWAPLTH-
+#=GR Transcript_12636|m.26661/248-452   PP ......************.*..*.*.*******...*..**********955.4.55.......6**********986.
+Transcript_17988|m.61289/358-578           ......PTVVSRLAAHLG.L..D.A.KDVYPNE...G..VLGIGDFDGLKvD.F.GM.......dDTLEYPHWAPLTHP
+#=GR Transcript_17988|m.61289/358-578   PP ......************.*..*.*.*******...*..**********745.4.44.......6***********997
+Transcript_22976|m.38715/144-335           ......EKLMAVIMDELG.V..S.D.AEVIELD...G..MIGMSDLSELV.T.D.AR........SDLLWPSFTPRVP-
+#=GR Transcript_22976|m.38715/144-335   PP ......************.*..*.*.*******...*..**********9.8.8.99........**********987.
+Transcript_22977|m.38735/144-335           ......EKLMAVIMDELG.V..S.D.AEVIELD...G..MIGMSDLSELV.T.D.AR........SDLLWPSFTPRVP-
+#=GR Transcript_22977|m.38735/144-335   PP ......************.*..*.*.*******...*..**********9.8.8.99........**********987.
+Transcript_12666|m.28757/188-380           ......TFIRRHLMRELS.L..K.D.TDIFEMD...V.pVLDLSSIMSLP.-.-.--........--------------
+#=GR Transcript_12666|m.28757/188-380   PP ......************.*..*.*.*******...*.99*******995.............................
+Transcript_2138|m.5256/297-489             ......TFIRRHLMRELS.L..K.D.TDIFEMD...V.pVLDLSSIMSLP.-.-.--........--------------
+#=GR Transcript_2138|m.5256/297-489     PP ......************.*..*.*.*******...*.99*******995.............................
+Transcript_810|m.2091/254-446              ......TFIRRHLMRELS.L..K.D.TDIFEMD...V.pVLDLSSIMSLP.-.-.--........--------------
+#=GR Transcript_810|m.2091/254-446      PP ......************.*..*.*.*******...*.99*******995.............................
+Transcript_2582|m.7961/266-467             ......EHVKDRLMKSLE.L..T.S.LDVTSVP...HaaPLGFGVLDSINvRfE.MD........DALVFDHWSPRTHP
+#=GR Transcript_2582|m.7961/266-467     PP ......************.*..*.*.****998...668*********985555.66........***********997
+Transcript_31260|m.37805/60-261            ......PMLTRRLQQELG.L..V.D.SDVYSTR...G..YLALGELDSINpKlK.MN........NTFEFDHWAPMTH-
+#=GR Transcript_31260|m.37805/60-261    PP ......************.*..*.*.*******...*..**********97766.77........*********9986.
+Transcript_43731|m.113196/61-256           ......TDLVSLICSELQ.L..NlE.EEVYLIP...G..MLALADLQSLP.InT.NMl......dS-------------
+#=GR Transcript_43731|m.113196/61-256   PP ......************.*..637.99*****...*..********997.424.444......45.............
+Transcript_43732|m.113201/61-256           ......TDLVSLICSELQ.L..NlE.EEVYLIP...G..MLALADLQSLP.InT.NMl......dS-------------
+#=GR Transcript_43732|m.113201/61-256   PP ......************.*..637.99*****...*..********997.424.444......45.............
+Transcript_40816|m.73349/186-394           ......SDLVSLICSELQ.L..NlE.EEVYRIP...G..MLALADLQSLP.V.E.TNw.....ldPSLTYVPAKTRPHP
+#=GR Transcript_40816|m.73349/186-394   PP ......************.*..637.9******...*..**********8.5.4.445.....7899999999988876
+Transcript_2583|m.7965/266-467             ......EHVKDRLMKSLE.L..T.S.LDVTSVP...HaaPLGFGVLDSINvRfE.MD........DALVFDHWSPRTHP
+#=GR Transcript_2583|m.7965/266-467     PP ......************.*..*.*.****998...668*********985555.66........***********997
+Transcript_16188|m.39468/276-486           ......AHVVKLLVDELD.GlqS.E.NDVYYSP...RsaPLDLGVIDSLP.ItF.GM.......dNQLLYDHWAPLTHP
+#=GR Transcript_16188|m.39468/276-486   PP ......***********9.5458.8.9999887...558**********9.545.55.......6***********997
+Transcript_45168|m.113081/137-332          ......TDLVSLICSELQ.L..NlE.EEVYLIP...G..MLALADLQSLP.InT.NMl......dS-------------
+#=GR Transcript_45168|m.113081/137-332  PP ......************.*..637.99*****...*..********997.424.434......44.............
+Transcript_25735|m.66278/168-363           ......TDLVSLICSELQ.L..NlE.EEVYLIP...G..MLALADLQSLP.InT.NMl......dS-------------
+#=GR Transcript_25735|m.66278/168-363   PP ......************.*..637.99*****...*..********997.424.434......44.............
+Transcript_33811|m.85194/172-367           ......TDLVSLICSELQ.L..NlE.EEVYLIP...G..MLALADLQSLP.InT.NMl......dS-------------
+#=GR Transcript_33811|m.85194/172-367   PP ......************.*..637.99*****...*..********997.424.434......44.............
+Transcript_7980|m.25125/302-503            ......EHVKDRLMKSLE.L..R.S.FDVTSVP...HaaPLGFGVLDSIDvSfE.MD........DALVFDHWSPRTHP
+#=GR Transcript_7980|m.25125/302-503    PP ......************.*..*.*.***9998...668*******99975655.66........***********997
+Transcript_8329|m.27374/301-502            ......EHVKDRLMKSLE.L..R.S.FDVTSVP...HaaPLGFGVLDSIDvSfE.MD........DALVFDYWSPRTHP
+#=GR Transcript_8329|m.27374/301-502    PP ......************.*..*.*.***9998...668*******99975655.66........9**********997
+Transcript_8558|m.29379/161-373            ......ADLVDLLTEELE.L..N.AtRDVYHVE...S..LLDLSDLRTLApEaE.-As......aNGLRFPRHQPV---
+#=GR Transcript_8558|m.29379/161-373    PP ......************.*..7.659******...*..**********96543..34......699****99997...
+Transcript_13167|m.48012/297-512           ......DHVVKSLVYKME.L..A.E.DDVYHIR...G..LIGLNQLFKLPvNcIhNH........RDFEWPKFK-----
+#=GR Transcript_13167|m.48012/297-512   PP ......************.*..*.*.*******...*..**********86554244........777777776.....
+Transcript_7624|m.27670/276-488            ......ADLVDLLTEELE.L..N.AtRDVYHVE...S..LLDLSDLRTLApEaE.-As......aNGLRFPRHQPV---
+#=GR Transcript_7624|m.27670/276-488    PP ......************.*..7.659******...*..**********96543..34......699****99997...
+Transcript_21315|m.64131/334-549           ......GALALLLTEELK.L..D.TaQNVLHVH...G..LLDMAHLSSLPvN.K.RKl......eKGMVWPAWKPREHP
+#=GR Transcript_21315|m.64131/334-549   PP ......************.*..7.6599*****...*..**********844.3.335......688889999999886
+Transcript_5394|m.16324/278-487            ......NDLVNLLTNELE.L.nA.E.RDVYHIE...S..LLDLSDLKSLK.IpA.DSh......lSKLKYPRYAPVP--
+#=GR Transcript_5394|m.16324/278-487    PP ......************.*.55.6.9******...*..*********97.544.446......8*********986..
+Transcript_16970|m.53905/280-442           ......DDVRGILCSQML.M..Q.R.GK-----...-..-----------.-.-.--........--------------
+#=GR Transcript_16970|m.53905/280-442   PP ......*********998.7..7.6.55...................................................
+Transcript_22749|m.63969/154-361           ......DDLVDLLVEELE.L..D.AhTDVYHTD...G..LLDLAALRALK.-.-.PSva....lpDGMEYPPFSPMMP-
+#=GR Transcript_22749|m.63969/154-361   PP ......************.*..8.759******...*..**********6.....3334....5799********987.
+Transcript_7526|m.21316/291-491            ......ENLARLICGELQ.L.cY.E.EEVFHLP...G..MLSLADLISIPvDkS.KM.......dPSMLFSPGK-----
+#=GR Transcript_7526|m.21316/291-491    PP ......************.9.88.9.*******...*..**********85433.33.......5666666655.....
+Transcript_7527|m.21325/291-491            ......ENLARLICGELQ.L.cY.E.EEVFHLP...G..MLSLADLISIPvDkS.KM.......dPSMLFSPGK-----
+#=GR Transcript_7527|m.21325/291-491    PP ......************.9.88.9.*******...*..**********85433.33.......5666666655.....
+Transcript_7528|m.21334/291-491            ......ENLARLICGELQ.L.cY.E.EEVFHLP...G..MLSLADLISIPvDkS.KM.......dPSMLFSPGK-----
+#=GR Transcript_7528|m.21334/291-491    PP ......************.9.88.9.*******...*..**********85433.33.......5666666655.....
+Transcript_21754|m.33675/1-157             ......AELSAFLLEQFG.L..P.G.AALYRVN...G..PV---------.-.-.--........--------------
+#=GR Transcript_21754|m.33675/1-157     PP ......************.*..*.*.*******...*..95......................................
+Transcript_19462|m.37281/1-179             ......EDLVATLVREMS.L..T.M.NDVYFMK...G..PLGIGDLFDLPvDfG.LD........TSLVFPHWAPMTH-
+#=GR Transcript_19462|m.37281/1-179     PP ......************.*..*.*.*******...*..**********85544.44........9*********986.
+Transcript_62957|m.154869/170-311          ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_62957|m.154869/170-311  PP ...............................................................................
+Transcript_6995|m.17183/164-364            ......KQIQNMIAKELF.L..D.S.ADVYTIP...G.rYLGLAEFFSIS.F.S.NA........PHLKLPVPEPKIHP
+#=GR Transcript_6995|m.17183/164-364    PP ......************.*..*.*.*******...*.***********6.4.8.99........*****999998876
+Transcript_4774|m.8464/9-147               ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_4774|m.8464/9-147       PP ...............................................................................
+Transcript_16688|m.68355/217-416           ......AEFLDLLVKELI.L..D.S.TDVFVFP...C.nLVGLADFMSIS.FsA.PF........AEHRDAPHTPKVP-
+#=GR Transcript_16688|m.68355/217-416   PP ......************.*..*.*.*******...9.9**********9.549.**........**********987.
+Transcript_16689|m.68361/217-416           ......AEFLDLLVKELI.L..D.S.TDVFVFP...C.nLVGLADFMSIS.FsA.PF........AEHRDAPHTPKVP-
+#=GR Transcript_16689|m.68361/217-416   PP ......************.*..*.*.*******...9.9**********9.549.**........**********987.
+Transcript_9142|m.16444/9-207              ......ADMRVLIQKELY.L..D.E.IDVYIIP...S.nLLGLADFFSVS.F.A.PL........PDLQYRPHEPSVP-
+#=GR Transcript_9142|m.16444/9-207      PP ......************.*..*.*.*******...9.9**********6.4.8.99........**********987.
+Transcript_8298|m.24923/183-383            ......EDFRLLLVKELI.L..D.S.TDVFVLP...C.hLVGLADFMSIS.FtA.PL........PEHRDPVHVPQVP-
+#=GR Transcript_8298|m.24923/183-383    PP ......************.*..*.*.*******...9.9**********9.659.99........**********997.
+Transcript_15129|m.38471/23-203            ......QQLVDLL-----.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_15129|m.38471/23-203    PP ......****998..................................................................
+Transcript_18322|m.38003/131-285           ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_18322|m.38003/131-285   PP ...............................................................................
+Transcript_9062|m.15101/3-146              ......ASLKKLIMEELE.V..T.G.DEVVDID...G..MIGLADLKEMV.L.D.DR........PDLLWPSFTPRVP-
+#=GR Transcript_9062|m.15101/3-146      PP ......************.*..*.*.*******...*..**********9.7.8.**........**********987.
+Transcript_9061|m.15097/3-146              ......ASLKKLIMEELE.V..T.G.DEVVDID...G..MIGLADLKEMV.L.D.DR........PDLLWPSFTPRVP-
+#=GR Transcript_9061|m.15097/3-146      PP ......************.*..*.*.*******...*..**********9.7.8.**........**********987.
+Transcript_25719|m.33467/176-299           ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_25719|m.33467/176-299   PP ...............................................................................
+Transcript_25506|m.47815/1-144             ......AELSAFLLEQFG.L..P.G.AALYRVN...G..PVNLVRLNELI.DqT.DA........PGLRFAPFEPAWP-
+#=GR Transcript_25506|m.47815/1-144     PP ......************.*..*.*.*******...*..***********.879.99........**********876.
+Transcript_45914|m.75906/1-143             ......AELSAFLLEQFG.L..P.G.AALYRVN...G..PVNLVRLNELI.DqT.DA........PGLRFAPFEPAWP-
+#=GR Transcript_45914|m.75906/1-143     PP ......************.*..*.*.*******...*..***********.879.99........**********876.
+Transcript_15137|m.49652/304-525           edkvstSRIVQSLTEKLE.LadE.R.LDVYRVG...RdrLVGLSELDAL-.-.-.--........--------------
+#=GR Transcript_15137|m.49652/304-525   PP 4444458899********.*434.4.6999998...6668888888766..............................
+Transcript_15135|m.49641/304-525           edkvstSRIVQSLTEKLE.LadE.R.LDVYRVG...RdrLVGLSELDAL-.-.-.--........--------------
+#=GR Transcript_15135|m.49641/304-525   PP 4444458899********.*434.4.6999998...6668888888766..............................
+Transcript_27648|m.67142/70-267            ......DDVKNRIIRELM.L..D.P.ADVFTIP...C.aFLGLADFMGLA.F.A.PV........PELQYPPHVQVVPP
+#=GR Transcript_27648|m.67142/70-267    PP ......************.*..*.*.*******...9.9**********7.6.8.9*........********999876
+Transcript_16691|m.34290/179-378           ......DHMRKQLLKELS.I..T.T.NEVFVIPddpG..LIGLAEFFSLA.F.V.PV........PDLRLGDHVPRPN-
+#=GR Transcript_16691|m.34290/179-378   PP ......************.*..*.*.*****975557..9*********7.6.9.99........****999999876.
+Transcript_37974|m.90206/94-218            ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_37974|m.90206/94-218    PP ...............................................................................
+Transcript_28271|m.36471/3-123             ......ASLKKLIMEELE.V..T.G.DEVVDID...G..MIGLADLKEMV.L.D.DR........PDLLWPSFTPRVP-
+#=GR Transcript_28271|m.36471/3-123     PP ......************.*..*.*.*******...*..**********9.7.8.**........**********987.
+Transcript_567|m.1019/2-124                ......AELSAFLLEQFG.L..P.G.AALYRVN...G..PVNLVRLNELI.DqT.DA........PGLRFAPFE-----
+#=GR Transcript_567|m.1019/2-124        PP ......************.*..*.*.*******...*..***********.879.99........*****9985.....
+Transcript_3503|m.10619/9-137              ......ADLVDLLTEELE.L..N.AtRDVYHVE...S..LLDLSDLRTLApEaE.-As......aNALRFPRHQPV---
+#=GR Transcript_3503|m.10619/9-137      PP ......************.*..7.659******...*..**********96543..34......6********997...
+Transcript_15132|m.38478/23-172            ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_15132|m.38478/23-172    PP ...............................................................................
+Transcript_12857|m.32462/1-113             ......SQLVDLLTEELE.L.nR.E.RDVYQID...S..LLDLQALKEFNvSaG.PK.......lSKYQFPKHVPV---
+#=GR Transcript_12857|m.32462/1-113     PP ......************.*.55.6.9******...*..*********974433.33.......577777777776...
+Transcript_7981|m.25132/1-116              ......EHVKDRLMKSLE.L..R.S.FDVTSVP...HaaPLGFGVLDSIDvSfE.MD........DALVFDHWSPRTHP
+#=GR Transcript_7981|m.25132/1-116      PP ......************.*..*.*.***9998...668*******99975655.66........***********997
+Transcript_15216|m.40983/160-271           ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_15216|m.40983/160-271   PP ...............................................................................
+Transcript_39406|m.64322/67-155            ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_39406|m.64322/67-155    PP ...............................................................................
+Transcript_39407|m.64325/4-102             ......AELSAFLLEQFG.L..P.G.AALYRVN...G..PVNLVRLNELI.DqT.DA........PGLRFAPFEPAWP-
+#=GR Transcript_39407|m.64325/4-102     PP ......************.*..*.*.*******...*..***********.879.99........**********876.
+Transcript_3138|m.5274/1-80                ......YELVDLLTEELE.L..N.A.E------...-..-----------.-.-.--........--------------
+#=GR Transcript_3138|m.5274/1-80        PP ......************.9..7.6.4....................................................
+Transcript_30555|m.65431/1-97              ......NDLVNLLTNELE.L.nA.E.RDVYHIE...S..LLDLSDLKSLK.IpA.DSh......lSKLKYPRYAPVP--
+#=GR Transcript_30555|m.65431/1-97      PP ......************.*.55.6.9******...*..*********97.544.446......8*********986..
+Transcript_9889|m.22841/4-92               ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_9889|m.22841/4-92       PP ...............................................................................
+Transcript_3140|m.5277/133-226             ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_3140|m.5277/133-226     PP ...............................................................................
+Transcript_3502|m.10614/205-276            ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_3502|m.10614/205-276    PP ...............................................................................
+Transcript_25720|m.33471/2-83              ......AELSAFLLEQFG.L..P.G.AALYRVN...G..PVNLVRLNELI.DqT.DA........PGLRFAPFEPAWP-
+#=GR Transcript_25720|m.33471/2-83      PP ......************.*..*.*.*******...*..***********.879.99........**********876.
+Transcript_7981|m.25134/302-366            ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_7981|m.25134/302-366    PP ...............................................................................
+Transcript_24203|m.58794/2-75              ......AELSAFLLEQFG.L..P.G.AALYRVN...G..PVNLVRLNELI.DqT.DA........PGLRFAPFEPAWP-
+#=GR Transcript_24203|m.58794/2-75      PP ......************.*..*.*.*******...*..***********.879.99........**********876.
+Transcript_15214|m.40976/13-97             ......KQIQNMIAKELF.L..D.S.ADVYTIP...G.rYLGLAEFFSIS.F.S.NA........PHLKLPVPEPKIHP
+#=GR Transcript_15214|m.40976/13-97     PP ......************.*..*.*.*******...*.***********6.4.8.99........*****999998876
+Transcript_9064|m.15106/142-190            ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_9064|m.15106/142-190    PP ...............................................................................
+Transcript_24450|m.33705/1-78              ......PDLVILLRNRLK.L..T.S.ADVYPIR...G..PLDIGAMLELPvE.F.GM.......dSSLTFSHWAPMTH-
+#=GR Transcript_24450|m.33705/1-78      PP ......************.*..*.*.*******...*..**********955.4.55.......599*******9986.
+Transcript_26317|m.45395/156-202           ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_26317|m.45395/156-202   PP ...............................................................................
+Transcript_8399|m.22113/17-84              ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_8399|m.22113/17-84      PP ...............................................................................
+Transcript_9886|m.22831/131-179            ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_9886|m.22831/131-179    PP ...............................................................................
+Transcript_18324|m.38009/131-175           ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_18324|m.38009/131-175   PP ...............................................................................
+Transcript_30574|m.65476/115-158           ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_30574|m.65476/115-158   PP ...............................................................................
+Transcript_18323|m.38006/3-66              ......SQLVDLLTEELE.L.nR.E.RDVYQID...S..LLDLQALKEFNvSaG.PK.......lSKYQFPKHVPV---
+#=GR Transcript_18323|m.38006/3-66      PP ......************.*.55.6.9******...*..*********974433.33.......577777777776...
+Transcript_17987|m.61285/358-401           ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_17987|m.61285/358-401   PP ...............................................................................
+Transcript_19461|m.37278/231-261           ......------------.-..-.-.-------...-..-----------.-.-.--........--------------
+#=GR Transcript_19461|m.37278/231-261   PP ...............................................................................
+#=GC PP_cons                               ......************.*..9.9.9******...9..**********8.5.6.66........99999999999877
+#=GC RF                                    ......xxxxxxxxxxxx.x..x.x.xxxxxxx...x..xxxxxxxxxxx.x.x.xx........xxxxxxxxxxxxxx
+//
