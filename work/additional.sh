@@ -16,24 +16,20 @@ tar -xvf MERC_MMETSP_Uniclust50_profiles.tar.gz
 #Build hmmprofile from trimmed_seq.fa OR use PP_kinase2.hmm
 hmmbuild PP_kinase_all.hmm trimmed_seq.fa
 #Run hmmsearch of file against hmm profile
-nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsMMETSP.sto PP_kinase_all.hmm MMETSP.pep &
-nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsTara.sto PP_kinase_all.hmm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas &
+
 
 nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsMiddleMMETSP.sto PP_kinase_middle.hmm MMETSP.pep &
 nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsTaraMiddle.sto PP_kinase_middle.hmm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas &
 
-nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsEukMMETSP.sto PP_kinase_euk.hmm MMETSP.pep &
-nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsTaraEuk.sto PP_kinase_euk.hmm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas &
+
 #Move results back to home directory in order to use esl tools (not available on isca)
 
-esl-reformat fasta myhitsMMETSP.sto > hitsMMETSP.fa
-esl-reformat fasta myhitsTara.sto > hitsTara.fa
+
 
 esl-reformat fasta myhitsMiddleMMETSP.sto > hitsMiddleMMETSP.fa
 esl-reformat fasta myhitsTaraMiddle.sto > hitsTaraMiddle.fa
 
-esl-reformat fasta myhitsEukMMETSP.sto > hitsEukMMETSP.fa
-esl-reformat fasta myhitsTaraEuk.sto > hitsTaraEuk.fa
+
 
 #fix MMETSP files
 python fixMMETSP.py
