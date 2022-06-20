@@ -96,13 +96,13 @@ cat hitsMMETSPRefined_600.fa hitsTaraRefined_600.fa  > hitsRefined.fa
 #https://github.com/Pbdas/epa-ng
 
 #DO THESE ONLINE
-mafft --add hitsMMETSPALL_600.fa pruned_tree.fast > aligned_MMETSPAll.fa
-mafft --add hitsTaraALL_600.fa pruned_tree.fast > aligned_TaraAll.fa
-mafft --add hitsMMETSPRefined_600.fa pruned_tree.fast > aligned_MMETSPRefined.fa
-mafft --add hitsTaraRefined_600.fa pruned_tree.fast > aligned_TaraRefined.fa
+mafft --add hitsMMETSPALL_600.fa pruned_tree.fast > aligned_MMETSPAll.fasta
+mafft --add hitsTaraALL_600.fa pruned_tree.fast > aligned_TaraAll.fasta
+mafft --add hitsMMETSPRefined_600.fa pruned_tree.fast > aligned_MMETSPRefined.fasta
+mafft --add hitsTaraRefined_600.fa pruned_tree.fast > aligned_TaraRefined.fasta
 
 #run Raxml EPA-NG(new one)
-epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_MMETSPAll.fa --outdir MMETSPAll
-epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_TaraAll.fa --outdir TaraAll
-epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_MMETSPRefined.fa --outdir MMETSPRefined
-epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_TaraRefined.fa --outdir TaraRefined
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_MMETSPAll.fasta --outdir MMETSPAll
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_TaraAll.fasta --outdir TaraAll
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_MMETSPRefined.fasta --outdir MMETSPRefined
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_TaraRefined.fasta --outdir TaraRefined

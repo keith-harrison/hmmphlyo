@@ -1,0 +1,13 @@
+INFO Selected: Output dir: MMETSPAll/
+INFO Selected: Query file: aligned_MMETSPAll.fa
+INFO Selected: Tree file: iqtree.nwk
+INFO Selected: Reference MSA: pruned_tree.fasta
+INFO Selected: Automatic switching of use of per rate scalers
+INFO Selected: Preserving the root of the input tree
+INFO Selected: Specified model: GTR+G
+INFO     ______ ____   ___           _   __ ______
+        / ____// __ \ /   |         / | / // ____/
+       / __/  / /_/ // /| | ______ /  |/ // / __  
+      / /___ / ____// ___ |/_____// /|  // /_/ /  
+     /_____//_/    /_/  |_|      /_/ |_/ \____/ (v0.3.8)
+ERR  The reference and query alignment files do not seem to have the same alignment width! (1882 vs. 1956). Are the query sequences not aligned?
