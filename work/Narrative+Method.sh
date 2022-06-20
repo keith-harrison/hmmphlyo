@@ -17,14 +17,16 @@ find . -maxdepth 1 -name "fixed*.fa" -exec seqkit rmdup -n {} -o concatenated_re
 #4. Run phylogeny (Mafft,Trimal,FastTree)
 mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
 trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
-#here
-FastTree -quiet -wag trimmed_seq.fa > treefile 
+FastTree -quiet trimmed_seq.fa > treefile
+
 
 #5. Prune FastTree (Python,MAFFT,Trimal)
-#DO ON ITOL get prunedtree.nwk and concatenated_read_seq
+#Prune on ITOL export pruned tree as newick format with NO internal node IDs to get prunedtree.nwk and used concatenated_ready_seq.fa 
+#get names
 python -c "exec(\"import sys\nimport sys\nfrom ete3 import Tree\nt = Tree('prunedtree.nwk',format=1)\nnames=t.get_leaf_names()\nwith open('listfile.txt', mode='w') as file:\n  for listitem in names:\n    file.write(listitem+str('\\\n'))\")"
-#make concatenated_ready_seq.fa single line fasta file
+#make concatenated_ready_seq.fa single files fasta
 python single_line.py
+#return matching pruned sequences from "master" sequence file
 cat listfile.txt | grep -A 1 --no-group-separator -f - fixedconcatenated_ready_seq.fa > newick_seq_line.fa
 #Now that we have all the sequences in our pruned tree run a regular MAFFT and Trimal followed by IQTREE
 mafft --auto newick_seq_line.fa > aligned_seq.fa
@@ -35,14 +37,13 @@ sed -i 's/(/_/' aligned_seq.fa
 sed -i 's/)/_/' aligned_seq.fa
 sed -i 's/_\{2,\}/_/g' aligned_seq.fa
 trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
-mv trimmed_seq.fa pruned_tree.fa
+mv trimmed_seq.fa pruned_tree.fasta
 
 #6. Run Phylogeny on Pruned FastTree (IQTree)
-iqtree -nt AUTO  -s pruned_tree.fa
+iqtree -nt AUTO  -s pruned_tree.fasta
 
 
-#Looking at MMETSP and Tara Datasets
-
+#7. Do on a machine with lots of storage (e.g. ISCA)
 #Download MMETSP
 wget https://zenodo.org/record/3247846/files/mmetsp_dib_trinity2.2.0_pep_zenodo.tar.gz
 tar -xvf mmetsp_dib_trinity2.2.0_pep_zenodo.tar.gz
@@ -50,9 +51,11 @@ tar -xvf mmetsp_dib_trinity2.2.0_pep_zenodo.tar.gz
 wget wwwuser.gwdg.de/~compbiol/metaeuk/2019_11/MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas.gz
 gunzip MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas.gz
 
-#7. Build HMM Profiles from full 6k sequences OR from the 18 Eukaryotes
-#Make hmm profile from alignment so generate alignment of eukaryotic sequences
-hmmbuild PP_kinase_all.hmm trimmed_seq.fa
+#Build hmmprofiles for the 6000 sequences and the 43 in the refined tree
+#grab trimmed_seq_all.fa from folder 4
+hmmbuild PP_kinase_all.hmm trimmed_seq_all.fa 
+#grab pruned_tre.fasta from folder 5
+hmmbuild PP_kinase_refined.hmm trimmed_seq_refined.fa
 
 #10. HMMSearch Tara and MMETSP
 nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsMMETSP.sto PP_kinase_all.hmm MMETSP.pep &
