@@ -101,8 +101,8 @@ mafft --add hitsTaraALL_600.fa pruned_tree.fast > aligned_TaraAll.fasta
 mafft --add hitsMMETSPRefined_600.fa pruned_tree.fast > aligned_MMETSPRefined.fasta
 mafft --add hitsTaraRefined_600.fa pruned_tree.fast > aligned_TaraRefined.fasta
 
-#run Raxml EPA-NG(new one)
-epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_MMETSPAll.fasta --outdir MMETSPAll
-epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_TaraAll.fasta --outdir TaraAll
-epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_MMETSPRefined.fasta --outdir MMETSPRefined
-epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_TaraRefined.fasta --outdir TaraRefined
+#run Raxml EPA-NG(new one) #Look at IQTree file to decide on model parameter
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_MMETSPAll.fasta --outdir MMETSPAll --model LG+R6
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_TaraAll.fasta --outdir TaraAll --model LG+R6
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_MMETSPRefined.fasta --outdir MMETSPRefined --model LG+R6
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_TaraRefined.fasta --outdir TaraRefined --model LG+R6
