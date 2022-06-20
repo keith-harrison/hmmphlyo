@@ -59,7 +59,7 @@ hmmbuild PP_kinase_all.hmm trimmed_seq_all.fa
 #grab pruned_tre.fasta from folder 5
 hmmbuild PP_kinase_refined.hmm trimmed_seq_refined.fa
 
-#8. HMMSearch Tara and MMETSP
+#7.5 HMMSearch Tara and MMETSP
 nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A hitsMMETSPAll.sto PP_kinase_all.hmm MMETSP.pep &
 nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A hitsTaraAll.sto PP_kinase_all.hmm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas &
 
@@ -89,6 +89,5 @@ seqkit seq -m 600 hitsMMETSPRefined.fa >  hitsMMETSPRefined_600.fa
 seqkit seq -m 600 hitsTaraRefined.fa > hitsTaraRefined_600.fa
 cat hitsMMETSPAll_600.fa hitsTaraAll_600.fa  > hitsAll.fa
 cat hitsMMETSPRefined_600.fa hitsTaraRefined_600.fa  > hitsRefined.fa
-#9. Use Raxml EPA or PPLACER to place these significant hits on the IQ tree.
-#https://matsen.fhcrc.org/pplacer/manual.html
-#https://cme.h-its.org/exelixis/resource/download/NewManual.pdf
+#8. Use Raxml EPA or PPLACER to place these significant hits on the IQ tree.
+#https://github.com/Pbdas/epa-ng
