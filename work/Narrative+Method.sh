@@ -17,6 +17,7 @@ find . -maxdepth 1 -name "fixed*.fa" -exec seqkit rmdup -n {} -o concatenated_re
 #4. Run phylogeny (Mafft,Trimal,FastTree)
 mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
 trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
+#here
 FastTree -quiet trimmed_seq.fa > treefile 
 
 #5. Prune FastTree (Python,MAFFT,Trimal)
