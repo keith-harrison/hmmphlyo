@@ -2,7 +2,7 @@
 #Make multiple trees comparing domains, sameish results PPK1-4
 #PFAM website
 #2. Use HMM Profiles to seach EBI's Reference Proteomes from Uniprot
-#DO on EBI's website
+#DO on EBI's website - download results as regular fasta
 #3. Format results 
 python GOfull.py
 python Fixfull.py
@@ -18,7 +18,7 @@ find . -maxdepth 1 -name "fixed*.fa" -exec seqkit rmdup -n {} -o concatenated_re
 mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
 trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
 #here
-FastTree -quiet trimmed_seq.fa > treefile 
+FastTree -quiet -wag trimmed_seq.fa > treefile 
 
 #5. Prune FastTree (Python,MAFFT,Trimal)
 #DO ON ITOL get prunedtree.nwk and concatenated_read_seq
