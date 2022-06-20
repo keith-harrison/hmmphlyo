@@ -89,5 +89,28 @@ seqkit seq -m 600 hitsMMETSPRefined.fa >  hitsMMETSPRefined_600.fa
 seqkit seq -m 600 hitsTaraRefined.fa > hitsTaraRefined_600.fa
 cat hitsMMETSPAll_600.fa hitsTaraAll_600.fa  > hitsAll.fa
 cat hitsMMETSPRefined_600.fa hitsTaraRefined_600.fa  > hitsRefined.fa
+
+#Have these hits 
+#8. Align hits with respective query database
 #8. Use Raxml EPA or PPLACER to place these significant hits on the IQ tree.
 #https://github.com/Pbdas/epa-ng
+#Below conversion can be done to hasten some processes - SHOULD BE ALIGNED
+#epa-ng --bfast hitsAll.fa --outdir hitsAll
+#epa-ng --bfast hitsRefined.fa --outdir hitsRefined
+
+
+mafft --auto hitsMMETSPAll_600.fa > hitsMMETSPAll_600.aln
+mafft --auto hitsTaraAll_600.fa > hitsTaraAll_600.aln
+trimal -fasta -in hitsMMETSPAll_600.aln -out hitsMMETSPAll_600_trimmed.aln
+trimal -fasta -in hitsTaraAll_600.aln -out hitsTaraAll_600_trimmed.aln
+
+mafft --auto hitsMMETSPRefined_600.fa > hitsMMETSPRefined_600.aln
+mafft --auto hitsTaraRefined_600.fa > hitsTaraRefined_600.aln
+trimal -fasta -in hitsMMETSPRefined_600.aln -out hitsMMETSPRefined_600_trimmed.aln
+trimal -fasta -in hitsTaraRefined_600.aln -out hitsTaraRefined_600_trimmed.aln
+
+#run Raxml EPA-NG(new one)
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query hitsMMETSPAll_600_trimmed.aln --outdir MMETSPAll
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query hitsTaraAll_600_trimmed.aln --outdir TaraAll
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query hitsMMETSPRefined_600_trimmed.aln --outdir MMETSPRefined
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query hitsTaraRefined_600_trimmed.aln --outdir TaraRefined
