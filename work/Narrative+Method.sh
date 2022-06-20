@@ -47,35 +47,48 @@ iqtree -nt AUTO  -s pruned_tree.fasta
 #Download MMETSP
 wget https://zenodo.org/record/3247846/files/mmetsp_dib_trinity2.2.0_pep_zenodo.tar.gz
 tar -xvf mmetsp_dib_trinity2.2.0_pep_zenodo.tar.gz
+cat MMETSP* > MMETSP.pep
+rm mmetsp_dib_trinity2.2.0_pep_zenodo.tar.gz
 #Download TARA
 wget wwwuser.gwdg.de/~compbiol/metaeuk/2019_11/MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas.gz
 gunzip MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas.gz
-
+rm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas.gz
 #Build hmmprofiles for the 6000 sequences and the 43 in the refined tree
 #grab trimmed_seq_all.fa from folder 4
 hmmbuild PP_kinase_all.hmm trimmed_seq_all.fa 
 #grab pruned_tre.fasta from folder 5
 hmmbuild PP_kinase_refined.hmm trimmed_seq_refined.fa
 
-#10. HMMSearch Tara and MMETSP
-nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsMMETSP.sto PP_kinase_all.hmm MMETSP.pep &
-nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsTara.sto PP_kinase_all.hmm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas &
+#8. HMMSearch Tara and MMETSP
+nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A hitsMMETSPAll.sto PP_kinase_all.hmm MMETSP.pep &
+nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A hitsTaraAll.sto PP_kinase_all.hmm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas &
 
-nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsEukMMETSP.sto PP_kinase_euk.hmm MMETSP.pep &
-nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A myhitsTaraEuk.sto PP_kinase_euk.hmm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas &
+nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A hitsMMETSPRefined.sto PP_kinase_refined.hmm MMETSP.pep &
+nohup hmmsearch -E 1 --domE 1 --incE 0.01 --incdomE 0.03 -A hitsTaraRefined.sto PP_kinase_refined.hmm MetaEuk_preds_Tara_vs_euk_profiles_uniqs.fas &
 
-esl-reformat fasta myhitsMMETSP.sto > hitsMMETSP.fa
-esl-reformat fasta myhitsTara.sto > hitsTara.fa
+esl-reformat fasta hitsMMETSPAll.sto > hitsMMETSPAll.fa
+esl-reformat fasta hitsTaraAll.sto > hitsTaraAll.fa
 
-esl-reformat fasta myhitsEukMMETSP.sto > hitsEukMMETSP.fa
-esl-reformat fasta myhitsTaraEuk.sto > hitsTaraEuk.fa
+esl-reformat fasta hitsMMETSPRefined.sto > hitsMMETSPRefined.fa
+esl-reformat fasta hitsTaraRefined.sto > hitsTaraRefined.fa
 
-#fix MMETSP files
+
+#fix MMETSP hits 
 python fixMMETSP.py
-#fix Tara files
-sed -i 's/|[^|]*//2g' hitsTara.fa
-sed -i 's/|/_/g' hitsTara.fa
+#fix Tara hits
+sed -i 's/|[^|]*//2g' hitsTaraAll.fa
+sed -i 's/|/_/g' hitsTaraAll.fa
 
-#11. Remove sequences <600 peptides
-seqkit seq -m 300 your_fasta.fa
-#12. Use Raxml EPA or PPLACER to place these significant hits on the IQ tree.
+sed -i 's/|[^|]*//2g' hitsTaraRefined.fa
+sed -i 's/|/_/g' hitsTaraRefined.fa
+
+#Remove sequences < 600 peptides #back on home machine
+seqkit seq -m 600 hitsMMETSPAll.fa > hitsMMETSPAll_600.fa
+seqkit seq -m 600 hitsTaraAll.fa > hitsTaraAll_600.fa
+seqkit seq -m 600 hitsMMETSPRefined.fa >  hitsMMETSPRefined_600.fa
+seqkit seq -m 600 hitsTaraRefined.fa > hitsTaraRefined_600.fa
+cat hitsMMETSPAll_600.fa hitsTaraAll_600.fa  > hitsAll.fa
+cat hitsMMETSPRefined_600.fa hitsTaraRefined_600.fa  > hitsRefined.fa
+#9. Use Raxml EPA or PPLACER to place these significant hits on the IQ tree.
+#https://matsen.fhcrc.org/pplacer/manual.html
+#https://cme.h-its.org/exelixis/resource/download/NewManual.pdf

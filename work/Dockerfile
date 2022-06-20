@@ -23,9 +23,10 @@ RUN pip install --upgrade numpy
 RUN apt-get -y install autoconf
 
 RUN  wget http://eddylab.org/software/hmmer/hmmer.tar.gz && tar zxf hmmer.tar.gz && cd hmmer-3.3.2 && ./configure && make && make install && cd easel && make && make install
-
+RUN conda install -c bioconda epa-ng
 #RUN git clone https://github.com/EddyRivasLab/easel && cd easel && autoconf && ./configure && make && make install
 RUN pip install --upgrade ete3
 ENV PATH="${PATH}:/bin"
 ENV PATH="${PATH}:/usr/bin"
+
 #TrimAL
