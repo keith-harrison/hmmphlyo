@@ -91,11 +91,11 @@ cat hitsMMETSPAll_600.fa hitsTaraAll_600.fa  > hitsAll.fa
 cat hitsMMETSPRefined_600.fa hitsTaraRefined_600.fa  > hitsRefined.fa
 
 #Have these hits 
-#8. Align hits with respective query database
-#8. Use Raxml EPA or PPLACER to place these significant hits on the IQ tree.
+#8. Use Raxml EPA or PPLACER to place these significant hits on the IQ tree. / Actually use EPA-ng new tool from raxml, complete overhaul of raxml epa
 #https://github.com/Pbdas/epa-ng
 
 #DO THESE ONLINE
+#https://mafft.cbrc.jp/alignment/server/add_sequences.html
 mafft --add hitsMMETSPALL_600.fa pruned_tree.fast > aligned_MMETSPAll.fasta
 mafft --add hitsTaraALL_600.fa pruned_tree.fast > aligned_TaraAll.fasta
 mafft --add hitsMMETSPRefined_600.fa pruned_tree.fast > aligned_MMETSPRefined.fasta
@@ -106,3 +106,24 @@ epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_MMETSPAll.f
 epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_TaraAll.fasta --outdir TaraAll --model LG+R6
 epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_MMETSPRefined.fasta --outdir MMETSPRefined --model LG+R6
 epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_TaraRefined.fasta --outdir TaraRefined --model LG+R6
+#visualise trees in itol
+
+#9. Run similar process on the Matou and MGT Tara Data
+#Perform hmmsearch on geneatlas tara website to get results in faa format
+#https://tara-oceans.mio.osupytheas.fr/ocean-gene-atlas/
+
+#reformat results 
+sed -i 's/,/_/g' matou.faa
+sed -i 's/ /_/g' matou.faa
+sed -i 's/,/_/g' mgt.faa
+sed -i 's/ /_/g' mgt.faa
+seqkit seq -m 600 matou.faa > matou.faa
+seqkit seq -m 600 mgt.faa > mgt.faa
+#use online Mafft ADD to place these hits on the IQ tree
+mafft --add matou.faa pruned_tree.fast > aligned_matou.fasta #DO ONLINE THIS IS AN EXAMPLE CODE
+#https://mafft.cbrc.jp/alignment/server/add_sequences.html
+
+#run Raxml EPA-NG(new one) #Look at IQTree file to decide on model parameter
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_matou.fasta --outdir matou --model LG+R6
+epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_mgt.fasta --outdir mgt --model LG+R6
+
