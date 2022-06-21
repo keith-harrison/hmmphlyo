@@ -1,0 +1,293 @@
+IQ-TREE multicore version 2.0.3 for Linux 64-bit built Dec 20 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    e87c09c35c69 (AVX2, FMA3, 12 GB RAM)
+Command: iqtree -nt AUTO -s aligned_mgt.fasta -m LG+R6 -pre aligned_mgt
+Seed:    381533 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Jun 21 14:43:44 2022
+Kernel:  AVX+FMA - auto-detect threads (6 CPU cores detected)
+
+Reading alignment file aligned_mgt.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 110 sequences with 1882 columns, 1877 distinct patterns
+1641 parsimony-informative, 204 singleton sites, 37 constant sites
+                                                                             Gap/Ambiguity  Composition  p-value
+   1  Litorilinea_aerophila                                                         60.20%    failed      1.51%
+   2  Longibacter_salinarum                                                         62.38%    failed      1.58%
+   3  Aliifodinibius_halophilus                                                     61.32%    failed      0.05%
+   4  Balneolaceae_bacterium_YR4-1                                                  61.53%    failed      0.00%
+   5  Longimonas_halophila                                                          61.21%    failed      0.11%
+   6  Rhodohalobacter_barkolensis                                                   60.47%    failed      0.00%
+   7  Rubrivirga_sp._SAORIC476                                                      62.54%    failed      0.00%
+   8  Caldilinea_aerophila_strain_DSM_14535_/_JCM_11387_/_NBRC_104270_/_STL-6-O1_   62.54%    failed      0.71%
+   9  Rhodothermaceae_bacterium_RA                                                  59.83%    failed      0.22%
+  10  Rubricoccus_marinus                                                           62.43%    failed      0.12%
+  11  Salinibacter_sp._10B                                                          62.22%    failed      1.68%
+  12  Aliifodinibius_roseus                                                         57.55%    failed      0.60%
+  13  Rhodohalobacter_mucosus                                                       59.99%    failed      0.01%
+  14  Balneola_sp._EhC07                                                            60.36%    failed      0.00%
+  15  Rhodohalobacter_sp._SW132                                                     61.11%    failed      0.00%
+  16  bacterium_HR18                                                                61.26%    failed      0.00%
+  17  Gracilimonas_mengyeensis                                                      60.36%    failed      0.00%
+  18  Dictyostelium_purpureum                                                       49.42%    failed      0.00%
+  19  Tieghemostelium_lacteum                                                       44.16%    failed      0.00%
+  20  Candidatus_Cyclonatronum_proteinivorum                                        59.99%    failed      1.01%
+  21  Cavenderia_fasciculata_strain_SH3_                                            36.66%    failed      0.00%
+  22  Dictyostelium_discoideum                                                      44.05%    failed      0.00%
+  23  Polysphondylium_pallidum_strain_ATCC_26659_/_Pp_5_/_PN500_                    36.08%    failed      0.00%
+  24  Balneola_sp.                                                                  60.20%    failed      0.00%
+  25  Suttonella_ornithocola                                                        62.49%    failed      0.04%
+  26  bacterium_SCGC_AG-212-C10                                                     63.71%    failed      3.68%
+  27  Dehalococcoidia_bacterium                                                     61.85%    failed      3.27%
+  28  Chloroflexi_bacterium_strain_G233_                                            62.75%    failed      0.02%
+  29  Ostreococcus_lucimarinus_strain_CCE9901_                                      56.80%    failed      3.48%
+  30  Ostreococcus_tauri                                                            52.02%    failed      4.78%
+  31  Dichelobacter_nodosus_strain_VCS1703A_                                        61.64%    failed      0.00%
+  32  Suttonella_indologenes                                                        62.22%    failed      0.01%
+  33  Physcomitrium_patens                                                          64.82%    failed      0.65%
+  34  Bathycoccus_prasinos                                                          46.76%    failed      0.20%
+  35  Chloropicon_primus                                                            51.91%    failed      3.43%
+  36  Cyanidioschyzon_merolae_strain_10D_                                           30.82%    failed      2.22%
+  37  Galdieria_sulphuraria                                                         45.80%    failed      2.38%
+  38  Cyanidiococcus_yangmingshanensis                                              48.03%    passed     17.29%
+  39  Porphyridium_purpureum                                                        46.92%    failed      1.13%
+  40  Porphyra_umbilicalis                                                          62.86%    failed      0.00%
+  41  Gracilariopsis_chorda                                                         39.37%    passed     17.35%
+  42  Chondrus_crispus                                                              44.00%    passed     36.66%
+  43  Thecamonas_trahens_ATCC_50062                                                 45.48%    failed      0.00%
+  44  MGT_1052748_3_MGT-v1-132_48235881                                             27.79%    failed      0.00%
+  45  MGT_1052749_3_MGT-v1-132_48235882                                             27.21%    failed      0.00%
+  46  MGT_4535274_5_MGT-v1-433_66922909                                             48.35%    failed      1.84%
+  47  MGT_660994_5_MGT-v1-115_31178020                                              45.16%    passed     10.45%
+  48  MGT_4603402_2_MGT-v1-449_66904442                                             38.26%    failed      0.19%
+  49  MGT_3534583_5_MGT-v1-307_66904231                                             14.03%    failed      0.01%
+  50  MGT_3534586_5_MGT-v1-307_66904235                                             14.03%    failed      0.01%
+  51  MGT_3534607_6_MGT-v1-307_66904484                                             29.22%    failed      0.00%
+  52  MGT_3534608_6_MGT-v1-307_66904485                                             29.22%    failed      0.00%
+  53  MGT_3533685_1_MGT-v1-307_25959144                                             34.59%    passed     20.74%
+  54  MGT_4528428_6_MGT-v1-430_58840832                                             34.54%    failed      1.75%
+  55  MGT_6238544_3_MGT-v1-774_66908219                                              9.88%    failed      0.00%
+  56  MGT_3623192_1_MGT-v1-319_54324592                                             65.73%    passed     15.55%
+  57  MGT_410254_4_MGT-v1-104_88106186                                              56.64%    passed     20.93%
+  58  MGT_4479951_2_MGT-v1-424_5323577                                              58.02%    passed     13.71%
+  59  MGT_2519656_1_MGT-v1-218_57156154                                             60.89%    passed     22.45%
+  60  MGT_2744303_4_MGT-v1-238_31197377                                             66.79%    failed      3.82%
+  61  MGT_663325_4_MGT-v1-115_31197377                                              66.79%    failed      3.82%
+  62  MGT_406855_2_MGT-v1-104_49987761                                              57.76%    passed     33.35%
+  63  MGT_2748819_5_MGT-v1-239_51628715                                             53.99%    passed     11.75%
+  64  MGT_1476566_5_MGT-v1-156_54301798                                             57.44%    passed     26.21%
+  65  MGT_4561580_3_MGT-v1-44_75810419                                              58.29%    passed     23.98%
+  66  MGT_1814915_6_MGT-v1-179_25965268                                             58.82%    passed     12.37%
+  67  MGT_4561581_3_MGT-v1-44_75810423                                              58.29%    passed     23.98%
+  68  MGT_4559551_4_MGT-v1-44_75497789                                              56.91%    passed     20.14%
+  69  MGT_1633761_1_MGT-v1-166_9192075                                              60.10%    passed     16.08%
+  70  MGT_3753262_3_MGT-v1-332_82311643                                             60.63%    passed     15.57%
+  71  MGT_3833015_2_MGT-v1-345_14075526                                             60.47%    passed     15.89%
+  72  MGT_2382362_3_MGT-v1-205_8969580                                              63.55%    passed     28.19%
+  73  MGT_843397_2_MGT-v1-122_24803117                                              64.29%    passed     25.57%
+  74  MGT_5727050_3_MGT-v1-65_45654085                                              62.59%    failed      0.30%
+  75  MGT_3753904_3_MGT-v1-332_102681618                                            62.59%    failed      1.13%
+  76  MGT_4745088_3_MGT-v1-470_66965753                                             63.34%    failed      3.80%
+  77  MGT_688130_3_MGT-v1-117_66965753                                              63.34%    failed      3.80%
+  78  MGT_4384137_2_MGT-v1-41_25954234                                              66.90%    failed      0.62%
+  79  MGT_889506_1_MGT-v1-125_95473921                                              70.94%    passed     37.99%
+  80  MGT_882402_6_MGT-v1-125_62597451                                              57.23%    failed      0.21%
+  81  MGT_3117413_6_MGT-v1-273_14187041                                             63.97%    failed      0.02%
+  82  MGT_4553027_2_MGT-v1-44_55816921                                              60.68%    failed      0.00%
+  83  MGT_4098736_3_MGT-v1-384_16655543                                             62.81%    failed      0.00%
+  84  MGT_4165542_4_MGT-v1-395_31187831                                             74.18%    passed     10.64%
+  85  MGT_5035575_3_MGT-v1-505_66939612                                             70.56%    failed      0.04%
+  86  MGT_6129472_2_MGT-v1-736_26121193                                             74.18%    failed      0.00%
+  87  MGT_5781537_1_MGT-v1-667_14063989                                             68.49%    failed      0.00%
+  88  MGT_5781536_2_MGT-v1-667_14063988                                             68.07%    failed      0.00%
+  89  MGT_5035058_1_MGT-v1-505_66903683                                             70.35%    passed      7.26%
+  90  MGT_3896042_3_MGT-v1-353_48243200                                             71.31%    failed      0.09%
+  91  MGT_5781536_1_MGT-v1-667_14063988                                             64.40%    failed      0.00%
+  92  MGT_5781537_3_MGT-v1-667_14063989                                             66.68%    failed      0.00%
+  93  MGT_5721973_5_MGT-v1-65_11620868                                              66.90%    failed      0.48%
+  94  MGT_5721973_6_MGT-v1-65_11620868                                              73.91%    failed      0.00%
+  95  MGT_882402_4_MGT-v1-125_62597451                                              65.04%    failed      0.00%
+  96  MGT_4553027_3_MGT-v1-44_55816921                                              63.12%    failed      0.00%
+  97  MGT_3523196_6_MGT-v1-304_14044621                                             79.06%    failed      0.00%
+  98  MGT_6129472_1_MGT-v1-736_26121193                                             82.41%    failed      0.00%
+  99  MGT_4844359_6_MGT-v1-491_14056172                                             77.47%    failed      0.00%
+ 100  MGT_4165655_3_MGT-v1-395_31195222                                             39.21%    failed      0.00%
+ 101  MGT_857531_1_MGT-v1-123_26163927                                              72.32%    failed      0.00%
+ 102  MGT_3117413_5_MGT-v1-273_14187041                                             69.98%    failed      0.00%
+ 103  MGT_4098625_6_MGT-v1-384_16649846                                             58.61%    failed      0.00%
+ 104  MGT_862092_2_MGT-v1-123_48232380                                              76.99%    failed      0.00%
+ 105  MGT_3199239_5_MGT-v1-281_22099891                                             74.87%    failed      1.38%
+ 106  MGT_4098625_5_MGT-v1-384_16649846                                             57.01%    failed      0.00%
+ 107  MGT_4165542_5_MGT-v1-395_31187831                                             79.38%    failed      0.00%
+ 108  MGT_5721973_4_MGT-v1-65_11620868                                              73.27%    failed      0.00%
+ 109  MGT_3753904_1_MGT-v1-332_102681618                                            69.98%    failed      0.00%
+ 110  MGT_3199239_6_MGT-v1-281_22099891                                             78.53%    failed      0.00%
+WARNING: 84 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                         57.60%  86 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: MGT_3534586_5_MGT-v1-307_66904235 is identical to MGT_3534583_5_MGT-v1-307_66904231 but kept for subsequent analysis
+NOTE: MGT_3534608_6_MGT-v1-307_66904485 is identical to MGT_3534607_6_MGT-v1-307_66904484 but kept for subsequent analysis
+NOTE: MGT_663325_4_MGT-v1-115_31197377 is identical to MGT_2744303_4_MGT-v1-238_31197377 but kept for subsequent analysis
+NOTE: MGT_4561581_3_MGT-v1-44_75810423 is identical to MGT_4561580_3_MGT-v1-44_75810419 but kept for subsequent analysis
+NOTE: MGT_688130_3_MGT-v1-117_66965753 is identical to MGT_4745088_3_MGT-v1-470_66965753 but kept for subsequent analysis
+Creating fast initial parsimony tree by random order stepwise addition...
+0.271 seconds, parsimony score: 25405 (based on 1845 sites)
+
+NOTE: 193 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 6 CPU cores
+7 trees examined
+Threads: 1 / Time: 6.011 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -171782
+Threads: 2 / Time: 3.277 sec / Speedup: 1.835 / Efficiency: 92% / LogL: -171782
+Threads: 3 / Time: 2.347 sec / Speedup: 2.561 / Efficiency: 85% / LogL: -171782
+Threads: 4 / Time: 2.106 sec / Speedup: 2.855 / Efficiency: 71% / LogL: -171782
+Threads: 5 / Time: 2.255 sec / Speedup: 2.665 / Efficiency: 53% / LogL: -171782
+Threads: 6 / Time: 2.797 sec / Speedup: 2.149 / Efficiency: 36% / LogL: -171782
+BEST NUMBER OF THREADS: 4
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -127158.523
+2. Current log-likelihood: -119673.951
+3. Current log-likelihood: -119574.122
+4. Current log-likelihood: -119569.651
+5. Current log-likelihood: -119563.734
+6. Current log-likelihood: -119554.867
+7. Current log-likelihood: -119541.059
+8. Current log-likelihood: -119521.296
+9. Current log-likelihood: -119517.005
+Optimal log-likelihood: -119516.887
+Site proportion and rates:  (0.046,0.076) (0.099,0.170) (0.154,0.326) (0.217,0.602) (0.364,1.182) (0.120,3.072)
+Parameters optimization took 9 rounds (30.978 sec)
+Computing ML distances based on estimated model parameters... 1.689 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.021 seconds
+Log-likelihood of BIONJ tree: -119564.495
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 3.263 second
+Computing log-likelihood of 98 initial trees ... 29.424 seconds
+Current best score: -119516.887
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -119033.876
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -118972.531
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -118915.185
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -118900.953
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 8: -118890.587
+Iteration 10 / LogL: -118907.521 / Time: 0h:3m:32s
+Iteration 20 / LogL: -118895.047 / Time: 0h:5m:2s
+Finish initializing candidate tree set (20)
+Current best tree score: -118890.587 / CPU time: 244.161
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 21: -118888.912
+Iteration 30 / LogL: -118890.584 / Time: 0h:6m:14s (0h:19m:34s left)
+Iteration 40 / LogL: -118940.725 / Time: 0h:7m:17s (0h:15m:7s left)
+Iteration 50 / LogL: -118910.193 / Time: 0h:8m:27s (0h:12m:15s left)
+UPDATE BEST LOG-LIKELIHOOD: -118888.906
+Iteration 60 / LogL: -118890.012 / Time: 0h:9m:37s (0h:9m:56s left)
+Iteration 70 / LogL: -118890.199 / Time: 0h:10m:44s (0h:7m:55s left)
+Iteration 80 / LogL: -118892.591 / Time: 0h:11m:48s (0h:6m:7s left)
+Iteration 90 / LogL: -118895.266 / Time: 0h:12m:53s (0h:4m:29s left)
+Iteration 100 / LogL: -118889.851 / Time: 0h:13m:59s (0h:2m:58s left)
+Iteration 110 / LogL: -118890.531 / Time: 0h:15m:7s (0h:1m:31s left)
+Iteration 120 / LogL: -118889.179 / Time: 0h:16m:11s (0h:0m:8s left)
+TREE SEARCH COMPLETED AFTER 122 ITERATIONS / Time: 0h:16m:24s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -118888.906
+2. Current log-likelihood: -118888.857
+3. Current log-likelihood: -118888.818
+4. Current log-likelihood: -118888.781
+5. Current log-likelihood: -118888.736
+6. Current log-likelihood: -118888.694
+7. Current log-likelihood: -118888.647
+8. Current log-likelihood: -118888.603
+9. Current log-likelihood: -118888.559
+10. Current log-likelihood: -118888.509
+11. Current log-likelihood: -118888.465
+12. Current log-likelihood: -118888.417
+13. Current log-likelihood: -118888.375
+14. Current log-likelihood: -118888.325
+15. Current log-likelihood: -118888.284
+16. Current log-likelihood: -118888.233
+17. Current log-likelihood: -118888.194
+18. Current log-likelihood: -118888.144
+19. Current log-likelihood: -118888.105
+20. Current log-likelihood: -118888.055
+21. Current log-likelihood: -118888.018
+22. Current log-likelihood: -118887.968
+23. Current log-likelihood: -118887.931
+24. Current log-likelihood: -118887.882
+25. Current log-likelihood: -118887.846
+26. Current log-likelihood: -118887.796
+27. Current log-likelihood: -118887.761
+28. Current log-likelihood: -118887.712
+29. Current log-likelihood: -118887.677
+30. Current log-likelihood: -118887.631
+31. Current log-likelihood: -118887.594
+32. Current log-likelihood: -118887.551
+33. Current log-likelihood: -118887.515
+34. Current log-likelihood: -118887.479
+35. Current log-likelihood: -118887.459
+36. Current log-likelihood: -118887.419
+37. Current log-likelihood: -118887.399
+38. Current log-likelihood: -118887.366
+39. Current log-likelihood: -118887.348
+40. Current log-likelihood: -118887.326
+41. Current log-likelihood: -118887.292
+42. Current log-likelihood: -118887.275
+43. Current log-likelihood: -118887.253
+44. Current log-likelihood: -118887.235
+45. Current log-likelihood: -118887.195
+46. Current log-likelihood: -118887.180
+47. Current log-likelihood: -118887.163
+48. Current log-likelihood: -118887.143
+49. Current log-likelihood: -118887.126
+50. Current log-likelihood: -118887.105
+51. Current log-likelihood: -118887.090
+52. Current log-likelihood: -118887.070
+53. Current log-likelihood: -118887.054
+54. Current log-likelihood: -118887.034
+55. Current log-likelihood: -118887.020
+56. Current log-likelihood: -118887.001
+57. Current log-likelihood: -118886.987
+58. Current log-likelihood: -118886.968
+59. Current log-likelihood: -118886.955
+60. Current log-likelihood: -118886.937
+61. Current log-likelihood: -118886.924
+62. Current log-likelihood: -118886.906
+63. Current log-likelihood: -118886.894
+64. Current log-likelihood: -118886.877
+Optimal log-likelihood: -118886.863
+Site proportion and rates:  (0.029,0.066) (0.102,0.141) (0.160,0.296) (0.229,0.567) (0.383,1.149) (0.097,3.785)
+Parameters optimization took 64 rounds (154.552 sec)
+BEST SCORE FOUND : -118886.863
+Total tree length: 118.622
+
+Total number of iterations: 122
+CPU time used for tree search: 3674.466 sec (1h:1m:14s)
+Wall-clock time used for tree search: 925.549 sec (0h:15m:25s)
+Total CPU time used: 4505.779 sec (1h:15m:5s)
+Total wall-clock time used: 1138.745 sec (0h:18m:58s)
+
+Analysis results written to: 
+  IQ-TREE report:                aligned_mgt.iqtree
+  Maximum-likelihood tree:       aligned_mgt.treefile
+  Likelihood distances:          aligned_mgt.mldist
+  Screen log file:               aligned_mgt.log
+
+Date and Time: Tue Jun 21 15:02:43 2022

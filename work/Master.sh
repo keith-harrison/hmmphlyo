@@ -127,3 +127,15 @@ mafft --add matou.faa pruned_tree.fast > aligned_matou.fasta #DO ONLINE THIS IS 
 epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_matou.fasta --outdir matou --model LG+R6
 epa-ng --tree iqtree.nwk --ref-msa pruned_tree.fasta --query aligned_mgt.fasta --outdir mgt --model LG+R6
 
+#10 Run phylogeny properly with these hits
+#Mafft Add does some weird stuff with the names, so we need to fix them
+#fixing Matou and MGT files
+
+sed -i 's/>*.*|/>/' aligned_matou.fasta 
+sed -i 's/>*.*|/>/' aligned_mgt.fasta
+#>9ins:113K-114N,etc|MATOU-v1_24803117_2_464262_PF02503_PF13090
+#>7ins:1L-237E,etc|MGT_3623192_1_MGT-v1-319_54324592
+trimal -fasta -in aligned_matou.fasta -out aligned_matou.fasta
+trimal -fasta -in aligned_mgt.fasta -out aligned_mgt.fasta
+iqtree -nt AUTO -s aligned_matou.fasta -m LG+R6 -pre aligned_matou
+iqtree -nt AUTO -s aligned_mgt.fasta -m LG+R6 -pre aligned_mgt
