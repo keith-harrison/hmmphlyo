@@ -15,9 +15,9 @@ find . -maxdepth 1 -name "fixed*.fa" -exec sed -i 's/_\{2,\}/_/g' {} \;
 find . -maxdepth 1 -name "fixed*.fa" -exec seqkit rmdup -n {} -o concatenated_ready_seq.fa \;
 
 #4. Run phylogeny (Mafft,Trimal,FastTree)
-mafft --auto concatenated_ready_seq.fa > aligned_seq.fa
-trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
-FastTree -quiet trimmed_seq.fa > treefile
+mafft --auto concatenated_ready_seq.fa > aligned_seq.fa # no methods applicable as a large number of sequences
+trimal -gappyout -fasta -in aligned_seq.fa -out trimmed_seq.fa
+FastTree -quiet trimmed_seq.fa > newtreefile #dont want to use psuedo as there is a high similarity / wag bad
 
 
 #5. Prune FastTree (Python,MAFFT,Trimal)
