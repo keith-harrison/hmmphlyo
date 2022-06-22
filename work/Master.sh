@@ -16,7 +16,7 @@ find . -maxdepth 1 -name "fixed*.fa" -exec seqkit rmdup -n {} -o concatenated_re
 
 #4. Run phylogeny (Mafft,Trimal,FastTree)
 mafft --auto concatenated_ready_seq.fa > aligned_seq.fa # no methods applicable as a large number of sequences
-trimal -gappyout -fasta -in aligned_seq.fa -out trimmed_seq.fa
+trimal  -fasta -in aligned_seq.fa -out trimmed_seq.fa #ruins results -gappyout
 FastTree -quiet trimmed_seq.fa > newtreefile #dont want to use psuedo as there is a high similarity / wag bad
 
 
@@ -38,11 +38,13 @@ sed -i 's/)/_/' aligned_seq.fa
 sed -i 's/_\{2,\}/_/g' aligned_seq.fa
 trimal -fasta -in aligned_seq.fa -out trimmed_seq.fa
 mv trimmed_seq.fa pruned_tree.fasta
+trimal -gappyout -fasta -in pruned_tree.fasta -out pruned_trimmed.fasta
+#6. Run Phylogeny on Pruned FastTree (IQTree) * here
+#iqtree -nt AUTO  -s pruned_tree.fasta
+nohup iqtree -nt AUTO -s pruned_tree.fasta -bb 1000 -pre pruned &
+nohup iqtree -nt AUTO -s pruned_trimmed.fasta -bb 1000 -pre trimmed &
 
-#6. Run Phylogeny on Pruned FastTree (IQTree)
-iqtree -nt AUTO  -s pruned_tree.fasta
-
-
+#6.5 Add reference proteomes ppk sequences to this pruned tree. Do this by using original fasta
 #7. Do on a machine with lots of storage (e.g. ISCA)
 #Download MMETSP
 wget https://zenodo.org/record/3247846/files/mmetsp_dib_trinity2.2.0_pep_zenodo.tar.gz
