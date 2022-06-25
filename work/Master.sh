@@ -12,7 +12,7 @@ find . -maxdepth 1 -name "fixed*.fa" -exec sed -i 's/,/_/' {} \;
 find . -maxdepth 1 -name "fixed*.fa" -exec sed -i 's/(/_/' {} \;
 find . -maxdepth 1 -name "fixed*.fa" -exec sed -i 's/)/_/' {} \;
 find . -maxdepth 1 -name "fixed*.fa" -exec sed -i 's/_\{2,\}/_/g' {} \;
-find . -maxdepth 1 -name "fixed*.fa" -exec seqkit rmdup -n {} -o concatenated_ready_seq.fa \;
+find . -maxdepth 1 -name "fixed*.fa" -exec seqkit rmdup -n {} -o concatenated_ready_seq.fa -d deleted.fa\;
 
 #4. Run phylogeny (Mafft,Trimal,FastTree)
 mafft --auto concatenated_ready_seq.fa > aligned_seq.fa # no methods applicable as a large number of sequences
@@ -45,6 +45,20 @@ nohup iqtree -nt AUTO -s pruned_tree.fasta -bb 1000 -pre pruned &
 nohup iqtree -nt AUTO -s pruned_trimmed.fasta -bb 1000 -pre trimmed &
 
 #6.5 Add reference proteomes ppk sequences to this pruned tree. Do this by using original fasta
+#So Download MMETSP
+wget https://zenodo.org/record/3247846/files/mmetsp_dib_trinity2.2.0_pep_zenodo.tar.gz
+tar -xvf mmetsp_dib_trinity2.2.0_pep_zenodo.tar.gz
+#go into pep and rename MMETSP files
+for filename in *.pep; do
+  newFilename=$(sed 's/trinity_out_2.2.*.Trinity.fasta.transdecoder.//g' <<< "$filename")
+  mv "$filename" "$newFilename"
+done
+#Put filename in each fastaheading
+for f in *.faa; do sed -i "s/^>/>${f%.faa}/g" "${f}"; done
+
+#Do HMMSEARCH on these files
+#Return Best result from each File
+
 #7. Do on a machine with lots of storage (e.g. ISCA)
 #Download MMETSP
 wget https://zenodo.org/record/3247846/files/mmetsp_dib_trinity2.2.0_pep_zenodo.tar.gz
