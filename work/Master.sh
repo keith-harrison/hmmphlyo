@@ -1,3 +1,4 @@
+#This file is not meant to be run but to supplement the workflow
 #1. Use Pfam to get HMM Profiles
 #Make multiple trees comparing domains, sameish results PPK1-4
 #PFAM website
@@ -155,3 +156,24 @@ trimal -fasta -in aligned_matou.fasta -out aligned_matou.fasta
 trimal -fasta -in aligned_mgt.fasta -out aligned_mgt.fasta
 iqtree -nt AUTO -s aligned_matou.fasta -m LG+R6 -pre aligned_matou
 iqtree -nt AUTO -s aligned_mgt.fasta -m LG+R6 -pre aligned_mgt
+
+#11 Add taxonomies to the initial tree
+#take fullPPK.fa (results of search with Gofull.py ran on it)
+sed -i '/^<!DOCTYPE/d' fullPPK.fa
+grep -e ">" fullPPK.fa > UniprotIDs.txt && sed -i 's/>//g' Uniprot.txt
+#Webscrape Ids
+python NewickTaxa.py
+sed -i 's/^/>/g' taxas.txt
+seqkit rmdup -n taxas.txt -o Taxa.txt -d deletedTaxa.fa
+sed -i -r '/^\s*$/d' Taxa.txt
+sed -i 's/>//g' Taxa.txt
+#IDS READY
+#Get names used in the original tree
+grep -e ">" trimmed_seq.fa > names.txt
+sed -i 's/>//' names.txt
+python AlterNewick.py
+#Synechococcus_sp._strain_JA-2-3B&#039;a manual change to 321332
+#Mycolicibacterium_smegmatis_strain_ATCC_700084_/_mc(2_155) to 246196
+#Streptomyces_coelicolor_strain_ATCC_BAA-471_/_A3(2_/_M145) to 100226
+#Synechococcus_sp._strain_ATCC_27167_/_PCC_6312_ to 195253
+#Nostoc_sp._&#039 to 1177
