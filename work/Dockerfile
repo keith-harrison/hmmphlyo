@@ -28,6 +28,7 @@ RUN conda install -c bioconda taxonkit
 RUN wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz && tar zxf taxdump.tar.gz && mkdir /root/.taxonkit && mv  *.dmp /root/.taxonkit
 #RUN git clone https://github.com/EddyRivasLab/easel && cd easel && autoconf && ./configure && make && make install
 RUN pip install --upgrade ete3
+RUN pip install pandas
 ENV PATH="${PATH}:/bin"
 ENV PATH="${PATH}:/usr/bin"
 
