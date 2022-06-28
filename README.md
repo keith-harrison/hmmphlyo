@@ -21,25 +21,21 @@ git clone https://github.com/keith-harrison/hmmphylo/
 cd hmmphylo
 docker-compose up -d
 docker-compose run --rm hmmphylo
-dos2unix GO.sh
+dos2unix initialtree.sh
+dos2unix prunetree.sh
 ```
-* Running GO.sh (Gives phylogeny of the sequences given)
+* Running initialtree.sh (Gives phylogeny of the sequences given from two given PFAM alignments/HMMsearch results)
 ```bat
-./GO.sh
-#Then input is the name of the file (this file is the results of the hmmsearch in fasta output)
+./initialtree.sh
+
 ```
-* Running GOfull.sh (Gives phylogeny of full protein sequences given ids)
-This will return the full protein sequences not just the snippets given in the hmm results for GO.sh
+
+* Running prunetree.sh (Gives refined phylogeny of pruned tree using manual pruned file from ITOL)
 ```bat
-./GOfull.sh
-#The input is the name of the file we wish to take uniprot ids from (this can take any file with format >ID1 >ID2 >....)
-#For simplicity you can give the same input as the previous GO.sh and the second input will be "full<FILENAME>"
+#NAME THE FILE pruneddraft.nwk and provide the concatenated_ready_seq.fa file
+./prunetree.sh
 ```
-* Running newick.sh (Allows pruning of newick tree file alongside using the concatenated_ready_seq.fa file to generate a more refined tree using IQTREE)
-On ITOL (online newick tree file viewer) prune the tree/results from previous GOfull analysis and put both this prunedtree.nwk and concatenated_ready_seq.fa from before and put it back into the work folder and run newick.sh.
-```bat
-./newick.sh
-```
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
