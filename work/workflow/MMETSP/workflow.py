@@ -1,7 +1,7 @@
 #Have a bunch of files representing the reference transcriptomes -> proteins from MMETSP
 #Want to ready the MMETSPinfo.csv finding out which files have an associated taxonomy 
+#Read MMETSPinfo.csv
 
-#read mmetsp and put into table
 
 #If they have an associated taxonomy do not delete them 
     #make every line starting with > just be the organism name
