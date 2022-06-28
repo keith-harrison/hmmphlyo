@@ -1,7 +1,7 @@
-filename = "concatenated_ready_seq.fa"
-
+filename = "fixedconcatenated_ready_seq.fa"
+oldname = "concatenated_ready_seq.fa"
 #TURN INTO SINGLE LINE FASTA
-with open(filename) as f_input, open(filename, 'w') as f_output:
+with open(oldname) as f_input, open(filename, 'w') as f_output:
     block = []
 
     for line in f_input:
