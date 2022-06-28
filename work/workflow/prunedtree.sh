@@ -7,7 +7,9 @@ python -c "exec(\"import sys\nimport sys\nfrom ete3 import Tree\nt = Tree('prune
 python single_line.py 
 
 #return matching pruned sequences from "master" sequence file
-cat listfile.txt | grep -A 1 --no-group-separator -f - fixedconcatenated_ready_seq.fa > newick_seq_line.fa
+#add > to listfile.txt (was looking for incorrect thing)
+sed -i 's/^/>/' listfile.txt
+cat listfile.txt | grep -A 1 --no-group-separator -xF -f - fixedconcatenated_ready_seq.fa > newick_seq_line.fa
 
 #Now that we have all the sequences in our pruned tree run a regular MAFFT and Trimal followed by IQTREE
 mafft --auto newick_seq_line.fa > aligned_seq.fa
