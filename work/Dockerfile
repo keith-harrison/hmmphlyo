@@ -24,6 +24,7 @@ RUN apt-get -y install autoconf
 
 RUN  wget http://eddylab.org/software/hmmer/hmmer.tar.gz && tar zxf hmmer.tar.gz && cd hmmer-3.3.2 && ./configure && make && make install && cd easel && make && make install
 RUN conda install -c bioconda epa-ng
+RUN pip install taxonomy-ranks
 RUN conda install -c bioconda taxonkit
 RUN wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz && tar zxf taxdump.tar.gz && mkdir /root/.taxonkit && mv  *.dmp /root/.taxonkit
 #RUN git clone https://github.com/EddyRivasLab/easel && cd easel && autoconf && ./configure && make && make install
