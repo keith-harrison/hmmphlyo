@@ -14,6 +14,4 @@ cat listfile.txt | grep -A 1 --no-group-separator -xF -f - fixedconcatenated_rea
 #Now that we have all the sequences in our pruned tree run a regular MAFFT and Trimal followed by IQTREE
 mafft --auto newick_seq_line.fa > aligned_seq.fa
 trimal -fasta -gappyout -in aligned_seq.fa -out trimmed_seq_gappy.fasta
-trimal -fasta  -in aligned_seq.fa -out trimmed_seq.fasta
-nohup iqtree -nt AUTO -s trimmed_seq.fasta -bb 1000 -pre pruned &
 nohup iqtree -nt AUTO -s trimmed_seq_gappy.fasta -bb 1000 -pre prunedgappy &
