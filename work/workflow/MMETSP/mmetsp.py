@@ -20,6 +20,8 @@ keep_list = []
 for index, row in df.iterrows():
     if row['Taxon'] != "NA":
         keep_list.append(row['ID'])
+
+
 #concatenate files together that have the same taxon
 #group MMETSP ids by taxon not including NA
 df = df[df["Taxon"] != "NA"]
